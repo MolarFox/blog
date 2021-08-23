@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://blog.molarfox.io",
     title: "Molar's Cooking Secrets",
   },
   plugins: [
@@ -16,6 +16,7 @@ module.exports = {
     "gatsby-plugin-mdx",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
+    "gatsby-transformer-remark",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -29,6 +30,14 @@ module.exports = {
       options: {
         name: "pages",
         path: "./src/pages/",
+      },
+      __key: "pages",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "md-posts",
+        path: "./src/markdown-pages",
       },
       __key: "pages",
     },
