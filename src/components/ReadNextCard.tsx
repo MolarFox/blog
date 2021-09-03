@@ -28,7 +28,7 @@ export interface ReadNextProps {
 }
 
 export const ReadNextCard: React.FC<ReadNextProps> = props => {
-  // filter out current post and limit to 3 related posts
+  // Filter out current post and limit to 3 related posts
   const relatedPosts = props.relatedPosts.edges.filter(post => post.node.fields.slug !== props.currentPageSlug).slice(0, 3);
 
   return (

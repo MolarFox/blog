@@ -29,7 +29,7 @@ export const SiteNavLogo = () => (
     render={(data: SiteNavLogoProps) => (
       <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
         {data.logo ? (
-          <img src={data.logo.childImageSharp.fixed.src} alt={config.title} />
+          <img src={data.logo.childImageSharp.fixed.src} alt={config.title}/>
         ) : (
           config.title
         )}

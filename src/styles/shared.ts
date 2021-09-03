@@ -172,7 +172,7 @@ export const AuthorProfileImage = css`
   }
 `;
 
-// tag and author post lists
+// Tag and author post lists
 export const SiteArchiveHeader = css`
   .site-header-content {
     position: relative;

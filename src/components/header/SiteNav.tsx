@@ -69,7 +69,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
     const trigger = this.titleRef.current.getBoundingClientRect().top;
     const triggerOffset = this.titleRef.current.offsetHeight + 35;
 
-    // show/hide post title
+    // Show/hide post title
     if (this.lastScrollY >= trigger + triggerOffset) {
       this.setState({ showTitle: true });
     } else {
@@ -83,10 +83,10 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
     const { isHome = false, isPost = false, post = {} } = this.props;
     return (
       <>
-        {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
+        {config.showSubscribe && <SubscribeModal ref={this.subscribe}/>}
         <nav css={SiteNavStyles}>
           <SiteNavLeft className="site-nav-left">
-            {!isHome && <SiteNavLogo />}
+            {!isHome && <SiteNavLogo/>}
             <SiteNavContent css={[this.state.showTitle ? HideNav : '']}>
               <ul css={NavStyles} role="menu">
                 <li role="menuitem">
@@ -117,7 +117,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   title="Facebook"
                   rel="noopener noreferrer"
                 >
-                  <Facebook />
+                  <Facebook/>
                 </a>
               )}
               {config.twitter && (
@@ -128,7 +128,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Twitter />
+                  <Twitter/>
                 </a>
               )}
             </SocialLinks>

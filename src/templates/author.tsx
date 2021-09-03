@@ -84,20 +84,20 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
   return (
     <IndexLayout>
       <Helmet>
-        <html lang={config.lang} />
+        <html lang={config.lang}/>
         <title>
           {author.id} - {config.title}
         </title>
-        <meta name="description" content={author.bio} />
-        <meta property="og:site_name" content={config.title} />
-        <meta property="og:type" content="profile" />
-        <meta property="og:title" content={`${author.id} - ${config.title}`} />
-        <meta property="og:url" content={config.siteUrl + location.pathname} />
-        <meta property="article:publisher" content="https://www.facebook.com/ghost" />
-        <meta property="article:author" content="https://www.facebook.com/ghost" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
-        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
+        <meta name="description" content={author.bio}/>
+        <meta property="og:site_name" content={config.title}/>
+        <meta property="og:type" content="profile"/>
+        <meta property="og:title" content={`${author.id} - ${config.title}`}/>
+        <meta property="og:url" content={config.siteUrl + location.pathname}/>
+        <meta property="article:publisher" content="https://www.facebook.com/ghost"/>
+        <meta property="article:author" content="https://www.facebook.com/ghost"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:title" content={`${author.id} - ${config.title}`}/>
+        <meta name="twitter:url" content={config.siteUrl + location.pathname}/>
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -115,7 +115,7 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
         <header className="site-archive-header" css={[SiteHeader, SiteArchiveHeader]}>
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
-              <SiteNav isHome={false} />
+              <SiteNav isHome={false}/>
             </div>
           </div>
 
@@ -189,12 +189,12 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
           <div css={inner}>
             <div css={[PostFeed]}>
               {edges.map(({ node }) => {
-                return <PostCard key={node.fields.slug} post={node} />;
+                return <PostCard key={node.fields.slug} post={node}/>;
               })}
             </div>
           </div>
         </main>
-        <Footer />
+        <Footer/>
       </Wrapper>
     </IndexLayout>
   );

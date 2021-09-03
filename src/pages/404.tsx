@@ -32,7 +32,7 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
         <header css={[SiteHeader, outer]}>
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
-              <SiteNav isHome={false} />
+              <SiteNav isHome={false}/>
             </div>
           </div>
         </header>
@@ -48,7 +48,7 @@ const NotFoundPage: React.FC<NotFoundTemplateProps> = props => {
 
             <div css={PostFeed} className="post-feed">
               {edges.map(({ node }) => (
-                <PostCard key={node.fields.slug} post={node} />
+                <PostCard key={node.fields.slug} post={node}/>
               ))}
             </div>
           </div>

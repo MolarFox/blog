@@ -63,19 +63,19 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
   return (
     <IndexLayout>
       <Helmet>
-        <html lang={config.lang} />
+        <html lang={config.lang}/>
         <title>
           {tag} - {config.title}
         </title>
-        <meta name="description" content={tagData?.node ? tagData.node.description : ''} />
-        <meta property="og:site_name" content={config.title} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={`${tag} - ${config.title}`} />
-        <meta property="og:url" content={config.siteUrl + location.pathname} />
-        {config.facebook && <meta property="article:publisher" content={config.facebook} />}
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${tag} - ${config.title}`} />
-        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
+        <meta name="description" content={tagData?.node ? tagData.node.description : ''}/>
+        <meta property="og:site_name" content={config.title}/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content={`${tag} - ${config.title}`}/>
+        <meta property="og:url" content={config.siteUrl + location.pathname}/>
+        {config.facebook && <meta property="article:publisher" content={config.facebook}/>}
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:title" content={`${tag} - ${config.title}`}/>
+        <meta name="twitter:url" content={config.siteUrl + location.pathname}/>
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -90,7 +90,7 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
         >
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
-              <SiteNav isHome={false} />
+              <SiteNav isHome={false}/>
             </div>
           </div>
           <ResponsiveHeaderBackground
@@ -118,12 +118,12 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
           <div css={inner}>
             <div css={[PostFeed]}>
               {edges.map(({ node }) => (
-                <PostCard key={node.fields.slug} post={node} />
+                <PostCard key={node.fields.slug} post={node}/>
               ))}
             </div>
           </div>
         </main>
-        <Footer />
+        <Footer/>
       </Wrapper>
     </IndexLayout>
   );

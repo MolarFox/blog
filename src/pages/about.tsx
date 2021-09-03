@@ -43,7 +43,7 @@ const About: React.FC = () => (
       <header className="site-archive-header no-image" css={[SiteHeader, SiteArchiveHeader]}>
         <div css={[outer, SiteNavMain]}>
           <div css={inner}>
-            <SiteNav isHome={false} />
+            <SiteNav isHome={false}/>
           </div>
         </div>
       </header>
@@ -57,7 +57,7 @@ const About: React.FC = () => (
             <PostFullContent className="post-full-content">
               <div className="post-content">
                 <h5>
-                  A starter template for Gatsby <br /> GitHub: <a href="https://github.com/scttcper/gatsby-casper">scttcper/gatsby-casper</a>
+                  A starter template for Gatsby <br/> GitHub: <a href="https://github.com/scttcper/gatsby-casper">scttcper/gatsby-casper</a>
                 </h5>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc commodo finibus leo,
@@ -99,7 +99,7 @@ const About: React.FC = () => (
           </article>
         </div>
       </main>
-      <Footer />
+      <Footer/>
     </Wrapper>
   </IndexLayout>
 );

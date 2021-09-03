@@ -7,7 +7,7 @@ import { colors } from '../styles/colors';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
-  // components: { 'interactive-counter': Counter },
+  // Components: { 'interactive-counter': Counter },
   components: {},
 }).Compiler;
 
@@ -24,7 +24,7 @@ const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => {
   return (
     <PostFullContent className="post-full-content">
       {/* TODO: this will apply the class when rehype-react is published https://github.com/rhysd/rehype-react/pull/11 */}
-      <Ast className="post-content" ast={htmlAst} />
+      <Ast className="post-content" ast={htmlAst}/>
     </PostFullContent>
   );
 };

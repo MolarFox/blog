@@ -30,7 +30,7 @@ export const SubscribeForm: React.FC = () => {
         />
       </FormGroup>
       <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-        <input type="text" name={config.mailchimpName} tabIndex={-1} />
+        <input type="text" name={config.mailchimpName} tabIndex={-1}/>
       </div>
       <SubscribeFormButton type="submit">
         <span>Subscribe</span>

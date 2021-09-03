@@ -9,31 +9,31 @@ export interface WebsiteConfig {
    */
   lang: string;
   /**
-   * blog full path, no ending slash!
+   * Blog full path, no ending slash!
    */
   siteUrl: string;
   /**
-   * full url, no username
+   * Full url, no username
    */
   facebook?: string;
   /**
-   * full url, no username
+   * Full url, no username
    */
   twitter?: string;
   /**
-   * hide or show all email subscribe boxes
+   * Hide or show all email subscribe boxes
    */
   showSubscribe: boolean;
   /**
-   * create a list on mailchimp and then create an embeddable signup form. this is the form action
+   * Create a list on mailchimp and then create an embeddable signup form. this is the form action
    */
   mailchimpAction?: string;
   /**
-   * this is the hidden input field name
+   * This is the hidden input field name
    */
   mailchimpName?: string;
   /**
-   * name and id of the mailchimp email field
+   * Name and id of the mailchimp email field
    */
   mailchimpEmailFieldName?: string;
   /**
