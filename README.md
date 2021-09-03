@@ -1,54 +1,89 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+# gatsby-casper
 
-## 🚀 Quick start
+Demo: https://gatsby-casper.netlify.app
 
-1.  **Create a Gatsby site.**
+This is a static blog generator and starter gatsby repo. A port of [Casper](https://github.com/TryGhost/Casper) v3 a theme from [Ghost](https://ghost.org/) for [GatsbyJS](https://www.gatsbyjs.org/) using [TypeScript](https://www.typescriptlang.org/).
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Getting Started
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+Clone this repo.
 
-2.  **Start developing.**
+```
+git clone https://github.com/scttcper/gatsby-casper.git --depth=1
+```
 
-    Navigate into your new site’s directory and start it up.
+Remove .git folder and setup a new one
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+```
+rm -rf .git && git init
+```
 
-3.  **Open the code and start customizing!**
+Edit website-config.ts with your website settings.
+Either disable subscribe or setup a mailchimp list and add the form action and hidden field input name.
 
-    Your site is now running at http://localhost:8000!
+Now push to whatever repo you want!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+### Progress
 
-4.  **Learn more**
+- [x] emotion / component styles
+- [x] home page
+- [x] tag page
+- [x] author page
+- [x] blog page
+  - [x] subscribe form - using [mailchimp](https://mailchimp.com)
+  - [ ] full width images in markdown? - not sure if possible
+  - [x] multiple post authors
+- [x] 404 page
+- [x] subscribe modal/overlay
+- [x] rss feed (on production build)
+- [ ] polish ✨
+  - [x] meta tags
+  - [x] page titles
+  - [ ] pagination
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+### Deploy to Netlify
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scttcper/gatsby-casper)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## How to configure Google Analytics
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+Edit `gatsby-config.js` and add your tracking ID
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```javascript
+{
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      // Here goes your tracking ID
+      trackingId: 'UA-XXXX-Y',
+      // Puts tracking script in the head instead of the body
+      head: true,
+      // IP anonymization for GDPR compliance
+      anonymize: true,
+      // Disable analytics for users with `Do Not Track` enabled
+      respectDNT: true,
+      // Avoids sending pageview hits from custom paths
+      exclude: ['/preview/**'],
+      // Specifies what percentage of users should be tracked
+      sampleRate: 100,
+      // Determines how often site speed tracking beacons will be sent
+      siteSpeedSampleRate: 10,
+    },
+},
+```
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+## How to edit your site title and description
 
-## 🚀 Quick start (Gatsby Cloud)
+Edit `gatsby-config.js` section `siteMetadata`
 
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
+```javascript
+ siteMetadata: {
+    title: 'My awesome site name',
+    description: 'This is a description for my site',
+    siteUrl: 'https://mysite.com', // full path to blog - no ending slash
+  },
+```
 
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## How to adjust pagination
+
+In `gatsby-node.js`, edit the `postsPerPage` constant. The default value is
+six posts per page.
