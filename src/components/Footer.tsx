@@ -13,18 +13,18 @@ export const Footer: React.FC = () => {
     <footer css={[outer, SiteFooter]}>
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
-          <Link to="/">{config.title}</Link> &copy; {new Date().getFullYear()}{' '}
+          <Link to="/">{config.authorName}</Link> &copy; {new Date().getFullYear()}{' '}
           {config.footer && (
             <Link to="/">
-              | {config.title} {config.footer}
+              | {config.authorName} {config.footer}
             </Link>
           )}
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
-          {config.facebook && (
-            <a href={config.facebook} target="_blank" rel="noopener noreferrer">
-              Facebook
+          {config.github && (
+            <a href={config.github} target="_blank" rel="noopener noreferrer">
+              Github
             </a>
           )}
           {config.twitter && (
@@ -33,8 +33,8 @@ export const Footer: React.FC = () => {
             </a>
           )}
 
-          <a href="https://github.com/scttcper/gatsby-casper" target="_blank" rel="noopener noreferrer">
-            Casper
+          <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
+            Contact me
           </a>
 
           <a href="/rss.xml">RSS</a>
