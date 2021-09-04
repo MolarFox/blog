@@ -11,7 +11,7 @@ import config from '../../website-config';
 import { Github } from '../icons/github';
 import { YouTube } from '../icons/youtube';
 import { Twitter } from '../icons/twitter';
-import { RSS } from '../icons/rss';
+import { Rss } from '../icons/rss';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
 
@@ -142,17 +142,17 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Twitter/>
                 </a>
               )}
-              {config.twitter && (
+              {
                 <a
                   css={SocialLink}
-                  href=""
+                  href="/rss.xml"
                   title="RSS"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <RSS/>
+                  <Rss/>
                 </a>
-              )}
+              }
             </SocialLinks>
             {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
