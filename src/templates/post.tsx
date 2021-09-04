@@ -21,6 +21,9 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
+// @ts-expect-error
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+
 export interface Author {
   id: string;
   bio: string;
@@ -114,6 +117,10 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
   if (post.frontmatter.image?.childImageSharp) {
     width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
+  }
+  let disqusConfig = {
+    url: `${config.siteUrl+location.pathname}`,
+    title: post.frontmatter.title
   }
 
   const date = new Date(post.frontmatter.date);
@@ -218,7 +225,12 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                           {displayDatetime}
                         </time>
                         <span className="byline-reading-time">
-                          <span className="bull">&bull;</span>{post.fields.readingTime.text}
+                          <span className="bull">&bull;</span>
+                          {post.fields.readingTime.text}
+                        </span>
+                        <span className="byline-disqus-comments">
+                          <span className="bull">&bull;</span>
+                          <CommentCount config={disqusConfig} placeholder={'...'} />
                         </span>
                       </div>
                     </section>
@@ -236,7 +248,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst}/>
-
+              <Disqus config={disqusConfig} />
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title}/>}
             </article>
