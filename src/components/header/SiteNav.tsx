@@ -8,6 +8,7 @@ import styled from '@emotion/styled';
 import { colors } from '../../styles/colors';
 import { SocialLink, SocialLinkFb } from '../../styles/shared';
 import config from '../../website-config';
+import { Github } from '../icons/github';
 import { YouTube } from '../icons/youtube';
 import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
@@ -105,6 +106,18 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
+              {config.github && (
+                <a
+                  className="social-link-gh"
+                  css={[SocialLink]}
+                  href={config.github}
+                  target="_blank"
+                  title="Github"
+                  rel="noopener noreferrer"
+                >
+                  <Github/>
+                </a>
+              )}
               {config.youtube && (
                 <a
                   className="social-link-yt"
