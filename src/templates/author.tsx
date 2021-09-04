@@ -43,9 +43,9 @@ interface AuthorTemplateProps {
     };
     authorYaml: {
       id: string;
+      username: string;
       website?: string;
       twitter?: string;
-      facebook?: string;
       location?: string;
       profile_image?: {
         childImageSharp: {
@@ -130,10 +130,10 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                   style={{ marginTop: '8px' }}
                   css={[AuthorProfileImage, AuthorProfileBioImage]}
                   src={data.authorYaml.avatar.childImageSharp.fluid.src}
-                  alt={author.id}
+                  alt={author.username}
                 />
                 <AuthHeaderContent className="author-header-content">
-                  <SiteTitle className="site-title">{author.id}</SiteTitle>
+                  <SiteTitle className="site-title">{author.username}</SiteTitle>
                   {author.bio && <AuthorBio className="author-bio">{author.bio}</AuthorBio>}
                   <div css={AuthorMeta} className="author-meta">
                     {author.location && (
@@ -168,17 +168,6 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                         </AuthorSocialLinkAnchor>
                       </AuthorSocialLink>
                     )}
-                    {author.facebook && (
-                      <AuthorSocialLink className="author-social-link">
-                        <AuthorSocialLinkAnchor
-                          href={`https://www.facebook.com/${author.facebook}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Facebook
-                        </AuthorSocialLinkAnchor>
-                      </AuthorSocialLink>
-                    )}
                   </div>
                 </AuthHeaderContent>
               </SiteHeaderContent>
@@ -204,6 +193,7 @@ export const pageQuery = graphql`
   query($author: String) {
     authorYaml(id: { eq: $author }) {
       id
+      username
       website
       twitter
       bio
@@ -247,6 +237,7 @@ export const pageQuery = graphql`
             }
             author {
               id
+              username
               bio
               avatar {
                 children {
