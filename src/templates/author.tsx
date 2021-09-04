@@ -27,6 +27,9 @@ import { PageContext } from './post';
 import { Helmet } from 'react-helmet';
 import config from '../website-config';
 
+// @ts-expect-error
+import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
+
 interface AuthorTemplateProps {
   location: Location;
   data: {
@@ -80,6 +83,12 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
     return isDraft && authorParticipated;
   });
   const totalCount = edges.length;
+
+  let disqusConfig = {
+    url: `${config.siteUrl+location.pathname}`,
+    identifier: author.id,
+    title: author.username
+  }
 
   return (
     <IndexLayout>
