@@ -13,7 +13,10 @@ export const Footer: React.FC = () => {
     <footer css={[outer, SiteFooter]}>
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
-          <Link to="/">{config.authorName}</Link> &copy; {new Date().getFullYear()}{' '}
+          <a href="https://molarfox.io" target="_self" rel="noopener noreferrer">
+            {config.authorName}
+            </a>
+          &copy; {new Date().getFullYear()}{' '}
           {config.footer && (
             <Link to="/">
               | {config.authorName} {config.footer}
@@ -34,7 +37,7 @@ export const Footer: React.FC = () => {
           )}
 
           <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
-            Contact me
+            Contact
           </a>
 
           <a href="/rss.xml">RSS</a>
