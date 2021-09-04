@@ -1,6 +1,6 @@
 export interface WebsiteConfig {
-  title: string; // Author title
-  siteTitle: string; // Website title
+  title: string;
+  authorName: string;
   description: string;
   coverImage?: string;
   logo: string;
@@ -54,8 +54,8 @@ export interface WebsiteConfig {
 }
 
 const config: WebsiteConfig = {
-  title: 'MolarFox',
-  siteTitle: 'Molar\'s Blog',
+  title: 'Molar\'s Blog',
+  authorName: 'MolarFox',
   description: 'The professional publishing platform',
   coverImage: 'img/blog-cover.png',
   logo: 'img/ghost-logo.png', // TODO
