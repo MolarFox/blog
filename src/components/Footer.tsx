@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
         <section className="copyright">
           <a href="https://molarfox.io" target="_self" rel="noopener noreferrer">
             {config.authorName}
-            </a>
+          </a>
           &copy; {new Date().getFullYear()}{' '}
           {config.footer && (
             <Link to="/">
