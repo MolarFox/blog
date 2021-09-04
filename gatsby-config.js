@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Molar\'s Cooking Secrets',
-    description: 'MolarFox\'s blog of things that are both cool and good!',
+    description: 'MolarFox\'s blog - blowing stuff up since 2020',
     siteUrl: 'https://blog.molarfox.io',
   },
   mapping: {
@@ -137,14 +137,13 @@ module.exports = {
           'G-JNV88EBCXC', // Google Analytics / GA
         ],
         gtagConfig: {
-          optimize_id: 'OPT_CONTAINER_ID',
           anonymize_ip: true,
           cookie_expires: 0,
         },
         pluginConfig: {
           head: false,
           respectDNT: true,
-          exclude: ['/preview/**', '/do-not-track/me/too/'],
+          exclude: [],
         },
       },
     },
