@@ -1,6 +1,6 @@
 export interface WebsiteConfig {
-  title: string;      // Author title
-  siteTitle: string;  // Website title
+  title: string; // Author title
+  siteTitle: string; // Website title
   description: string;
   coverImage?: string;
   logo: string;
@@ -13,6 +13,10 @@ export interface WebsiteConfig {
    * Blog full path, no ending slash!
    */
   siteUrl: string;
+  /**
+   * Full url, no username
+   */
+  github?: string;
   /**
    * Full url, no username
    */
@@ -57,6 +61,7 @@ const config: WebsiteConfig = {
   logo: 'img/ghost-logo.png', // TODO
   lang: 'en',
   siteUrl: 'https://blog.molarfox.io',
+  github: 'https://github.com/MolarFox',
   youtube: 'https://www.youtube.com/channel/UC0_Z_l0ae4x1sntIgAeMepA',
   twitter: 'https://twitter.com/MolarFox',
   showSubscribe: true,
