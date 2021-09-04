@@ -15,7 +15,7 @@ export interface WebsiteConfig {
   /**
    * Full url, no username
    */
-  facebook?: string;
+  youtube?: string;
   /**
    * Full url, no username
    */
@@ -55,7 +55,7 @@ const config: WebsiteConfig = {
   logo: 'img/ghost-logo.png',
   lang: 'en',
   siteUrl: 'https://gatsby-casper.netlify.com',
-  facebook: 'https://www.facebook.com/ghost',
+  youtube: 'https://www.facebook.com/ghost',
   twitter: 'https://twitter.com/tryghost',
   showSubscribe: true,
   mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
