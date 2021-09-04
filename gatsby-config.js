@@ -1,67 +1,150 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://blog.molarfox.io",
-    title: "Molar's Cooking Secrets",
+    title: 'Molar\'s Cooking Secrets',
+    description: 'MolarFox\'s blog of things that are both cool and good!',
+    siteUrl: 'https://blog.molarfox.io',
+  },
+  mapping: {
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
   },
   plugins: [
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sitemap",
+    'gatsby-plugin-sitemap',
     {
-      resolve: "gatsby-plugin-manifest",
+      resolve: 'gatsby-plugin-sharp',
       options: {
-        icon: "src/images/icon.png",
+        defaultQuality: 100,
+        stripMetadata: true,
       },
     },
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-    "gatsby-transformer-remark",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: 'content',
+        path: path.join(__dirname, 'src', 'content'),
       },
-      __key: "images",
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-transformer-remark',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        plugins: [
+          {
+            resolve: 'gatsby-remark-responsive-iframe',
+            options: {
+              wrapperStyle: 'margin-bottom: 1rem',
+            },
+          },
+          'gatsby-remark-prismjs',
+          'gatsby-remark-copy-linked-files',
+          'gatsby-remark-smartypants',
+          'gatsby-remark-reading-time',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 2000,
+              quality: 100,
+            },
+          },
+        ],
       },
-      __key: "pages",
     },
+    'gatsby-transformer-json',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        name: "md-posts",
-        path: "./src/markdown-pages",
+        siteUrl: 'https://gatsby-casper.netlify.com',
       },
-      __key: "pages",
     },
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-emotion',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-yaml',
     {
-      resolve:  `gatsby-plugin-disqus`,
+      resolve: 'gatsby-plugin-feed',
       options: {
-          shortname: `molarfox`
-      }
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return {
+                  ...edge.node.frontmatter,
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
+                  guid: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                };
+              });
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  filter: { frontmatter: { draft: { ne: true } } }
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: '/rss.xml',
+            title: 'Ghost\'s Blog',
+            match: '^/blog/',
+          },
+        ],
+      },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: 'gatsby-plugin-postcss',
+      options: {
+        postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'molarfox',
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
-          "G-JNV88EBCXC", // Google Analytics / GA
+          'G-JNV88EBCXC', // Google Analytics / GA
         ],
         gtagConfig: {
-          optimize_id: "OPT_CONTAINER_ID",
+          optimize_id: 'OPT_CONTAINER_ID',
           anonymize_ip: true,
           cookie_expires: 0,
         },
         pluginConfig: {
           head: false,
           respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
+          exclude: ['/preview/**', '/do-not-track/me/too/'],
         },
       },
     },
