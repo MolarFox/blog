@@ -58,7 +58,7 @@ const config: WebsiteConfig = {
   authorName: 'MolarFox',
   description: 'If it\'s on fire, we\'re on the right track!',
   coverImage: 'img/blog-cover.jpg',
-  logo: 'img/molarfox-logo.jpg', // TODO
+  logo: 'img/molarfox-logo.png', // TODO
   lang: 'en',
   siteUrl: 'https://blog.molarfox.io',
   github: 'https://github.com/MolarFox',
