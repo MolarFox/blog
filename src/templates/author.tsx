@@ -84,11 +84,11 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
   });
   const totalCount = edges.length;
 
-  let disqusConfig = {
-    url: `${config.siteUrl+location.pathname}`,
+  const disqusConfig = {
+    url: `${config.siteUrl + location.pathname}`,
     identifier: author.id,
-    title: author.username
-  }
+    title: author.username,
+  };
 
   return (
     <IndexLayout>
