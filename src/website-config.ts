@@ -56,9 +56,9 @@ export interface WebsiteConfig {
 const config: WebsiteConfig = {
   title: 'Molar\'s Blog',
   authorName: 'MolarFox',
-  description: 'The professional publishing platform',
-  coverImage: 'img/blog-cover.png',
-  logo: 'img/ghost-logo.png', // TODO
+  description: 'If it\'s on fire, we\'re on the right track!',
+  coverImage: 'img/blog-cover.jpg',
+  logo: 'img/molarfox-logo.jpg', // TODO
   lang: 'en',
   siteUrl: 'https://blog.molarfox.io',
   github: 'https://github.com/MolarFox',
