@@ -142,17 +142,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Twitter/>
                 </a>
               )}
-              {
-                <a
-                  css={SocialLink}
-                  href="/rss.xml"
-                  title="RSS"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Rss/>
-                </a>
-              }
+              <a
+                css={SocialLink}
+                href="/rss.xml"
+                title="RSS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Rss/>
+              </a>
             </SocialLinks>
             {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>

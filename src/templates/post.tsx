@@ -118,10 +118,11 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
     width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
     height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
   }
-  let disqusConfig = {
-    url: `${config.siteUrl+location.pathname}`,
-    title: post.frontmatter.title
-  }
+
+  const disqusConfig = {
+    url: `${config.siteUrl + location.pathname}`,
+    title: post.frontmatter.title,
+  };
 
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
@@ -230,7 +231,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                         </span>
                         <span className="byline-disqus-comments">
                           <span className="bull">&bull;</span>
-                          <CommentCount config={disqusConfig} placeholder={'...'} />
+                          <CommentCount config={disqusConfig} placeholder="..." />
                         </span>
                       </div>
                     </section>
@@ -456,7 +457,7 @@ const PostFullImage = styled.figure`
 
 export const query = graphql`
   query($slug: String, $primaryTag: String) {
-    logo: file(relativePath: { eq: "img/ghost-logo.png" }) {
+    logo: file(relativePath: { eq: "img/molarfox-logo.png" }) {
       childImageSharp {
         fixed {
           ...GatsbyImageSharpFixed
