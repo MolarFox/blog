@@ -3,7 +3,8 @@
 # =========================
 
 # Build directory
-# public/
+public/
+# docs/
 
 # Gatsby cache
 .cache/
