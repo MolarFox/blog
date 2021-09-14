@@ -1,11 +1,10 @@
 ---
 layout: post
 title: A Full and Comprehensive Style Test
-image: ../../img/testimg-cover.jpg
 author: [molarfox]
+image: ../../img/sc2_hyperion.jpg
 date: 2018-09-30T07:03:47.149Z
-tags:
-  - Tests
+tags: [Tests, Default]
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
@@ -38,7 +37,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### Big Image
 
-![Test Image](../../img/testimg1.jpg)
+![Test Image](../../img/sc2_hyperion.jpg)
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -46,7 +45,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 
-![Small Test Image](../../img/testimg2.jpg)
+![Small Test Image](../../avatars/sly_molar.jpeg)
 
 Labore et dolore.
 
