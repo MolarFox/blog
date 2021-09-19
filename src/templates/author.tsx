@@ -45,7 +45,6 @@ interface AuthorTemplateProps {
       id: string;
       website?: string;
       twitter?: string;
-      facebook?: string;
       location?: string;
       profile_image?: any;
       bio?: string;
@@ -160,17 +159,6 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                         </AuthorSocialLinkAnchor>
                       </AuthorSocialLink>
                     )}
-                    {author.facebook && (
-                      <AuthorSocialLink className="author-social-link">
-                        <AuthorSocialLinkAnchor
-                          href={`https://www.facebook.com/${author.facebook}`}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Facebook
-                        </AuthorSocialLinkAnchor>
-                      </AuthorSocialLink>
-                    )}
                   </div>
                 </AuthHeaderContent>
               </SiteHeaderContent>
@@ -197,7 +185,6 @@ export const pageQuery = graphql`
       website
       twitter
       bio
-      facebook
       location
       profile_image {
         childImageSharp {
