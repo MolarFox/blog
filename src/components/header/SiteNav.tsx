@@ -6,8 +6,9 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import { colors } from '../../styles/colors';
-import { SocialLink, SocialLinkFb } from '../../styles/shared';
+import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
+import { YouTube } from '../icons/youtube';
 import { Twitter } from '../icons/twitter';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
@@ -98,11 +99,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                     About
                   </Link>
                 </li>
-                <li role="menuitem">
-                  <Link to="/tags/getting-started/" activeClassName="nav-current">
-                    Getting Started
-                  </Link>
-                </li>
               </ul>
               {isPost && (
                 <NavPostTitle ref={this.titleRef} className="nav-post-title">
@@ -113,6 +109,17 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
+            {config.youtube && (
+                <a
+                  css={SocialLink}
+                  href={config.youtube}
+                  title="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <YouTube />
+                </a>
+              )}
               {config.twitter && (
                 <a
                   css={SocialLink}
