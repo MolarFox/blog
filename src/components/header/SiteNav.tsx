@@ -146,7 +146,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
               )}
               <a
                 css={SocialLink}
-                href=""
+                href="/rss.xml"
                 title="RSS"
                 target="_blank"
                 rel="noopener noreferrer"
