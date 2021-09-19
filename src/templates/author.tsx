@@ -2,7 +2,7 @@ import { graphql } from 'gatsby';
 import React from 'react';
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { FluidObject } from 'gatsby-image';
+import { getSrc } from 'gatsby-plugin-image';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
@@ -27,9 +27,6 @@ import { PageContext } from './post';
 import { Helmet } from 'react-helmet';
 import config from '../website-config';
 
-// @ts-expect-error
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
-
 interface AuthorTemplateProps {
   location: Location;
   data: {
@@ -50,17 +47,9 @@ interface AuthorTemplateProps {
       website?: string;
       twitter?: string;
       location?: string;
-      profile_image?: {
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
+      profile_image?: any;
       bio?: string;
-      avatar: {
-        childImageSharp: {
-          fluid: FluidObject;
-        };
-      };
+      avatar: any;
     };
   };
 }
@@ -84,29 +73,23 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
   });
   const totalCount = edges.length;
 
-  const disqusConfig = {
-    url: `${config.siteUrl + location.pathname}`,
-    identifier: author.id,
-    title: author.username,
-  };
-
   return (
     <IndexLayout>
       <Helmet>
-        <html lang={config.lang}/>
+        <html lang={config.lang} />
         <title>
           {author.id} - {config.title}
         </title>
-        <meta name="description" content={author.bio}/>
-        <meta property="og:site_name" content={config.title}/>
-        <meta property="og:type" content="profile"/>
-        <meta property="og:title" content={`${author.id} - ${config.title}`}/>
-        <meta property="og:url" content={config.siteUrl + location.pathname}/>
-        <meta property="article:publisher" content="https://molarfox.io"/>
-        <meta property="article:author" content="https://molarfox.io"/>
-        <meta name="twitter:card" content="summary"/>
-        <meta name="twitter:title" content={`${author.id} - ${config.title}`}/>
-        <meta name="twitter:url" content={config.siteUrl + location.pathname}/>
+        <meta name="description" content={author.bio} />
+        <meta property="og:site_name" content={config.title} />
+        <meta property="og:type" content="profile" />
+        <meta property="og:title" content={`${author.id} - ${config.title}`} />
+        <meta property="og:url" content={config.siteUrl + location.pathname} />
+        <meta property="article:publisher" content="https://molarfox.io" />
+        <meta property="article:author" content="https://molarfox.io" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
+        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -124,12 +107,12 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
         <header className="site-archive-header" css={[SiteHeader, SiteArchiveHeader]}>
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
-              <SiteNav isHome={false}/>
+              <SiteNav isHome={false} />
             </div>
           </div>
 
           <ResponsiveHeaderBackground
-            backgroundImage={author.profile_image?.childImageSharp.fluid.src}
+            backgroundImage={getSrc(author.profile_image)}
             css={[outer, SiteHeaderBackground]}
             className="site-header-background"
           >
@@ -138,7 +121,7 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                 <img
                   style={{ marginTop: '8px' }}
                   css={[AuthorProfileImage, AuthorProfileBioImage]}
-                  src={data.authorYaml.avatar.childImageSharp.fluid.src}
+                  src={getSrc(data.authorYaml.avatar)}
                   alt={author.username}
                 />
                 <AuthHeaderContent className="author-header-content">
@@ -186,20 +169,18 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
             <div css={[PostFeed]}>
-              {edges.map(({ node }) => {
-                return <PostCard key={node.fields.slug} post={node}/>;
-              })}
+              {edges.map(({ node }) => <PostCard key={node.fields.slug} post={node} />)}
             </div>
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </Wrapper>
     </IndexLayout>
   );
 };
 
 export const pageQuery = graphql`
-  query($author: String) {
+  query ($author: String) {
     authorYaml(id: { eq: $author }) {
       id
       username
@@ -209,16 +190,12 @@ export const pageQuery = graphql`
       location
       profile_image {
         childImageSharp {
-          fluid(maxWidth: 3720) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
       avatar {
         childImageSharp {
-          fluid(quality: 100, srcSetBreakpoints: [40, 80, 120]) {
-            ...GatsbyImageSharpFluid
-          }
+          gatsbyImageData(quality: 100, breakpoints: [40, 80, 120], layout: FULL_WIDTH)
         }
       }
     }
@@ -238,9 +215,7 @@ export const pageQuery = graphql`
             draft
             image {
               childImageSharp {
-                fluid(maxWidth: 3720) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
             author {
@@ -248,12 +223,8 @@ export const pageQuery = graphql`
               username
               bio
               avatar {
-                children {
-                  ... on ImageSharp {
-                    fluid(quality: 100) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH)
                 }
               }
             }

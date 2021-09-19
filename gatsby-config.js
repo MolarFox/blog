@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-plugin-sharp',
       options: {
@@ -79,18 +80,14 @@ module.exports = {
         `,
         feeds: [
           {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.edges.map(edge => {
-                return {
-                  ...edge.node.frontmatter,
-                  description: edge.node.excerpt,
-                  date: edge.node.frontmatter.date,
-                  url: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
-                  guid: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
-                };
-              });
-            },
+            serialize: ({ query: { site, allMarkdownRemark } }) => allMarkdownRemark.edges.map(edge => ({
+              ...edge.node.frontmatter,
+              description: edge.node.excerpt,
+              date: edge.node.frontmatter.date,
+              url: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
+              guid: `${site.siteMetadata.siteUrl}${edge.node.fields.slug}`,
+              custom_elements: [{ 'content:encoded': edge.node.html }],
+            })),
             query: `
               {
                 allMarkdownRemark(
@@ -122,12 +119,6 @@ module.exports = {
       resolve: 'gatsby-plugin-postcss',
       options: {
         postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-disqus',
-      options: {
-        shortname: 'molarfox',
       },
     },
     {

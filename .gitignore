@@ -1,10 +1,9 @@
- =========================
+# =========================
 # Node.js-Specific Ignores
 # =========================
 
 # Build directory
 public/
-# docs/
 
 # Gatsby cache
 .cache/

@@ -1,6 +1,6 @@
 import { format } from 'date-fns';
 import { Link } from 'gatsby';
-import Img from 'gatsby-image';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import _ from 'lodash';
 import { lighten } from 'polished';
 import React from 'react';
@@ -11,6 +11,7 @@ import styled from '@emotion/styled';
 import { colors } from '../styles/colors';
 import { PageContext } from '../templates/post';
 import { AuthorList } from './AuthorList';
+import config from '../website-config';
 
 export interface PostCardProps {
   post: PageContext;
@@ -34,11 +35,11 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
           <PostCardImage className="post-card-image">
-            {post.frontmatter?.image?.childImageSharp?.fluid && (
-              <Img
+            {post.frontmatter?.image && (
+              <GatsbyImage
+                image={getImage(post.frontmatter.image)!}
                 alt={`${post.frontmatter.title} cover image`}
                 style={{ height: '100%' }}
-                fluid={post.frontmatter.image.childImageSharp.fluid}
               />
             )}
           </PostCardImage>
@@ -47,17 +48,20 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css={PostCardContentLink} to={post.fields.slug}>
           <PostCardHeader className="post-card-header">
-            {post.frontmatter.tags && (
+            {post.frontmatter.tags && config.showAllTags && (
               <PostCardPrimaryTag className="post-card-primary-tag">
-                {post.frontmatter.tags.map(
-                  function(t){
-                    return (
-                      <Link to={`/tags/${_.kebabCase(t)}/`}>
-                        {t}&nbsp; 
-                      </Link>
-                    )
-                  }
-                )}
+                {post.frontmatter.tags.map(tag => (
+                  <React.Fragment key={tag}>
+                    <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link><b>&nbsp;</b>
+                  </React.Fragment>
+                ))}
+              </PostCardPrimaryTag>
+            )}
+            {post.frontmatter.tags && !config.showAllTags && (
+              <PostCardPrimaryTag className="post-card-primary-tag">
+                <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
+                  {post.frontmatter.tags[0]}
+                </Link>
               </PostCardPrimaryTag>
             )}
             <PostCardTitle className="post-card-title">{post.frontmatter.title}</PostCardTitle>
@@ -67,17 +71,15 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
           </PostCardExcerpt>
         </Link>
         <PostCardMeta className="post-card-meta">
-          <AuthorList authors={post.frontmatter.author} tooltip="small"/>
+          <AuthorList authors={post.frontmatter.author} tooltip="small" />
           <PostCardBylineContent className="post-card-byline-content">
             <span>
-              {post.frontmatter.author.map((author, index) => {
-                return (
-                  <React.Fragment key={author.id}>
-                    <Link to={`/author/${_.kebabCase(author.id)}/`}>{author.id}</Link>
-                    {post.frontmatter.author.length - 1 > index && ', '}
-                  </React.Fragment>
-                );
-              })}
+              {post.frontmatter.author.map((author, index) => (
+                <React.Fragment key={author.id}>
+                  <Link to={`/author/${_.kebabCase(author.id)}/`}>{author.id}</Link>
+                  {post.frontmatter.author.length - 1 > index && ', '}
+                </React.Fragment>
+              ))}
             </span>
             <span className="post-card-byline-date">
               <time dateTime={datetime}>{displayDatetime}</time>{' '}

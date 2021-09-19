@@ -71,7 +71,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
     const trigger = this.titleRef.current.getBoundingClientRect().top;
     const triggerOffset = this.titleRef.current.offsetHeight + 35;
 
-    // Show/hide post title
+    // show/hide post title
     if (this.lastScrollY >= trigger + triggerOffset) {
       this.setState({ showTitle: true });
     } else {
@@ -85,17 +85,21 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
     const { isHome = false, isPost = false, post = {} } = this.props;
     return (
       <>
-        {config.showSubscribe && <SubscribeModal ref={this.subscribe}/>}
+        {config.showSubscribe && <SubscribeModal ref={this.subscribe} />}
         <nav css={SiteNavStyles}>
           <SiteNavLeft className="site-nav-left">
-            {!isHome && <SiteNavLogo/>}
+            {!isHome && <SiteNavLogo />}
             <SiteNavContent css={[this.state.showTitle ? HideNav : '']}>
               <ul css={NavStyles} role="menu">
                 <li role="menuitem">
-                  <Link to="/" activeClassName="nav-current">Home</Link>
+                  <Link to="/" activeClassName="nav-current">
+                    Home
+                  </Link>
                 </li>
                 <li role="menuitem">
-                  <Link to="/about" activeClassName="nav-current">About</Link>
+                  <Link to="/about" activeClassName="nav-current">
+                    About
+                  </Link>
                 </li>
               </ul>
               {isPost && (
@@ -109,26 +113,24 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
             <SocialLinks>
               {config.github && (
                 <a
-                  className="social-link-gh"
-                  css={[SocialLink]}
+                  css={SocialLink}
                   href={config.github}
-                  target="_blank"
                   title="Github"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Github/>
+                  <Github />
                 </a>
               )}
               {config.youtube && (
                 <a
-                  className="social-link-yt"
-                  css={[SocialLink]}
+                  css={SocialLink}
                   href={config.youtube}
-                  target="_blank"
                   title="YouTube"
+                  target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <YouTube/>
+                  <YouTube />
                 </a>
               )}
               {config.twitter && (
@@ -139,7 +141,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Twitter/>
+                  <Twitter />
                 </a>
               )}
               <a
@@ -149,7 +151,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <Rss/>
+                <Rss />
               </a>
             </SocialLinks>
             {config.showSubscribe && (

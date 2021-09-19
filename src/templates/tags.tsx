@@ -1,6 +1,6 @@
 import { graphql } from 'gatsby';
 import React from 'react';
-import { FluidObject } from 'gatsby-image';
+import { getSrc } from 'gatsby-plugin-image';
 
 import { Footer } from '../components/Footer';
 import SiteNav from '../components/header/SiteNav';
@@ -36,11 +36,7 @@ interface TagTemplateProps {
         node: {
           id: string;
           description: string;
-          image?: {
-            childImageSharp: {
-              fluid: FluidObject;
-            };
-          };
+          image?: any;
         };
       }>;
     };
@@ -56,26 +52,23 @@ interface TagTemplateProps {
 const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
   const tag = pageContext.tag ? pageContext.tag : '';
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagData = data.allTagYaml.edges.find(
-    n => n.node.id.toLowerCase() === tag.toLowerCase(),
-  );
+  const tagData = data.allTagYaml.edges.find(n => n.node.id.toLowerCase() === tag.toLowerCase());
 
   return (
     <IndexLayout>
       <Helmet>
-        <html lang={config.lang}/>
+        <html lang={config.lang} />
         <title>
           {tag} - {config.title}
         </title>
-        <meta name="description" content={tagData?.node ? tagData.node.description : ''}/>
-        <meta property="og:site_name" content={config.title}/>
-        <meta property="og:type" content="website"/>
-        <meta property="og:title" content={`${tag} - ${config.title}`}/>
-        <meta property="og:url" content={config.siteUrl + location.pathname}/>
-        {config.facebook && <meta property="article:publisher" content={config.facebook}/>}
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title" content={`${tag} - ${config.title}`}/>
-        <meta name="twitter:url" content={config.siteUrl + location.pathname}/>
+        <meta name="description" content={tagData?.node ? tagData.node.description : ''} />
+        <meta property="og:site_name" content={config.title} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${tag} - ${config.title}`} />
+        <meta property="og:url" content={config.siteUrl + location.pathname} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${tag} - ${config.title}`} />
+        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -84,18 +77,15 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
         )}
       </Helmet>
       <Wrapper>
-        <header
-          className="site-archive-header"
-          css={[SiteHeader, SiteArchiveHeader]}
-        >
+        <header className="site-archive-header" css={[SiteHeader, SiteArchiveHeader]}>
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
-              <SiteNav isHome={false}/>
+              <SiteNav isHome={false} />
             </div>
           </div>
           <ResponsiveHeaderBackground
             css={[outer, SiteHeaderBackground]}
-            backgroundImage={tagData?.node?.image?.childImageSharp?.fluid?.src}
+            backgroundImage={getSrc(tagData?.node?.image)}
             className="site-header-background"
           >
             <SiteHeaderContent css={inner} className="site-header-content">
@@ -118,12 +108,12 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
           <div css={inner}>
             <div css={[PostFeed]}>
               {edges.map(({ node }) => (
-                <PostCard key={node.fields.slug} post={node}/>
+                <PostCard key={node.fields.slug} post={node} />
               ))}
             </div>
           </div>
         </main>
-        <Footer/>
+        <Footer />
       </Wrapper>
     </IndexLayout>
   );
@@ -132,7 +122,7 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
 export default Tags;
 
 export const pageQuery = graphql`
-  query($tag: String) {
+  query ($tag: String) {
     allTagYaml {
       edges {
         node {
@@ -140,9 +130,7 @@ export const pageQuery = graphql`
           description
           image {
             childImageSharp {
-              fluid(maxWidth: 3720) {
-                ...GatsbyImageSharpFluid
-              }
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }
@@ -164,21 +152,15 @@ export const pageQuery = graphql`
             date
             image {
               childImageSharp {
-                fluid(maxWidth: 1240) {
-                  ...GatsbyImageSharpFluid
-                }
+                gatsbyImageData(layout: FULL_WIDTH)
               }
             }
             author {
               id
               bio
               avatar {
-                children {
-                  ... on ImageSharp {
-                    fluid(quality: 100, srcSetBreakpoints: [40, 80, 120]) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
                 }
               }
             }

@@ -1,6 +1,6 @@
 import { format } from 'date-fns';
 import { graphql, Link } from 'gatsby';
-import Img, { FluidObject } from 'gatsby-image';
+import { GatsbyImage, getSrc, getImage } from 'gatsby-plugin-image';
 import * as _ from 'lodash';
 import { lighten, setLightness } from 'polished';
 import React from 'react';
@@ -21,17 +21,13 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-// @ts-expect-error
+// @ts-expect-error - Disqus import missing type info, just ignore
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 export interface Author {
   id: string;
   bio: string;
-  avatar: {
-    children: Array<{
-      fluid: FluidObject;
-    }>;
-  };
+  avatar: any;
 }
 
 interface PageTemplateProps {
@@ -50,11 +46,7 @@ interface PageTemplateProps {
         title: string;
         date: string;
         userDate: string;
-        image: {
-          childImageSharp: {
-            fluid: any;
-          };
-        };
+        image: any;
         excerpt: string;
         tags: string[];
         author: Author[];
@@ -96,11 +88,7 @@ export interface PageContext {
     };
   };
   frontmatter: {
-    image: {
-      childImageSharp: {
-        fluid: FluidObject;
-      };
-    };
+    image: any;
     excerpt: string;
     title: string;
     date: string;
@@ -112,11 +100,11 @@ export interface PageContext {
 
 const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
   const post = data.markdownRemark;
-  let width = '';
-  let height = '';
-  if (post.frontmatter.image?.childImageSharp) {
-    width = post.frontmatter.image.childImageSharp.fluid.sizes.split(', ')[1].split('px')[0];
-    height = String(Number(width) / post.frontmatter.image.childImageSharp.fluid.aspectRatio);
+  let width: number | undefined;
+  let height: number | undefined;
+  if (post.frontmatter.image) {
+    width = getImage(post.frontmatter.image)?.width;
+    height = getImage(post.frontmatter.image)?.height;
   }
 
   const disqusConfig = {
@@ -133,42 +121,42 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
   return (
     <IndexLayout className="post-template">
       <Helmet>
-        <html lang={config.lang}/>
+        <html lang={config.lang} />
         <title>{post.frontmatter.title}</title>
 
-        <meta name="description" content={post.frontmatter.excerpt || post.excerpt}/>
-        <meta property="og:site_name" content={config.title}/>
-        <meta property="og:type" content="article"/>
-        <meta property="og:title" content={post.frontmatter.title}/>
-        <meta property="og:description" content={post.frontmatter.excerpt || post.excerpt}/>
-        <meta property="og:url" content={config.siteUrl + location.pathname}/>
-        {post.frontmatter.image?.childImageSharp && (
+        <meta name="description" content={post.frontmatter.excerpt || post.excerpt} />
+        <meta property="og:site_name" content={config.title} />
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content={post.frontmatter.title} />
+        <meta property="og:description" content={post.frontmatter.excerpt || post.excerpt} />
+        <meta property="og:url" content={config.siteUrl + location.pathname} />
+        {post.frontmatter.image && (
           <meta
             property="og:image"
-            content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
+            content={`${config.siteUrl}${getSrc(post.frontmatter.image)}`}
           />
         )}
-        <meta property="article:published_time" content={post.frontmatter.date}/>
+        <meta property="article:published_time" content={post.frontmatter.date} />
         {/* not sure if modified time possible */}
         {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
         {post.frontmatter.tags && (
-          <meta property="article:tag" content={post.frontmatter.tags[0]}/>
+          <meta property="article:tag" content={post.frontmatter.tags[0]} />
         )}
 
-        <meta name="twitter:card" content="summary_large_image"/>
-        <meta name="twitter:title" content={post.frontmatter.title}/>
-        <meta name="twitter:description" content={post.frontmatter.excerpt || post.excerpt}/>
-        <meta name="twitter:url" content={config.siteUrl + location.pathname}/>
-        {post.frontmatter.image?.childImageSharp && (
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={post.frontmatter.title} />
+        <meta name="twitter:description" content={post.frontmatter.excerpt || post.excerpt} />
+        <meta name="twitter:url" content={config.siteUrl + location.pathname} />
+        {post.frontmatter.image && (
           <meta
             name="twitter:image"
-            content={`${config.siteUrl}${post.frontmatter.image.childImageSharp.fluid.src}`}
+            content={`${config.siteUrl}${getSrc(post.frontmatter.image)}`}
           />
         )}
-        <meta name="twitter:label1" content="Written by"/>
-        <meta name="twitter:data1" content={post.frontmatter.author[0].id}/>
-        <meta name="twitter:label2" content="Filed under"/>
-        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]}/>}
+        <meta name="twitter:label1" content="Written by" />
+        <meta name="twitter:data1" content={post.frontmatter.author[0].id} />
+        <meta name="twitter:label2" content="Filed under" />
+        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -181,14 +169,14 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
             content={`@${config.twitter.split('https://twitter.com/')[1]}`}
           />
         )}
-        {width && <meta property="og:image:width" content={width}/>}
-        {height && <meta property="og:image:height" content={height}/>}
+        {width && <meta property="og:image:width" content={width?.toString()} />}
+        {height && <meta property="og:image:height" content={height?.toString()} />}
       </Helmet>
       <Wrapper css={PostTemplate}>
         <header className="site-header">
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
-              <SiteNav isPost post={post.frontmatter}/>
+              <SiteNav isPost post={post.frontmatter} />
             </div>
           </div>
         </header>
@@ -198,16 +186,17 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
               <PostFullHeader className="post-full-header">
                 <PostFullTags className="post-full-tags">
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    post.frontmatter.tags.map(
-                      function(t){
-                        return (
-                          <Link to={`/tags/${_.kebabCase(t)}/`}>
-                            {t}&nbsp; 
-                          </Link>
-                        )
-                      }
-                    )
+                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && config.showAllTags && (
+                    post.frontmatter.tags.map(tag => (
+                      <React.Fragment key={tag}>
+                        <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link><b>&nbsp;</b>
+                      </React.Fragment>
+                    ))
+                  )}
+                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && !config.showAllTags && (
+                    <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
+                      {post.frontmatter.tags[0]}
+                    </Link>
                   )}
                 </PostFullTags>
                 <PostFullTitle className="post-full-title">{post.frontmatter.title}</PostFullTitle>
@@ -216,7 +205,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullCustomExcerpt>
                 <PostFullByline className="post-full-byline">
                   <section className="post-full-byline-content">
-                    <AuthorList authors={post.frontmatter.author} tooltip="large"/>
+                    <AuthorList authors={post.frontmatter.author} tooltip="large" />
                     <section className="post-full-byline-meta">
                       <h4 className="author-name">
                         {post.frontmatter.author.map(author => (
@@ -243,19 +232,19 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullByline>
               </PostFullHeader>
 
-              {post.frontmatter.image?.childImageSharp && (
+              {post.frontmatter.image && (
                 <PostFullImage>
-                  <Img
+                  <GatsbyImage
+                    image={getImage(post.frontmatter.image)!}
                     style={{ height: '100%' }}
-                    fluid={post.frontmatter.image.childImageSharp.fluid}
-                    alt={post.frontmatter.title}
-                  />
+                    alt={post.frontmatter.title} />
                 </PostFullImage>
               )}
-              <PostContent htmlAst={post.htmlAst}/>
-              <Disqus config={disqusConfig} />
+              <PostContent htmlAst={post.htmlAst} />
+              <Disqus config={disqusConfig}/>
+
               {/* The big email subscribe modal content */}
-              {config.showSubscribe && <Subscribe title={config.title}/>}
+              {config.showSubscribe && <Subscribe title={config.title} />}
             </article>
           </div>
         </main>
@@ -267,7 +256,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
           pageContext={pageContext}
         />
 
-        <Footer/>
+        <Footer />
       </Wrapper>
     </IndexLayout>
   );
@@ -459,76 +448,69 @@ const PostFullImage = styled.figure`
   }
 `;
 
-export const query = graphql`
-  query($slug: String, $primaryTag: String) {
-    logo: file(relativePath: { eq: "img/molarfox-logo.png" }) {
-      childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
+export const query = graphql`query ($slug: String, $primaryTag: String) {
+  logo: file(relativePath: {eq: "img/molarfox-logo.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FIXED)
+    }
+  }
+  markdownRemark(fields: {slug: {eq: $slug}}) {
+    html
+    htmlAst
+    excerpt
+    fields {
+      readingTime {
+        text
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      htmlAst
+    frontmatter {
+      title
+      userDate: date(formatString: "D MMMM YYYY")
+      date
+      tags
       excerpt
-      fields {
-        readingTime {
-          text
+      image {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-      frontmatter {
-        title
-        userDate: date(formatString: "D MMMM YYYY")
-        date
-        tags
-        excerpt
-        image {
-          childImageSharp {
-            fluid(maxWidth: 3720) {
-              ...GatsbyImageSharpFluid
+      author {
+        id
+        bio
+        avatar {
+          children {
+            ... on ImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
             }
-          }
-        }
-        author {
-          id
-          bio
-          avatar {
-            children {
-              ... on ImageSharp {
-                fluid(quality: 100, srcSetBreakpoints: [40, 80, 120]) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-    relatedPosts: allMarkdownRemark(
-      filter: { frontmatter: { tags: { in: [$primaryTag] }, draft: { ne: true } } }
-      limit: 5
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      totalCount
-      edges {
-        node {
-          id
-          excerpt
-          frontmatter {
-            title
-            date
-          }
-          fields {
-            readingTime {
-              text
-            }
-            slug
           }
         }
       }
     }
   }
+  relatedPosts: allMarkdownRemark(
+    filter: {frontmatter: {tags: {in: [$primaryTag]}, draft: {ne: true}}}
+    limit: 5
+    sort: {fields: [frontmatter___date], order: DESC}
+  ) {
+    totalCount
+    edges {
+      node {
+        id
+        excerpt
+        frontmatter {
+          title
+          date
+        }
+        fields {
+          readingTime {
+            text
+          }
+          slug
+        }
+      }
+    }
+  }
+}
 `;
 
 export default PageTemplate;

@@ -44,15 +44,15 @@ export class SubscribeModal extends React.Component<any, SubscribeState> {
   render() {
     return (
       <SubscribeOverlay open={this.state.isOpen}>
-        <SubscribeOverlayClose onClick={this.close}/>
+        <SubscribeOverlayClose onClick={this.close} />
         <SubscribeOverlayContent>
-          <SubscribeLogo/>
+          <SubscribeLogo />
           <SubscribeOverlayTitle>Subscribe to {config.title}</SubscribeOverlayTitle>
           <SubscribeOverlayDescription>
             Stay up to date! Get all the latest &amp; greatest posts delivered straight to your
             inbox
           </SubscribeOverlayDescription>
-          <SubscribeForm/>
+          <SubscribeForm />
         </SubscribeOverlayContent>
       </SubscribeOverlay>
     );
@@ -154,7 +154,7 @@ const SubscribeOverlayClose = styled.a`
   height: 40px;
 
   :before {
-    content: "";
+    content: '';
     position: absolute;
     top: 20px;
     right: 4px;
@@ -167,7 +167,7 @@ const SubscribeOverlayClose = styled.a`
   }
 
   :after {
-    content: "";
+    content: '';
     position: absolute;
     top: 20px;
     right: 4px;
