@@ -111,7 +111,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
-            {config.github && (
+              {config.github && (
                 <a
                   css={SocialLink}
                   href={config.github}
@@ -121,8 +121,8 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                 >
                   <Github />
                 </a>
-            )}
-            {config.youtube && (
+              )}
+              {config.youtube && (
                 <a
                   css={SocialLink}
                   href={config.youtube}

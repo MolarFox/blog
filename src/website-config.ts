@@ -55,7 +55,7 @@ export interface WebsiteConfig {
    * Shows all post tags in main index view and post view if true
    * Otherwise only shows first (primary) tag
    */
-   showAllTags: boolean;
+  showAllTags: boolean;
 }
 
 const config: WebsiteConfig = {
