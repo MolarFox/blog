@@ -8,8 +8,10 @@ import styled from '@emotion/styled';
 import { colors } from '../../styles/colors';
 import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
+import { Github } from '../icons/github';
 import { YouTube } from '../icons/youtube';
 import { Twitter } from '../icons/twitter';
+import { Rss } from '../icons/rss';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
 
@@ -109,6 +111,17 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
+            {config.github && (
+                <a
+                  css={SocialLink}
+                  href={config.github}
+                  title="Github"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Github />
+                </a>
+            )}
             {config.youtube && (
                 <a
                   css={SocialLink}
@@ -131,6 +144,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <Twitter />
                 </a>
               )}
+              <a
+                css={SocialLink}
+                href=""
+                title="RSS"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Rss />
+              </a>
             </SocialLinks>
             {config.showSubscribe && (
               <SubscribeButton onClick={this.openModal}>Subscribe</SubscribeButton>
