@@ -21,7 +21,7 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-// @ts-expect-error
+// @ts-expect-error - Disqus import missing type info, just ignore
 import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
 
 export interface Author {
