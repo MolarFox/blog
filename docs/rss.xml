@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Molar's Blog]]></title><description><![CDATA[MolarFox's blog - blowing stuff up since 2020]]></description><link>https://blog.molarfox.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 19 Sep 2021 07:51:08 GMT</lastBuildDate><item><title><![CDATA[A Full and Comprehensive Style Test]]></title><description><![CDATA[Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs…]]></description><link>https://blog.molarfox.io/posts/default/a-full-style-test/</link><guid isPermaLink="false">https://blog.molarfox.io/posts/default/a-full-style-test/</guid><pubDate>Sun, 30 Sep 2018 07:03:47 GMT</pubDate><content:encoded>&lt;p&gt;Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;
+&lt;hr&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, &lt;a href=&quot;&quot;&gt;test link&lt;/a&gt; adipiscing elit. &lt;strong&gt;This is strong.&lt;/strong&gt; Nullam dignissim convallis est. Quisque aliquam. &lt;em&gt;This is emphasized.&lt;/em&gt; Donec faucibus. Nunc iaculis suscipit dui. 5&lt;sup&gt;3&lt;/sup&gt; = 125. Water is H&lt;sub&gt;2&lt;/sub&gt;O. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. &lt;cite&gt;The New York Times&lt;/cite&gt; (That’s a citation). &lt;span style=&quot;text-decoration:underline;&quot;&gt;Underline&lt;/span&gt;. Maecenas ornare tortor. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.&lt;/p&gt;
+&lt;p&gt;HTML and CSS are our tools. Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. To copy a file type &lt;code class=&quot;language-text&quot;&gt;COPY filename&lt;/code&gt;. &lt;del&gt;Dinner’s at 5:00.&lt;/del&gt; &lt;span style=&quot;text-decoration:underline;&quot;&gt;Let’s make that 7&lt;/span&gt;. This &lt;del&gt;text&lt;/del&gt; has been struck.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Media&lt;/h2&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
+&lt;h3&gt;Big Image&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1918px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 56.60000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAALABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAcEBQYJ/8QAFwEAAwEAAAAAAAAAAAAAAAAAAgMEBf/aAAwDAQACEAMQAAAB5cqql1N+dNE6Ar//xAAZEAACAwEAAAAAAAAAAAAAAAADBAIFBgH/2gAIAQEAAQUCutRYaZk69aFix0LazCMuyaiwVZORCF7/AP/EACIRAAIBAgUFAAAAAAAAAAAAAAECEQMhAAQFEkETMVFhgf/aAAgBAwEBPwHNZl0KKR1DU2JDNEl5EvUhjA2mwT6eE0TS1VQ2SoMQLsUBLez2uebAeABj/8QAIREAAgEDAwUAAAAAAAAAAAAAAQIRAAMSBCFRIjFBQmH/2gAIAQIBAT8Btqbs3XbqBJyicQmJhVkD25+bU2u1MnG4VXwoiAOO1f/EACQQAAICAgIBAwUAAAAAAAAAAAECAxESIQAEExRCcSMxMkFh/9oACAEBAAY/Ap/UdkF+07Ss6LKRm5tvpJlb2+CEgb/KSt8T0x7wxRIpW7DwT595VJnYYQ9ZYeu5x8cJaaaEK6yM+SNwR9ZIzF4YipZA3txOvYFK4hN6XI7biKapkNgAKDiMhYUD9gfOwdE8aeApHKrUriKK18aF0q0NFWANjetnmUjs5+1sb1d18WTr+8//xAAYEAEBAQEBAAAAAAAAAAAAAAABEQAhMf/aAAgBAQABPyF8etehga2uyALz06kudFKeaY5ba+msgA7hyoJQOyKX9GBWKb46Bt3hDyczieQ0UNFJ0KZSV8pA4Khv/9oADAMBAAIAAwAAABAMH//EABgRAQEBAQEAAAAAAAAAAAAAAAERIQAx/9oACAEDAQE/EFTMFIaaJVBSMEGcOr4TIlb1CxRmAf/EABgRAQEBAQEAAAAAAAAAAAAAAAERIQBR/9oACAECAQE/ENiDCGkTAWYoQ9FUz5yHFAXhoasCqq9//8QAFxABAQEBAAAAAAAAAAAAAAAAAREAIf/aAAgBAQABPxBG/RLCLgPaN8TaW0NIglwYPcUxFaX0646VRMFhdA8BsEwY+EJ3ESTSIxwsoud09e2c8SBd/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Test Image&quot;
+        title=&quot;Test Image&quot;
+        src=&quot;/static/a36e05bc0fe09fd89bf0274c2080489c/75e35/sc2_hyperion.jpg&quot;
+        srcset=&quot;/static/a36e05bc0fe09fd89bf0274c2080489c/953fe/sc2_hyperion.jpg 500w,
+/static/a36e05bc0fe09fd89bf0274c2080489c/0a251/sc2_hyperion.jpg 1000w,
+/static/a36e05bc0fe09fd89bf0274c2080489c/75e35/sc2_hyperion.jpg 1918w&quot;
+        sizes=&quot;(max-width: 1918px) 100vw, 1918px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&lt;/p&gt;
+&lt;h3&gt;Small Image&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 584px; &quot;
+    &gt;
+      &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100.2%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/2wBDAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQH/wgARCAAUABQDASIAAhEBAxEB/8QAGgABAQACAwAAAAAAAAAAAAAAAAgBAwQFB//EABcBAQADAAAAAAAAAAAAAAAAAAgGBwn/2gAMAwEAAhADEAAAAcbPC7Kkhv4Tp19CKVrLCprDNASIB//EAB0QAAICAwADAAAAAAAAAAAAAAIEAwUBBgcAEhX/2gAIAQEAAQUCAiQfqZ225Bi9cV+ymVhZ4p/nQnFDFziiTf1/qL7BV+XmPP/EACMRAAEEAQQDAAMAAAAAAAAAAAIBAwQFBgcREhMAFCEjktH/2gAIAQMBAT8Bw/QrTnJ9FcgubW3jY3n8ARjTLm0nNnWVjsG0sZtfYuweRz4UK9rZ8THZSsNyEck18WREr/aB4pzlCXYeym6nNdnOkk5pv8PYiQk5J92VEVN9l8jxo7ejGV9bDLfs0OQuSODQD3uBTuKBvcRTtMFAVEj5KKiKovxPBaa2T8bf6D/PP//EACMRAAEDAwQCAwAAAAAAAAAAAAECAwQFBiEHERITABQQUZH/2gAIAQIBAT8BuK+rvt3UGlU6PT3qpb00dkeLCiue1LS9FYYlRWpBHqPSabIjvVRAccY4xpDjb0ngpsMJqBIBOCQNwTuQcY3GPzH15WHHHNT7e7HFr6anTW2ealK6kLmoC0Nbk9aFhSgpKdgoKIIyfj//xAAnEAADAAEDAwQBBQAAAAAAAAABAgMEBRITABEhBhQiMVEjJEFh0f/aAAgBAQAGPwLGRsK+Tj2lemTl445facLyWfJMd2dX5G7ie6igA7GUP2yZ6gYTubNk4YWbT/ZX8jEcNOZfI04jiyGAIK0jTe+4nrsvkfn8nrDDVscc0aWScY72eVZ7RNJupLq1dhfj47qV747bvDYFa01Dl1DAL4aYO3TsmLfqTOTb3WNySHzXub8lGeRVcYp8VnPkauyaK1CSWoyooZ27jvuY+T9eT9DrVvUdqZaanoWu6J7B45DSmo5oVdaTA+YoTsfyG2eEKnuevSl++xrTwdSsqbxOuVqEsqFGdNxDCSruxv5i7OQxDkdDyPr+/wDev//EABwQAQEAAwEAAwAAAAAAAAAAAAERACFBMVGBkf/aAAgBAQABPyGsMr4cJcmCb3KZ82LRRdZLlYR1ZWkJ09/OfEwyOMF5fvEem1kUWmFFvZ6DsdHFdrbREGhrpSMNG4ABR+hep2bKLC8lQdyuEswt1y1sBdu9e+fWf//aAAwDAQACAAMAAAAQoMDD/8QAGxEBAAICAwAAAAAAAAAAAAAAAQAhEWGBkfD/2gAIAQMBAT8QSTOmX2xRHfihgRGu5ohBJlgDULTgJZewYFdJLGhXjgdE/8QAGxEBAQABBQAAAAAAAAAAAAAAAREAQVGR8PH/2gAIAQIBAT8Qa1icrkRuQasSHthUAalWiypSCkinYZXVfVBFxQTXd74cZ//EABcQAQEBAQAAAAAAAAAAAAAAAAERACH/2gAIAQEAAT8Q6SDfnIBNFzq23N1mX9ujKSAxKJKlrEWDAQAAAGFAqZf+g4GAbPGbuUGkXZyyanFJPBNCPrSDR7BJpeea0bDDLfFt/wBq3mIJxLZ5rUaAOAoCgvev/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Small Test Image&quot;
+        title=&quot;Small Test Image&quot;
+        src=&quot;/static/3813140f868e7a42f588a5f6eb17e312/e5e00/sly_molar.jpg&quot;
+        srcset=&quot;/static/3813140f868e7a42f588a5f6eb17e312/953fe/sly_molar.jpg 500w,
+/static/3813140f868e7a42f588a5f6eb17e312/e5e00/sly_molar.jpg 584w&quot;
+        sizes=&quot;(max-width: 584px) 100vw, 584px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+        decoding=&quot;async&quot;
+      /&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Labore et dolore.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;List Types&lt;/h2&gt;
+&lt;h3&gt;Definition List&lt;/h3&gt;
+&lt;p&gt;Definition List Title
+: This is a definition list division.&lt;/p&gt;
+&lt;p&gt;Definition
+: An exact statement or description of the nature, scope, or meaning of something: &lt;em&gt;our definition of what constitutes poetry.&lt;/em&gt;&lt;/p&gt;
+&lt;h3&gt;Ordered List&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2
+&lt;ol&gt;
+&lt;li&gt;Nested list item A&lt;/li&gt;
+&lt;li&gt;Nested list item B&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Unordered List&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;List Item 1&lt;/li&gt;
+&lt;li&gt;List Item 2
+&lt;ul&gt;
+&lt;li&gt;Nested list item A&lt;/li&gt;
+&lt;li&gt;Nested list item B&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;List Item 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2&gt;Table&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Table Header 1&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Table Header 2&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Table Header 3&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Division 1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Division 1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;Division 1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Division 3&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2&gt;Preformatted Text&lt;/h2&gt;
+&lt;p&gt;Typographically, preformatted text is not the same thing as code. Sometimes, a faithful execution of the text requires preformatted text that may not have anything to do with code. Most browsers use Courier and that’s a good default — with one slight adjustment, Courier 10 Pitch over regular Courier for Linux users.&lt;/p&gt;
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;p&gt;Code can be presented inline, like &lt;code class=&quot;language-text&quot;&gt;&amp;lt;?php bloginfo(&apos;stylesheet_url&apos;); ?&gt;&lt;/code&gt;, or using &lt;a href=&quot;http://jekyllrb.com/docs/templates/#code-snippet-highlighting&quot;&gt;jekyll’s highlight
+filter&lt;/a&gt; to
+highlight a block of code. Because we have more specific typographic needs for code, we’ll specify Consolas and Monaco ahead of the browser-defined monospace font.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;#container&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; left&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 0 -240px 0 0&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token property&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 100%&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;hr&gt;
+&lt;h2&gt;Blockquotes&lt;/h2&gt;
+&lt;p&gt;Let’s keep it simple. Italics are good to help set it off from the body text. Be sure to style the citation.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Good afternoon, gentlemen. I am a HAL 9000 computer. I became operational at the H.A.L. plant in Urbana, Illinois on the 12th of January 1992. My instructor was Mr. Langley, and he taught me to sing a song. If you’d like to hear it I can sing it for you. — &lt;a href=&quot;http://en.wikipedia.org/wiki/HAL_9000&quot;&gt;HAL 9000&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;And here’s a bit of trailing text.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;Text-level semantics&lt;/h2&gt;
+&lt;p&gt;HTML elements&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;#&quot;&gt;a element&lt;/a&gt; example &lt;br&gt;
+The &lt;abbr&gt;abbr element&lt;/abbr&gt; and &lt;abbr title=&quot;Title text&quot;&gt;abbr element with title&lt;/abbr&gt; examples &lt;br&gt;
+The &lt;b&gt;b element&lt;/b&gt; example &lt;br&gt;
+The &lt;cite&gt;cite element&lt;/cite&gt; example &lt;br&gt;
+The &lt;code&gt;code element&lt;/code&gt; example &lt;br&gt;
+The &lt;del&gt;del element&lt;/del&gt; example &lt;br&gt;
+The &lt;dfn&gt;dfn element&lt;/dfn&gt; and &lt;dfn title=&quot;Title text&quot;&gt;dfn element with title&lt;/dfn&gt; examples &lt;br&gt;
+The &lt;em&gt;em element&lt;/em&gt; example &lt;br&gt;
+The &lt;i&gt;i element&lt;/i&gt; example &lt;br&gt;
+The &lt;ins&gt;ins element&lt;/ins&gt; example &lt;br&gt;
+The &lt;kbd&gt;kbd element&lt;/kbd&gt; example &lt;br&gt;
+The &lt;mark&gt;mark element&lt;/mark&gt; example &lt;br&gt;
+The &lt;q&gt;q element &lt;q&gt;inside&lt;/q&gt; a q element&lt;/q&gt; example &lt;br&gt;
+The &lt;s&gt;s element&lt;/s&gt; example &lt;br&gt;
+The &lt;samp&gt;samp element&lt;/samp&gt; example &lt;br&gt;
+The &lt;small&gt;small element&lt;/small&gt; example &lt;br&gt;
+The &lt;span&gt;span element&lt;/span&gt; example &lt;br&gt;
+The &lt;strong&gt;strong element&lt;/strong&gt; example &lt;br&gt;
+The &lt;sub&gt;sub element&lt;/sub&gt; example &lt;br&gt;
+The &lt;sup&gt;sup element&lt;/sup&gt; example &lt;br&gt;
+The &lt;var&gt;var element&lt;/var&gt; example &lt;br&gt;
+The &lt;u&gt;u element&lt;/u&gt; example&lt;/p&gt;
+* * *
+&lt;h2&gt;Embeds&lt;/h2&gt;
+&lt;p&gt;Sometimes all you want to do is embed a little love from another location and set your post alive.&lt;/p&gt;
+&lt;h3&gt;Video&lt;/h3&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 56.166666666666664%; position: relative; height: 0; overflow: hidden; margin-bottom: 1rem&quot; &gt; &lt;iframe src=&quot;//player.vimeo.com/video/103224792&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;h3&gt;Slides&lt;/h3&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;script async class=&quot;speakerdeck-embed&quot; data-id=&quot;585245d01ee1013238737e42b879906f&quot; data-ratio=&quot;1.77777777777778&quot; src=&quot;//speakerdeck.com/assets/embed.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3&gt;Audio&lt;/h3&gt;
+&lt;p&gt;Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/p&gt;
+&lt;iframe width=&quot;100%&quot; height=&quot;450&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/52891122&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;Culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+&lt;h3&gt;Code&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.&lt;/p&gt;
+&lt;p data-height=&quot;268&quot; data-theme-id=&quot;0&quot; data-slug-hash=&quot;bcqhe&quot; data-default-tab=&quot;result&quot; data-user=&quot;rglazebrook&quot; class=&apos;codepen&apos;&gt;See the Pen &lt;a href=&apos;http://codepen.io/rglazebrook/pen/bcqhe/&apos;&gt;Simple Rotating Spinner&lt;/a&gt; by Rob Glazebrook (&lt;a href=&apos;http://codepen.io/rglazebrook&apos;&gt;@rglazebrook&lt;/a&gt;) on &lt;a href=&apos;http://codepen.io&apos;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async src=&quot;//assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;Isn’t it beautiful.&lt;/p&gt;
+&lt;p&gt;_[HTML]: Hyper Text Markup Language
+_[CSS]: Cascading Style Sheets&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Great Gatsby]]></title><description><![CDATA[In my younger and more vulnerable years my father gave me some advice that I’ve been turning over in my mind ever since. “Whenever you feel…]]></description><link>https://blog.molarfox.io/posts/default/emancipation-proclamation/</link><guid isPermaLink="false">https://blog.molarfox.io/posts/default/emancipation-proclamation/</guid><pubDate>Tue, 12 Dec 1922 10:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In my younger and more vulnerable years my father gave me some advice that I’ve been turning over in my mind ever since.&lt;/p&gt;
+&lt;p&gt;“Whenever you feel like criticizing any one,” he told me, “just remember that all the people in this world haven’t had the advantages that you’ve had.”&lt;/p&gt;
+&lt;p&gt;He didn’t say any more, but we’ve always been unusually communicative in a reserved way, and I understood that he meant a great deal more than that. In consequence, I’m inclined to reserve all judgments, a habit that has opened up many curious natures to me and also made me the victim of not a few veteran bores. The abnormal mind is quick to detect and attach itself to this quality when it appears in a normal person, and so it came about that in college I was unjustly accused of being a politician, because I was privy to the secret griefs of wild, unknown men. Most of the confidences were unsought — frequently I have feigned sleep, preoccupation, or a hostile levity when I realized by some unmistakable sign that an intimate revelation was quivering on the horizon; for the intimate revelations of young men, or at least the terms in which they express them, are usually plagiaristic and marred by obvious suppressions. Reserving judgments is a matter of infinite hope. I am still a little afraid of missing something if I forget that, as my father snobbishly suggested, and I snobbishly repeat, a sense of the fundamental decencies is parcelled out unequally at birth.&lt;/p&gt;
+&lt;p&gt;And, after boasting this way of my tolerance, I come to the admission that it has a limit. Conduct may be founded on the hard rock or the wet marshes, but after a certain point I don’t care what it’s founded on. When I came back from the East last autumn I felt that I wanted the world to be in uniform and at a sort of moral attention forever; I wanted no more riotous excursions with privileged glimpses into the human heart. Only Gatsby, the man who gives his name to this book, was exempt from my reaction — Gatsby, who represented everything for which I have an unaffected scorn. If personality is an unbroken series of successful gestures, then there was something gorgeous about him, some heightened sensitivity to the promises of life, as if he were related to one of those intricate machines that register earthquakes ten thousand miles away. This responsiveness had nothing to do with that flabby impressionability which is dignified under the name of the “creative temperament.”— it was an extraordinary gift for hope, a romantic readiness such as I have never found in any other person and which it is not likely I shall ever find again. No — Gatsby turned out all right at the end; it is what preyed on Gatsby, what foul dust floated in the wake of his dreams that temporarily closed out my interest in the abortive sorrows and short-winded elations of men.&lt;/p&gt;</content:encoded></item></channel></rss>
