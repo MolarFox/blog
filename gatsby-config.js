@@ -122,6 +122,12 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-disqus',
+      options: {
+        shortname: 'molarfox',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-google-gtag',
       options: {
         trackingIds: [
