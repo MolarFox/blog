@@ -107,10 +107,10 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
     height = getImage(post.frontmatter.image)?.height;
   }
 
-  let disqusConfig = {
-    url: `${config.siteUrl+location.pathname}`,
-    title: post.frontmatter.title
-  }
+  const disqusConfig = {
+    url: `${config.siteUrl + location.pathname}`,
+    title: post.frontmatter.title,
+  };
 
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
@@ -189,7 +189,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0 && config.showAllTags && (
                     post.frontmatter.tags.map(tag => (
                       <React.Fragment key={tag}>
-                        <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link>,<b>&nbsp;</b>
+                        <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link><b>&nbsp;</b>
                       </React.Fragment>
                     ))
                   )}
@@ -224,7 +224,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                         </span>
                         <span className="byline-disqus-comments">
                           <span className="bull">&bull;</span>
-                          <CommentCount config={disqusConfig} placeholder={'...'} />
+                          <CommentCount config={disqusConfig} placeholder="..." />
                         </span>
                       </div>
                     </section>
