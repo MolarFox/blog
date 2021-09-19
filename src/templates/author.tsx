@@ -43,6 +43,7 @@ interface AuthorTemplateProps {
     };
     authorYaml: {
       id: string;
+      username: string;
       website?: string;
       twitter?: string;
       location?: string;
@@ -121,10 +122,10 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
                   style={{ marginTop: '8px' }}
                   css={[AuthorProfileImage, AuthorProfileBioImage]}
                   src={getSrc(data.authorYaml.avatar)}
-                  alt={author.id}
+                  alt={author.username}
                 />
                 <AuthHeaderContent className="author-header-content">
-                  <SiteTitle className="site-title">{author.id}</SiteTitle>
+                  <SiteTitle className="site-title">{author.username}</SiteTitle>
                   {author.bio && <AuthorBio className="author-bio">{author.bio}</AuthorBio>}
                   <div css={AuthorMeta} className="author-meta">
                     {author.location && (
@@ -182,6 +183,7 @@ export const pageQuery = graphql`
   query ($author: String) {
     authorYaml(id: { eq: $author }) {
       id
+      username
       website
       twitter
       bio
@@ -218,6 +220,7 @@ export const pageQuery = graphql`
             }
             author {
               id
+              username
               bio
               avatar {
                 childImageSharp {
