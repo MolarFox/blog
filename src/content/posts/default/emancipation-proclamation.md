@@ -1,9 +1,10 @@
 ---
+layout: post
 title: 'Great Gatsby'
-author: [Another Author]
-tags: []
-image: img/marvin-meyer-794521-unsplash.jpg
+author: [molarfox]
+tags: [Default]
 date: '1922-12-12T10:00:00.000Z'
+excerpt: Aaaaaa
 draft: false
 ---
 
