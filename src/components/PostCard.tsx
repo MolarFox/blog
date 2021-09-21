@@ -202,6 +202,7 @@ const PostCardPrimaryTag = styled.div`
 `;
 
 const PostCardTitle = styled.h2`
+  font-family: ViceCitySans, sans-serif;
   margin: 0 0 0.4em;
   line-height: 1.15em;
   transition: color 0.2s ease-in-out;
@@ -212,7 +213,7 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: "ViceCitySans", Georgia, serif;
+  font-family: Georgia, serif;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */
