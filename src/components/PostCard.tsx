@@ -7,6 +7,7 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { ViceCitySans } from '../styles/typography';
 
 import { colors } from '../styles/colors';
 import { PageContext } from '../templates/post';
@@ -30,7 +31,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
       className={`post-card ${post.frontmatter.image ? '' : 'no-image'} ${
         large ? 'post-card-large' : ''
       }`}
-      css={[PostCardStyles, large && PostCardLarge]}
+      css={[ViceCitySans, PostCardStyles, large && PostCardLarge]}
     >
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
@@ -211,7 +212,7 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: Georgia, serif;
+  font-family: "ViceCitySans", Georgia, serif;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */

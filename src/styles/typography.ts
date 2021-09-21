@@ -1,8 +1,10 @@
 import { css } from '@emotion/react';
 
-export const outer = css`
+import ViceCitySans_font from "../fonts/ViceCitySans.woff2";
+
+export const ViceCitySans = css`
   @font-face {
-    font-family: "Font Name";
-    src: url("../fonts/fontname.woff2");
+    font-family: "ViceCitySans";
+    src: url("${ViceCitySans_font}") format("woff2");
   }
 `;
