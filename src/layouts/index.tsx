@@ -10,6 +10,7 @@ import { ResolveLight } from '../styles/typography';
 
 interface IndexProps {
   className?: string;
+  children: React.ReactNode;
 }
 
 const IndexLayout: React.FC<IndexProps> = props => (
@@ -493,9 +494,10 @@ const IndexLayout: React.FC<IndexProps> = props => (
             }
           }
         `}
-    />
-    {props.children}
-  </div>
-);
+      />
+      {props.children}
+    </div>
+  );
+}
 
 export default IndexLayout;

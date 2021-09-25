@@ -38,11 +38,12 @@ export const Footer: React.FC = () => (
           Contact me
         </a>
 
-        <a href="/rss.xml">RSS</a>
-      </SiteFooterNav>
-    </div>
-  </footer>
-);
+          <a href="/rss.xml">RSS</a>
+        </SiteFooterNav>
+      </div>
+    </footer>
+  );
+}
 
 const SiteFooter = css`
   position: relative;

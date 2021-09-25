@@ -5,9 +5,9 @@ import { getSrc } from 'gatsby-plugin-image';
 
 import config from '../../website-config';
 
-interface SiteNavLogoProps {
+type SiteNavLogoProps = {
   logo?: any;
-}
+};
 
 export const SiteNavLogo = () => (
   <StaticQuery
@@ -19,17 +19,18 @@ export const SiteNavLogo = () => (
   }
 }
 `}
-    render={(data: SiteNavLogoProps) => (
-      <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
-        {data.logo ? (
-          <img src={getSrc(data.logo)} alt={config.title} />
-        ) : (
-          config.title
-        )}
-      </Link>
-    )}
-  />
-);
+      render={(data: SiteNavLogoProps) => (
+        <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
+          {data.logo ? (
+            <img src={getSrc(data.logo)} alt={config.title} />
+          ) : (
+            config.title
+          )}
+        </Link>
+      )}
+    />
+  );
+}
 
 const SiteNavLogoStyles = css`
   position: relative;

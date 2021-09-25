@@ -23,11 +23,11 @@ import {
   ResponsiveHeaderBackground,
   SiteHeaderBackground,
 } from '../styles/shared';
-import { PageContext } from './post';
+import type { PageContext } from './post';
 import { Helmet } from 'react-helmet';
 import config from '../website-config';
 
-interface AuthorTemplateProps {
+type AuthorTemplateProps = {
   location: Location;
   data: {
     logo: {
@@ -52,9 +52,9 @@ interface AuthorTemplateProps {
       avatar: any;
     };
   };
-}
+};
 
-const Author = ({ data, location }: AuthorTemplateProps) => {
+function Author({ data, location }: AuthorTemplateProps) {
   const author = data.authorYaml;
 
   const edges = data.allMarkdownRemark.edges.filter(edge => {
@@ -63,7 +63,7 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
     let authorParticipated = false;
     if (edge.node.frontmatter.author) {
       edge.node.frontmatter.author.forEach(element => {
-        if (element.id === author.id) {
+        if (element.name === author.name) {
           authorParticipated = true;
         }
       });
@@ -78,17 +78,17 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
       <Helmet>
         <html lang={config.lang} />
         <title>
-          {author.id} - {config.title}
+          {author.name} - {config.title}
         </title>
         <meta name="description" content={author.bio} />
         <meta property="og:site_name" content={config.title} />
         <meta property="og:type" content="profile" />
-        <meta property="og:title" content={`${author.id} - ${config.title}`} />
+        <meta property="og:title" content={`${author.name} - ${config.title}`} />
         <meta property="og:url" content={config.siteUrl + location.pathname} />
         <meta property="article:publisher" content="https://molarfox.io" />
         <meta property="article:author" content="https://molarfox.io" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
+        <meta name="twitter:title" content={`${author.name} - ${config.title}`} />
         <meta name="twitter:url" content={config.siteUrl + location.pathname} />
         {config.twitter && (
           <meta
@@ -169,7 +169,9 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
             <div css={[PostFeed]}>
-              {edges.map(({ node }) => <PostCard key={node.fields.slug} post={node} />)}
+              {edges.map(({ node }) => (
+                <PostCard key={node.fields.slug} post={node} />
+              ))}
             </div>
           </div>
         </main>
@@ -177,7 +179,7 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
       </Wrapper>
     </IndexLayout>
   );
-};
+}
 
 export const pageQuery = graphql`
   query ($author: String) {
@@ -201,7 +203,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: { frontmatter: { draft: { ne: true } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: ASC } }
       limit: 2000
     ) {
       edges {

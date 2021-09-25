@@ -22,13 +22,13 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-export interface Author {
-  id: string;
+export type Author = {
+  name: string;
   bio: string;
   avatar: any;
-}
+};
 
-interface PageTemplateProps {
+type PageTemplateProps = {
   location: Location;
   data: {
     logo: {
@@ -75,9 +75,9 @@ interface PageTemplateProps {
     prev: PageContext;
     next: PageContext;
   };
-}
+};
 
-export interface PageContext {
+export type PageContext = {
   excerpt: string;
   fields: {
     slug: string;
@@ -94,9 +94,9 @@ export interface PageContext {
     tags: string[];
     author: Author[];
   };
-}
+};
 
-const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
+function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
   const post = data.markdownRemark;
   let width: number | undefined;
   let height: number | undefined;
@@ -147,7 +147,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
           />
         )}
         <meta name="twitter:label1" content="Written by" />
-        <meta name="twitter:data1" content={post.frontmatter.author[0].id} />
+        <meta name="twitter:data1" content={post.frontmatter.author[0].name} />
         <meta name="twitter:label2" content="Filed under" />
         {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
         {config.twitter && (
@@ -194,7 +194,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
               <PostFullHeader className="post-full-header">
                 <PostFullTags className="post-full-tags">
                   {post.frontmatter.tags && post.frontmatter.tags.length > 0 && config.showAllTags && (
-                    post.frontmatter.tags.map(tag => (
+                    post.frontmatter.tags.map((tag, idx) => (
                       <React.Fragment key={tag}>
                         <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link><b>&nbsp;</b>
                       </React.Fragment>
@@ -216,8 +216,8 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                     <section className="post-full-byline-meta">
                       <h4 className="author-name">
                         {post.frontmatter.author.map(author => (
-                          <Link key={author.id} to={`/author/${_.kebabCase(author.id)}/`}>
-                            {author.id}
+                          <Link key={author.name} to={`/author/${_.kebabCase(author.name)}/`}>
+                            {author.name}
                           </Link>
                         ))}
                       </h4>
@@ -263,7 +263,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
       </Wrapper>
     </IndexLayout>
   );
-};
+}
 
 const PostTemplate = css`
   .site-main {
@@ -482,13 +482,11 @@ export const query = graphql`query ($slug: String, $primaryTag: String) {
         }
       }
       author {
-        id
+        name
         bio
         avatar {
-          children {
-            ... on ImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
-            }
+          childImageSharp {
+            gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
           }
         }
       }

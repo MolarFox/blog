@@ -19,7 +19,7 @@ export interface PostCardProps {
   large?: boolean;
 }
 
-export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
+export function PostCard({ post, large = false }: PostCardProps) {
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
@@ -51,9 +51,10 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
           <PostCardHeader className="post-card-header">
             {post.frontmatter.tags && config.showAllTags && (
               <PostCardPrimaryTag className="post-card-primary-tag">
-                {post.frontmatter.tags.map(tag => (
+                {post.frontmatter.tags.map((tag, idx) => (
                   <React.Fragment key={tag}>
-                    <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link><b>&nbsp;</b>
+                    {idx > 0 && (<>, &nbsp;</>)}
+                    <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link>
                   </React.Fragment>
                 ))}
               </PostCardPrimaryTag>
@@ -76,8 +77,8 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
           <PostCardBylineContent className="post-card-byline-content">
             <span>
               {post.frontmatter.author.map((author, index) => (
-                <React.Fragment key={author.id}>
-                  <Link to={`/author/${_.kebabCase(author.id)}/`}>{author.id}</Link>
+                <React.Fragment key={author.name}>
+                  <Link to={`/author/${_.kebabCase(author.name)}/`}>{author.name}</Link>
                   {post.frontmatter.author.length - 1 > index && ', '}
                 </React.Fragment>
               ))}
@@ -91,7 +92,7 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
       </PostCardContent>
     </article>
   );
-};
+}
 
 const PostCardStyles = css`
   position: relative;
