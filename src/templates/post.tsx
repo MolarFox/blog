@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { Resolve } from '../styles/typography';
 
 import { Footer } from '../components/Footer';
 import SiteNav, { SiteNavMain } from '../components/header/SiteNav';
@@ -200,7 +201,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                   )}
                 </PostFullTags>
                 <PostFullTitle className="post-full-title">{post.frontmatter.title}</PostFullTitle>
-                <PostFullCustomExcerpt className="post-full-custom-excerpt">
+                <PostFullCustomExcerpt className="post-full-custom-excerpt" css={[Resolve, PostFullCustomExcerpt]}>
                   {post.frontmatter.excerpt}
                 </PostFullCustomExcerpt>
                 <PostFullByline className="post-full-byline">
@@ -329,7 +330,7 @@ const PostFullTags = styled.section`
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
-  font-family: Georgia, serif;
+  font-family: Resolve, Roboto, sans-serif;
   font-size: 2.3rem;
   line-height: 1.4em;
   font-weight: 300;
