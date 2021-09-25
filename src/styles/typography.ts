@@ -1,14 +1,14 @@
 import { css } from '@emotion/react';
 
-import ViceCitySans_font from "../fonts/ViceCitySans.woff2";
+import ViceCitySans_font from '../fonts/ViceCitySans.woff2';
 
-import ResolveRegular_font from "../fonts/Resolve-Regular.woff2";
-import ResolveBold_font from "../fonts/Resolve-Bold.woff2";
-import ResolveItalic_font from "../fonts/Resolve-RegularIta.woff2";
-import ResolveBoldItalic_font from "../fonts/Resolve-BoldIta.woff2";
+import ResolveRegular_font from '../fonts/Resolve-Regular.woff2';
+import ResolveBold_font from '../fonts/Resolve-Bold.woff2';
+import ResolveItalic_font from '../fonts/Resolve-RegularIta.woff2';
+import ResolveBoldItalic_font from '../fonts/Resolve-BoldIta.woff2';
 
-import ResolveLight_font from "../fonts/Resolve-Light.woff2";
-import ResolveLightItalic_font from "../fonts/Resolve-LightIta.woff2";
+import ResolveLight_font from '../fonts/Resolve-Light.woff2';
+import ResolveLightItalic_font from '../fonts/Resolve-LightIta.woff2';
 
 export const ViceCitySans = css`
   @font-face {
