@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import RehypeReact from 'rehype-react';
 
 import { colors } from '../styles/colors';
-import { Resolve } from '../styles/typography';
+import { ResolveLight } from '../styles/typography';
 
 const renderAst = new RehypeReact({
   createElement: React.createElement,
@@ -21,7 +21,7 @@ export interface PostContentProps {
 }
 
 const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => (
-  <PostFullContent className="post-full-content" css={[Resolve, PostFullContent]}>
+  <PostFullContent className="post-full-content" css={[ResolveLight, PostFullContent]}>
     <Ast className="post-content" ast={htmlAst} />
   </PostFullContent>
 );
@@ -31,7 +31,7 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 0 170px 6vw;
   min-height: 230px;
-  font-family: Resolve, Roboto, Arial, sans-serif;
+  font-family: ResolveLight, Roboto, Arial, sans-serif;
   font-size: 2rem;
   line-height: 1.6em;
   background: #fff;
