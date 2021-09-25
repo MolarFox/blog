@@ -336,7 +336,7 @@ export const PostFullContent = styled.section`
     border: 0;
     /* color: var(--blue); */
     color: ${colors.blue};
-    font-family: Georgia, serif;
+    font-family: ResolveLight, Roboto, sans-serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
