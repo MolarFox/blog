@@ -31,7 +31,7 @@ export const PostFullContent = styled.section`
   margin: 0 auto;
   padding: 0 170px 6vw;
   min-height: 230px;
-  font-family: ResolveLight, Roboto, Arial, sans-serif;
+  font-family: ResolveLight, Roboto, "Segoe UI", Arial, sans-serif;
   font-size: 2rem;
   line-height: 1.6em;
   background: #fff;
@@ -257,7 +257,7 @@ export const PostFullContent = styled.section`
     /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
     font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu, Cantarell,
-      'Open Sans', 'Helvetica Neue', sans-serif;
+      'Open Sans', "Segoe UI", 'Helvetica Neue', sans-serif;
   }
 
   h1 {
@@ -336,7 +336,7 @@ export const PostFullContent = styled.section`
     border: 0;
     /* color: var(--blue); */
     color: ${colors.blue};
-    font-family: ResolveLight, Roboto, sans-serif;
+    font-family: ResolveLight, Roboto, "Segoe UI", sans-serif;
     font-size: 3.2rem;
     line-height: 1.35em;
     text-align: center;
@@ -377,7 +377,7 @@ export const PostFullContent = styled.section`
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu, Cantarell,
+    font-family: ResolveLight, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     white-space: nowrap;
