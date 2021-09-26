@@ -6,6 +6,8 @@ import { lighten } from 'polished';
 import favicon from '../../src/favicon.ico';
 import { colors } from '../styles/colors';
 
+import { ResolveLight } from '../styles/typography';
+
 interface IndexProps {
   className?: string;
 }
@@ -16,6 +18,7 @@ const IndexLayout: React.FC<IndexProps> = props => (
       <link rel="icon" href={favicon} type="image/x-icon" />
     </Helmet>
     <Global
+      css={ResolveLight}
       styles={css`
           html,
           body,
@@ -274,7 +277,7 @@ const IndexLayout: React.FC<IndexProps> = props => (
           body {
             overflow-x: hidden;
             color: ${lighten('-0.3', colors.midgrey)};
-            font-family: -apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu,
+            font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu,
               Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.6rem;
             line-height: 1.6em;
