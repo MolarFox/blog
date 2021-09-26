@@ -10,10 +10,10 @@ jobs:
       - checkout
       - node/install-packages
       - run:
-          name: lint
+          name: Linter
           command: npm run lint
       - run:
-          name: tsc
+          name: TSC
           command: npx tsc
 
 workflows:

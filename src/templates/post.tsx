@@ -8,6 +8,7 @@ import { Helmet } from 'react-helmet';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { Resolve, ResolveLight, ViceCitySans } from '../styles/typography';
 
 import { Footer } from '../components/Footer';
 import SiteNav, { SiteNavMain } from '../components/header/SiteNav';
@@ -180,7 +181,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
             </div>
           </div>
         </header>
-        <main id="site-main" className="site-main" css={[SiteMain, outer]}>
+        <main id="site-main" className="site-main" css={[SiteMain, outer, Resolve, ResolveLight, ViceCitySans]}>
           <div css={inner}>
             {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
@@ -320,6 +321,7 @@ const PostFullTags = styled.section`
   align-items: center;
   /* color: var(--midgrey); */
   color: ${colors.midgrey};
+  font-family: ResolveLight, Roboto, sans-serif;
   font-size: 1.3rem;
   line-height: 1.4em;
   font-weight: 600;
@@ -329,7 +331,7 @@ const PostFullTags = styled.section`
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
   color: var(--midgrey);
-  font-family: Georgia, serif;
+  font-family: Resolve, Roboto, sans-serif;
   font-size: 2.3rem;
   line-height: 1.4em;
   font-weight: 300;
@@ -352,6 +354,7 @@ const PostFullByline = styled.div`
   padding-top: 15px;
   /* border-top: 1px solid color(var(--lightgrey) l(+10%)); */
   border-top: 1px solid ${lighten('0.1', colors.lightgrey)};
+  font-family: ResolveLight, Roboto, sans-serif;
 
   .post-full-byline-content {
     flex-grow: 1;
@@ -414,6 +417,8 @@ const PostFullByline = styled.div`
 export const PostFullTitle = styled.h1`
   margin: 0 0 0.2em;
   color: ${setLightness('0.05', colors.darkgrey)};
+  font-family: ViceCitySans, Resolve, Roboto, sans-serif;
+
   @media (max-width: 500px) {
     margin-top: 0.2em;
     font-size: 3.3rem;
