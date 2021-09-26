@@ -213,7 +213,7 @@ const PostCardTitle = styled.h2`
 `;
 
 const PostCardExcerpt = styled.section`
-  font-family: ResolveLight, Roboto, sans-serif;
+  font-family: ResolveLight, Roboto, "Segoe UI", sans-serif;
 
   @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */
