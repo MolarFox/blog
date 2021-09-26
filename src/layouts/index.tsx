@@ -131,7 +131,7 @@ const IndexLayout: React.FC<IndexProps> = props => (
           }
           html {
             box-sizing: border-box;
-            font-family: sans-serif;
+            font-family: ResolveLight, sans-serif;
 
             -ms-text-size-adjust: 100%;
             -webkit-text-size-adjust: 100%;
@@ -277,8 +277,8 @@ const IndexLayout: React.FC<IndexProps> = props => (
           body {
             overflow-x: hidden;
             color: ${lighten('-0.3', colors.midgrey)};
-            font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu,
-              Cantarell, 'Open Sans', "Segoe UI", 'Helvetica Neue', sans-serif;
+            font-family: ResolveLight, Roboto, -apple-system, BlinkMacSystemFont, Oxygen, Ubuntu,
+              Cantarell, 'Open Sans', "Segoe UI", system-ui, 'Helvetica Neue', sans-serif;
             font-size: 1.6rem;
             line-height: 1.6em;
             font-weight: 400;
