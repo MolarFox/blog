@@ -256,7 +256,7 @@ export const PostFullContent = styled.section`
   h6 {
     /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
@@ -377,7 +377,7 @@ export const PostFullContent = styled.section`
     width: auto;
     border-spacing: 0;
     border-collapse: collapse;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.6rem;
     white-space: nowrap;
