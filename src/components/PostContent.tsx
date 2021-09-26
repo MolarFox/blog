@@ -256,7 +256,7 @@ export const PostFullContent = styled.section`
   h6 {
     /* color: color(var(--darkgrey) l(-5%)); */
     color: ${lighten('-0.05', colors.darkgrey)};
-    font-family: -apple-system, BlinkMacSystemFont, ResolveLight, Roboto, Oxygen, Ubuntu, Cantarell,
+    font-family: ResolveLight, -apple-system, BlinkMacSystemFont, system-ui, Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', "Segoe UI", 'Helvetica Neue', sans-serif;
   }
 
