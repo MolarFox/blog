@@ -63,7 +63,7 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
     let authorParticipated = false;
     if (edge.node.frontmatter.author) {
       edge.node.frontmatter.author.forEach(element => {
-        if (element.id === author.id) {
+        if (element.name === author.name) {
           authorParticipated = true;
         }
       });
@@ -78,17 +78,17 @@ const Author = ({ data, location }: AuthorTemplateProps) => {
       <Helmet>
         <html lang={config.lang} />
         <title>
-          {author.id} - {config.title}
+          {author.name} - {config.title}
         </title>
         <meta name="description" content={author.bio} />
         <meta property="og:site_name" content={config.title} />
         <meta property="og:type" content="profile" />
-        <meta property="og:title" content={`${author.id} - ${config.title}`} />
+        <meta property="og:title" content={`${author.name} - ${config.title}`} />
         <meta property="og:url" content={config.siteUrl + location.pathname} />
         <meta property="article:publisher" content="https://molarfox.io" />
         <meta property="article:author" content="https://molarfox.io" />
         <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content={`${author.id} - ${config.title}`} />
+        <meta name="twitter:title" content={`${author.name} - ${config.title}`} />
         <meta name="twitter:url" content={config.siteUrl + location.pathname} />
         {config.twitter && (
           <meta

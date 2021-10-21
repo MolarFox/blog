@@ -8,7 +8,7 @@ module.exports = {
     siteUrl: 'https://blog.molarfox.io',
   },
   mapping: {
-    'MarkdownRemark.frontmatter.author': 'AuthorYaml',
+    'MarkdownRemark.frontmatter.author': 'AuthorYaml.name',
   },
   plugins: [
     'gatsby-plugin-sitemap',
