@@ -121,13 +121,7 @@ module.exports = {
         postCssPlugins: [require('postcss-color-function'), require('cssnano')()],
       },
     },
-    `gatsby-plugin-preload-fonts`,
-    {
-      resolve: 'gatsby-plugin-disqus',
-      options: {
-        shortname: 'molarfox',
-      },
-    },
+    'gatsby-plugin-preload-fonts',
     {
       resolve: 'gatsby-plugin-google-gtag',
       options: {

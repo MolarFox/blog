@@ -22,9 +22,6 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-// @ts-expect-error - Disqus import missing type info, just ignore
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
-
 export interface Author {
   id: string;
   bio: string;
@@ -108,11 +105,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
     height = getImage(post.frontmatter.image)?.height;
   }
 
-  const disqusConfig = {
-    url: `${config.siteUrl + location.pathname}`,
-    title: post.frontmatter.title,
-  };
-
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
@@ -172,6 +164,20 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
         )}
         {width && <meta property="og:image:width" content={width?.toString()} />}
         {height && <meta property="og:image:height" content={height?.toString()} />}
+
+        <script
+          src="https://giscus.app/client.js"
+          data-repo="MolarFox/blog"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg3ODE2NjU="
+          data-category="Blog comments"
+          data-category-id="DIC_kwDOF8Ts4c4CAhDO"
+          data-mapping="pathname"
+          data-reactions-enabled="1"
+          data-emit-metadata="1"
+          data-theme="preferred_color_scheme"
+          data-lang="en"
+          crossOrigin="anonymous"
+        />
       </Helmet>
       <Wrapper css={PostTemplate}>
         <header className="site-header">
@@ -223,10 +229,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                           <span className="bull">&bull;</span>
                           {post.fields.readingTime.text}
                         </span>
-                        <span className="byline-disqus-comments">
-                          <span className="bull">&bull;</span>
-                          <CommentCount config={disqusConfig} placeholder="..." />
-                        </span>
                       </div>
                     </section>
                   </section>
@@ -242,7 +244,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-              <Disqus config={disqusConfig}/>
+              <div className="giscus"/>
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
