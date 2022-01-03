@@ -1,0 +1,13 @@
+inputs:
+  node-version: 
+    description: 'Node version to use'
+    default: 18.x
+
+runs:
+  using: "composite"
+  steps: 
+    - name: Use Node.js v${{ inputs.node-version }}
+      uses: actions/setup-node@v2
+      with:
+        node-version: ${{ inputs.node-version }}
+        cache: 'npm'
