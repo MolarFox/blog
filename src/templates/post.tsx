@@ -22,9 +22,6 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-// @ts-expect-error - Disqus import missing type info, just ignore
-import { Disqus, CommentCount } from 'gatsby-plugin-disqus';
-
 export interface Author {
   id: string;
   bio: string;
@@ -107,11 +104,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
     width = getImage(post.frontmatter.image)?.width;
     height = getImage(post.frontmatter.image)?.height;
   }
-
-  const disqusConfig = {
-    url: `${config.siteUrl + location.pathname}`,
-    title: post.frontmatter.title,
-  };
 
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
@@ -223,10 +215,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                           <span className="bull">&bull;</span>
                           {post.fields.readingTime.text}
                         </span>
-                        <span className="byline-disqus-comments">
-                          <span className="bull">&bull;</span>
-                          <CommentCount config={disqusConfig} placeholder="..." />
-                        </span>
                       </div>
                     </section>
                   </section>
@@ -242,7 +230,6 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-              <Disqus config={disqusConfig}/>
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
