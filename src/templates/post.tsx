@@ -165,7 +165,8 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
         {width && <meta property="og:image:width" content={width?.toString()} />}
         {height && <meta property="og:image:height" content={height?.toString()} />}
 
-        <script src="https://giscus.app/client.js"
+        <script
+          src="https://giscus.app/client.js"
           data-repo="MolarFox/blog"
           data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg3ODE2NjU="
           data-category="Blog comments"
@@ -175,8 +176,8 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
           data-emit-metadata="1"
           data-theme="preferred_color_scheme"
           data-lang="en"
-          crossOrigin="anonymous">
-        </script>
+          crossOrigin="anonymous"
+        />
       </Helmet>
       <Wrapper css={PostTemplate}>
         <header className="site-header">
@@ -243,7 +244,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
                 </PostFullImage>
               )}
               <PostContent htmlAst={post.htmlAst} />
-              <div className='giscus'></div>
+              <div className="giscus"/>
 
               {/* The big email subscribe modal content */}
               {config.showSubscribe && <Subscribe title={config.title} />}
