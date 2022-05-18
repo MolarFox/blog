@@ -96,7 +96,7 @@ export interface PageContext {
   };
 }
 
-const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
+function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
   const post = data.markdownRemark;
   let width: number | undefined;
   let height: number | undefined;
@@ -264,7 +264,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
       </Wrapper>
     </IndexLayout>
   );
-};
+}
 
 const PostTemplate = css`
   .site-main {
