@@ -22,13 +22,13 @@ import { inner, outer, SiteMain } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
-export interface Author {
+export type Author = {
   name: string;
   bio: string;
   avatar: any;
-}
+};
 
-interface PageTemplateProps {
+type PageTemplateProps = {
   location: Location;
   data: {
     logo: {
@@ -75,9 +75,9 @@ interface PageTemplateProps {
     prev: PageContext;
     next: PageContext;
   };
-}
+};
 
-export interface PageContext {
+export type PageContext = {
   excerpt: string;
   fields: {
     slug: string;
@@ -94,7 +94,7 @@ export interface PageContext {
     tags: string[];
     author: Author[];
   };
-}
+};
 
 function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
   const post = data.markdownRemark;

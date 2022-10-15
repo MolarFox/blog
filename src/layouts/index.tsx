@@ -11,7 +11,7 @@ import { ResolveLight } from '../styles/typography';
 interface IndexProps {
   className?: string;
   children: React.ReactNode;
-}
+};
 
 const IndexLayout: React.FC<IndexProps> = props => (
   <div className={props.className}>

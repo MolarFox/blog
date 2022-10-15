@@ -16,9 +16,9 @@ const Ast = ({ ast, ...props }: any) => {
   return renderAst(ast);
 };
 
-export interface PostContentProps {
+export type PostContentProps = {
   htmlAst: any;
-}
+};
 
 const PostContent: React.FC<PostContentProps> = ({ htmlAst }) => (
   <PostFullContent className="post-full-content" css={[ResolveLight, PostFullContent]}>
