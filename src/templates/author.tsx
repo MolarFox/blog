@@ -169,7 +169,9 @@ function Author({ data, location }: AuthorTemplateProps) {
         <main id="site-main" css={[SiteMain, outer]}>
           <div css={inner}>
             <div css={[PostFeed]}>
-              {edges.map(({ node }) => <PostCard key={node.fields.slug} post={node} />)}
+              {edges.map(({ node }) => (
+                <PostCard key={node.fields.slug} post={node} />
+              ))}
             </div>
           </div>
         </main>
@@ -201,7 +203,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: { frontmatter: { draft: { ne: true } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: ASC } }
       limit: 2000
     ) {
       edges {
