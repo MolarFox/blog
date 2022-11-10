@@ -31,11 +31,6 @@ export type Author = {
 type PageTemplateProps = {
   location: Location;
   data: {
-    logo: {
-      childImageSharp: {
-        fixed: any;
-      };
-    };
     markdownRemark: {
       html: string;
       htmlAst: any;
@@ -492,7 +487,7 @@ export const query = graphql`query ($slug: String, $primaryTag: String) {
         excerpt
         image {
           childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
+            gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: [AUTO, WEBP, AVIF])
           }
         }
         author {
