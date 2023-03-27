@@ -50,7 +50,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
   }
 
   onScroll = () => {
-    if (!this.titleRef || !this.titleRef.current) {
+    if (!this.titleRef?.current) {
       return;
     }
 
@@ -62,7 +62,7 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
   };
 
   update = () => {
-    if (!this.titleRef || !this.titleRef.current) {
+    if (!this.titleRef?.current) {
       return;
     }
 
