@@ -124,59 +124,58 @@ function Tags({ pageContext, data, location }: TagTemplateProps) {
 export default Tags;
 
 export const pageQuery = graphql`
-query ($tag: String) {
-  allTagYaml {
-    edges {
-      node {
-        yamlId
-        description
-        image {
-          childImageSharp {
-            gatsbyImageData(layout: FULL_WIDTH)
-          }
-        }
-      }
-    }
-  }
-  allMarkdownRemark(
-    limit: 2000
-    sort: { frontmatter: { date: ASC } }
-    filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } }
-  ) {
-    totalCount
-    edges {
-      node {
-        excerpt
-        frontmatter {
-          title
-          excerpt
-          tags
-          date
+  query ($tag: String) {
+    allTagYaml {
+      edges {
+        node {
+          yamlId
+          description
           image {
             childImageSharp {
               gatsbyImageData(layout: FULL_WIDTH)
             }
           }
-          author {
-            id
-            username
-            bio
-            avatar {
+        }
+      }
+    }
+    allMarkdownRemark(
+      limit: 2000
+      sort: { frontmatter: { date: ASC } }
+      filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } }
+    ) {
+      totalCount
+      edges {
+        node {
+          excerpt
+          frontmatter {
+            title
+            excerpt
+            tags
+            date
+            image {
               childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
+                gatsbyImageData(layout: FULL_WIDTH)
+              }
+            }
+            author {
+              id
+              bio
+              avatar {
+                childImageSharp {
+                  gatsbyImageData(layout: FULL_WIDTH, breakpoints: [40, 80, 120])
+                }
               }
             }
           }
-        }
-        fields {
-          readingTime {
-            text
+          fields {
+            readingTime {
+              text
+            }
+            layout
+            slug
           }
-          layout
-          slug
         }
       }
     }
   }
-}
 `;

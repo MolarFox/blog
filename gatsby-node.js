@@ -76,7 +76,6 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
               }
               author {
-                id
                 username
                 bio
                 avatar {
