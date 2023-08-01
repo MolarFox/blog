@@ -6,8 +6,6 @@ import { lighten } from 'polished';
 import favicon from '../../src/favicon.ico';
 import { colors } from '../styles/colors';
 
-import { ResolveLight } from '../styles/typography';
-
 type IndexProps = {
   className?: string;
   children: React.ReactNode;
