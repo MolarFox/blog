@@ -483,7 +483,7 @@ export const query = graphql`
           }
         }
         author {
-          id
+          name
           bio
           avatar {
             childImageSharp {

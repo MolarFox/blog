@@ -38,6 +38,9 @@ export const Footer: React.FC = () => (
           Contact me
         </a>
 
+          <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
+            Contact me
+          </a>
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>

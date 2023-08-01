@@ -73,8 +73,7 @@ export const pageQuery = graphql`
               }
             }
             author {
-              id
-              username
+              name
               bio
               avatar {
                 children {
