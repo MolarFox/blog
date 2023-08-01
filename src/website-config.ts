@@ -1,4 +1,4 @@
-export interface WebsiteConfig {
+export type WebsiteConfig = {
   title: string;
   authorName: string;
   description: string;
@@ -10,15 +10,15 @@ export interface WebsiteConfig {
    */
   lang: string;
   /**
-   * Blog full path, no ending slash!
+   * blog full path, no ending slash!
    */
   siteUrl: string;
   /**
-   * Full url, no username
+   * full url, no username
    */
   github?: string;
   /**
-   * Full url, no username
+   * full url, no username
    */
   youtube?: string;
   /**
@@ -26,19 +26,19 @@ export interface WebsiteConfig {
    */
   twitter?: string;
   /**
-   * Hide or show all email subscribe boxes
+   * hide or show all email subscribe boxes
    */
   showSubscribe: boolean;
   /**
-   * Create a list on mailchimp and then create an embeddable signup form. this is the form action
+   * create a list on mailchimp and then create an embeddable signup form. this is the form action
    */
   mailchimpAction?: string;
   /**
-   * This is the hidden input field name
+   * this is the hidden input field name
    */
   mailchimpName?: string;
   /**
-   * Name and id of the mailchimp email field
+   * name and id of the mailchimp email field
    */
   mailchimpEmailFieldName?: string;
   /**
@@ -56,7 +56,7 @@ export interface WebsiteConfig {
    * Otherwise only shows first (primary) tag
    */
   showAllTags: boolean;
-}
+};
 
 const config: WebsiteConfig = {
   title: 'Molar\'s Blog',

@@ -5,16 +5,16 @@ import { css } from '@emotion/react';
 
 import { colors } from '../styles/colors';
 
-export interface PaginationProps {
+export type PaginationProps = {
   currentPage: number;
   numPages: number;
-}
+};
 
-const Pagination: React.FunctionComponent<PaginationProps> = ({ currentPage, numPages }) => {
+function Pagination({ currentPage, numPages }: PaginationProps) {
   const isFirst = currentPage === 1;
   const isLast = currentPage === numPages;
-  const prevPage = currentPage - 1 === 1 ? '/' : (currentPage - 1).toString();
-  const nextPage = (currentPage + 1).toString();
+  const prevPage = currentPage - 1 === 1 ? '/' : `../${(currentPage - 1).toString()}`;
+  const nextPage = `../${(currentPage + 1).toString()}`;
 
   return (
     <nav css={navCss}>
@@ -45,7 +45,7 @@ const Pagination: React.FunctionComponent<PaginationProps> = ({ currentPage, num
       </div>
     </nav>
   );
-};
+}
 
 const navCss = css`
   text-align: center;
