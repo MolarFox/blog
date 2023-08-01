@@ -76,7 +76,7 @@ exports.createPages = async ({ graphql, actions }) => {
                 }
               }
               author {
-                username
+                name
                 bio
                 avatar {
                   childImageSharp {
@@ -98,8 +98,7 @@ exports.createPages = async ({ graphql, actions }) => {
       allAuthorYaml {
         edges {
           node {
-            id
-            username
+            name
           }
         }
       }

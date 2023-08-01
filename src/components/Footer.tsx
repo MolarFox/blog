@@ -10,36 +10,34 @@ import config from '../website-config';
 
 export function Footer() {
   return (
-  <footer css={[outer, SiteFooter]}>
-    <div css={[inner, SiteFooterContent]}>
-      <section className="copyright">
-        <a href="https://molarfox.io" target="_self" rel="noopener noreferrer">
-          {config.authorName}
-        </a> &copy; {new Date().getFullYear()}{' '}
-        {config.footer && (
-          <Link to="/">
-            | {config.authorName} {config.footer}
-          </Link>
-        )}
-      </section>
-      <SiteFooterNav>
-        <Link to="/">Latest Posts</Link>
-        {config.github && (
-          <a href={config.github} target="_blank" rel="noopener noreferrer">
-            Github
-          </a>
-        )}
-        {config.twitter && (
-          <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-            Twitter
-          </a>
-        )}
+    <footer css={[outer, SiteFooter]}>
+      <div css={[inner, SiteFooterContent]}>
+        <section className="copyright">
+          <a href="https://molarfox.io" target="_self" rel="noopener noreferrer">
+            {config.authorName}
+          </a> &copy; {new Date().getFullYear()}{' '}
+          {config.footer && (
+            <Link to="/">
+              | {config.authorName} {config.footer}
+            </Link>
+          )}
+        </section>
+        <SiteFooterNav>
+          <Link to="/">Latest Posts</Link>
+          {config.github && (
+            <a href={config.github} target="_blank" rel="noopener noreferrer">
+              Github
+            </a>
+          )}
+          {config.twitter && (
+            <a href={config.twitter} target="_blank" rel="noopener noreferrer">
+              Twitter
+            </a>
+          )}
 
-        <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
-          Contact me
-        </a>
-        )
-
+          <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
+            Contact me
+          </a>
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
       </div>
