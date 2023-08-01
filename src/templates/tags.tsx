@@ -21,11 +21,11 @@ import {
   ResponsiveHeaderBackground,
   SiteHeaderBackground,
 } from '../styles/shared';
-import { PageContext } from './post';
+import type { PageContext } from './post';
 import { Helmet } from 'react-helmet';
 import config from '../website-config';
 
-interface TagTemplateProps {
+type TagTemplateProps = {
   location: Location;
   pageContext: {
     tag: string;
@@ -34,7 +34,7 @@ interface TagTemplateProps {
     allTagYaml: {
       edges: Array<{
         node: {
-          id: string;
+          yamlId: string;
           description: string;
           image?: any;
         };
@@ -47,12 +47,14 @@ interface TagTemplateProps {
       }>;
     };
   };
-}
+};
 
-const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
+function Tags({ pageContext, data, location }: TagTemplateProps) {
   const tag = pageContext.tag ? pageContext.tag : '';
   const { edges, totalCount } = data.allMarkdownRemark;
-  const tagData = data.allTagYaml.edges.find(n => n.node.id.toLowerCase() === tag.toLowerCase());
+  const tagData = data.allTagYaml.edges.find(
+    n => n.node.yamlId.toLowerCase() === tag.toLowerCase(),
+  );
 
   return (
     <IndexLayout>
@@ -117,7 +119,7 @@ const Tags = ({ pageContext, data, location }: TagTemplateProps) => {
       </Wrapper>
     </IndexLayout>
   );
-};
+}
 
 export default Tags;
 
@@ -126,7 +128,7 @@ export const pageQuery = graphql`
     allTagYaml {
       edges {
         node {
-          id
+          yamlId
           description
           image {
             childImageSharp {
@@ -138,7 +140,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       limit: 2000
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: ASC } }
       filter: { frontmatter: { tags: { in: [$tag] }, draft: { ne: true } } }
     ) {
       totalCount
@@ -156,7 +158,7 @@ export const pageQuery = graphql`
               }
             }
             author {
-              id
+              name
               bio
               avatar {
                 childImageSharp {

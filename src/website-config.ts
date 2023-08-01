@@ -1,4 +1,4 @@
-export interface WebsiteConfig {
+export type WebsiteConfig = {
   title: string;
   authorName: string;
   description: string;
@@ -56,7 +56,7 @@ export interface WebsiteConfig {
    * Otherwise only shows first (primary) tag
    */
   showAllTags: boolean;
-}
+};
 
 const config: WebsiteConfig = {
   title: 'Molar\'s Blog',

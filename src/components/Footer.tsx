@@ -8,7 +8,8 @@ import { colors } from '../styles/colors';
 import { outer, inner } from '../styles/shared';
 import config from '../website-config';
 
-export const Footer: React.FC = () => (
+export function Footer() {
+  return (
   <footer css={[outer, SiteFooter]}>
     <div css={[inner, SiteFooterContent]}>
       <section className="copyright">
@@ -37,12 +38,14 @@ export const Footer: React.FC = () => (
         <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
           Contact me
         </a>
+        )
 
-        <a href="/rss.xml">RSS</a>
-      </SiteFooterNav>
-    </div>
-  </footer>
-);
+          <a href="/rss.xml">RSS</a>
+        </SiteFooterNav>
+      </div>
+    </footer>
+  );
+}
 
 const SiteFooter = css`
   position: relative;
