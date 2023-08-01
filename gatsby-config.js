@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   siteMetadata: {
-    title: 'Molar\'s Cooking Secrets',
+    title: 'Molar\'s Tech Tips and Fox Care Advice',
     description: 'MolarFox\'s blog - blowing stuff up since 2020',
     siteUrl: 'https://blog.molarfox.io',
   },
@@ -122,20 +122,21 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-google-gtag',
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingIds: [
-          'G-JNV88EBCXC', // Google Analytics / GA
-        ],
-        gtagConfig: {
-          anonymize_ip: true,
-          cookie_expires: 0,
-        },
-        pluginConfig: {
-          head: false,
-          respectDNT: true,
-          exclude: [],
-        },
+        trackingId: 'G-RT1YMC49G4',
+        // Puts tracking script in the head instead of the body
+        head: true,
+        // IP anonymization for GDPR compliance
+        anonymize: true,
+        // Disable analytics for users with `Do Not Track` enabled
+        respectDNT: true,
+        // Avoids sending pageview hits from custom paths
+        exclude: ['/preview/**'],
+        // Specifies what percentage of users should be tracked
+        sampleRate: 100,
+        // Determines how often site speed tracking beacons will be sent
+        siteSpeedSampleRate: 10,
       },
     },
   ],
