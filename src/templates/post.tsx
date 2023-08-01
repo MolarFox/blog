@@ -455,19 +455,11 @@ const PostFullImage = styled.figure`
   }
 `;
 
-export const query = graphql`query ($slug: String, $primaryTag: String) {
-  logo: file(relativePath: {eq: "img/molarfox-logo.png"}) {
-    childImageSharp {
-      gatsbyImageData(layout: FIXED)
-    }
-  }
-  markdownRemark(fields: {slug: {eq: $slug}}) {
-    html
-    htmlAst
-    excerpt
-    fields {
-      readingTime {
-        text
+export const query = graphql`
+  query postQuery ($slug: String, $primaryTag: String) {
+    logo: file(relativePath: {eq: "img/molarfox-logo.png"}) {
+      childImageSharp {
+        gatsbyImageData(layout: FIXED)
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -491,7 +483,8 @@ export const query = graphql`query ($slug: String, $primaryTag: String) {
           }
         }
         author {
-          name
+          id
+          username
           bio
           avatar {
             childImageSharp {
