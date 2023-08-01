@@ -182,7 +182,7 @@ function Author({ data, location }: AuthorTemplateProps) {
 }
 
 export const pageQuery = graphql`
-  query ($author: String) {
+  query authorQuery ($author: String) {
     authorYaml(id: { eq: $author }) {
       id
       username
