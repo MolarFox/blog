@@ -31,7 +31,7 @@ export function PostCard({ post, large = false }: PostCardProps) {
       className={`post-card ${post.frontmatter.image ? '' : 'no-image'} ${
         large ? 'post-card-large' : ''
       }`}
-      css={[ResolveLight, ViceCitySans, PostCardStyles, large && PostCardLarge]}
+      css={[ResolveLight, ViceCitySans, PostCardStyles, isLarge && PostCardLarge]}
     >
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>

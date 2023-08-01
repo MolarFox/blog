@@ -162,7 +162,6 @@ export const pageQuery = graphql`
             }
             author {
               id
-              username
               bio
               avatar {
                 childImageSharp {
