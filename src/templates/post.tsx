@@ -456,7 +456,7 @@ const PostFullImage = styled.figure`
 `;
 
 export const query = graphql`
-  query ($slug: String, $primaryTag: String) {
+  query postQuery ($slug: String, $primaryTag: String) {
     logo: file(relativePath: {eq: "img/molarfox-logo.png"}) {
       childImageSharp {
         gatsbyImageData(layout: FIXED)
@@ -483,7 +483,8 @@ export const query = graphql`
           }
         }
         author {
-          name
+          id
+          username
           bio
           avatar {
             childImageSharp {
