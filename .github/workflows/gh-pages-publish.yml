@@ -1,0 +1,48 @@
+name: gh-pages-publish
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+      - name: Setup Node.js v${{ matrix.node-version }}
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Build static files
+        id: build
+        if: github.actor == 'molarfox'
+        run: |
+          npm ci
+          npm run build
+
+      - name: Upload static files as artifact
+        id: deployment
+        if: github.actor == 'molarfox'
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: public/
+
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: deploy-github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        if: github.actor == 'molarfox'
+        uses: actions/deploy-pages@v4
