@@ -1,5 +1,4 @@
 name: ci
-author: MolarFox
 
 on:
   push:
