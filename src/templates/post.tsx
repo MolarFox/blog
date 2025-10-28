@@ -161,18 +161,21 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
         {height && <meta property="og:image:height" content={height?.toString()} />}
 
         <script
+          async
           src="https://giscus.app/client.js"
           data-repo="MolarFox/blog"
           data-repo-id="MDEwOlJlcG9zaXRvcnkzOTg3ODE2NjU="
           data-category="Blog comments"
           data-category-id="DIC_kwDOF8Ts4c4CAhDO"
           data-mapping="pathname"
+          data-strict="0"
           data-reactions-enabled="1"
-          data-emit-metadata="1"
+          data-emit-metadata="0"
+          data-input-position="top"
           data-theme="preferred_color_scheme"
           data-lang="en"
-          crossOrigin="anonymous"
-        ></script>
+          data-loading="lazy"
+          crossOrigin="anonymous"/>
       </Helmet>
       <Wrapper css={PostTemplate}>
         <header className="site-header">
