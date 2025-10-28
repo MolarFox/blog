@@ -61,7 +61,7 @@ export type WebsiteConfig = {
 const config: WebsiteConfig = {
   title: 'Molar\'s Blog',
   authorName: 'MolarFox',
-  description: 'If it\'s on fire, we\'re on the right track!',
+  description: 'Awoof.',
   coverImage: 'img/blog-cover.jpg',
   logo: 'img/molarfox-logo.png', // TODO
   lang: 'en',
@@ -70,11 +70,11 @@ const config: WebsiteConfig = {
   youtube: 'https://www.youtube.com/channel/UC0_Z_l0ae4x1sntIgAeMepA',
   twitter: 'https://twitter.com/MolarFox',
   showSubscribe: false,
-  mailchimpAction: 'https://twitter.us19.list-manage.com/subscribe/post?u=a89b6987ac248c81b0b7f3a0f&amp;id=7d777b7d75',
-  mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
+  mailchimpAction: '',
+  mailchimpName: '',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
-  footer: 'didn\'t start the fire (it was always burnin\' ♪)',
+  footer: '♪',
   showAllTags: true,
 };
 

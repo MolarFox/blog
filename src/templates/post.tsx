@@ -172,7 +172,7 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
           data-theme="preferred_color_scheme"
           data-lang="en"
           crossOrigin="anonymous"
-        />
+        ></script>
       </Helmet>
       <Wrapper css={PostTemplate}>
         <header className="site-header">
