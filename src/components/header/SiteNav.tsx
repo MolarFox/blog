@@ -305,6 +305,7 @@ const SubscribeButton = styled.a`
 `;
 
 const NavPostTitle = styled.span`
+  font-family: MonoFur, Roboto, monospace;
   visibility: hidden;
   position: absolute;
   top: 9px;
