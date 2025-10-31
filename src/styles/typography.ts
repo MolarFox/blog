@@ -1,6 +1,7 @@
 import { css } from '@emotion/react';
 
-import ViceCitySans_font from '../fonts/ViceCitySans.woff2';
+import MonoFur_font from '../fonts/MonoFur.woff2';
+import MonoFurItalic_font from '../fonts/MonoFur-Ita.woff2';
 
 import ResolveRegular_font from '../fonts/Resolve-Regular.woff2';
 import ResolveBold_font from '../fonts/Resolve-Bold.woff2';
@@ -10,10 +11,16 @@ import ResolveBoldItalic_font from '../fonts/Resolve-BoldIta.woff2';
 import ResolveLight_font from '../fonts/Resolve-Light.woff2';
 import ResolveLightItalic_font from '../fonts/Resolve-LightIta.woff2';
 
-export const ViceCitySans = css`
+export const MonoFur = css`
   @font-face {
-    font-family: "ViceCitySans";
-    src: url("${ViceCitySans_font}") format("woff2");
+    font-family: "MonoFur";
+    src: url("${MonoFur_font}") format("woff2");
+  }
+
+  @font-face {
+    font-family: "MonoFur";
+    src: url("${MonoFurItalic_font}") format("woff2");
+    font-weight: italic;
   }
 `;
 

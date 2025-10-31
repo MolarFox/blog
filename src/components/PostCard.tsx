@@ -7,7 +7,7 @@ import React from 'react';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { ResolveLight, ViceCitySans } from '../styles/typography';
+import { ResolveLight, MonoFur } from '../styles/typography';
 
 import { colors } from '../styles/colors';
 import type { PageContext } from '../templates/post';
@@ -31,7 +31,7 @@ export function PostCard({ post, isLarge = false }: PostCardProps) {
       className={`post-card ${post.frontmatter.image ? '' : 'no-image'} ${
         isLarge ? 'post-card-large' : ''
       }`}
-      css={[ResolveLight, ViceCitySans, PostCardStyles, isLarge && PostCardLarge]}
+      css={[MonoFur, ResolveLight, PostCardStyles, isLarge && PostCardLarge]}
     >
       {post.frontmatter.image && (
         <Link className="post-card-image-link" css={PostCardImageLink} to={post.fields.slug}>
@@ -204,7 +204,7 @@ const PostCardPrimaryTag = styled.div`
 `;
 
 const PostCardTitle = styled.h2`
-  font-family: ViceCitySans, sans-serif;
+  font-family: MonoFur, monospace;
   margin: 0 0 0.4em;
   line-height: 1.15em;
   transition: color 0.2s ease-in-out;
