@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet';
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Resolve, ResolveLight, ViceCitySans } from '../styles/typography';
+import { Resolve, ResolveLight, MonoFur } from '../styles/typography';
 
 import { Footer } from '../components/Footer';
 import SiteNav, { SiteNavMain } from '../components/header/SiteNav';
@@ -185,7 +185,7 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
             </div>
           </div>
         </header>
-        <main id="site-main" className="site-main" css={[SiteMain, outer, Resolve, ResolveLight, ViceCitySans]}>
+        <main id="site-main" className="site-main" css={[SiteMain, outer, Resolve, ResolveLight, MonoFur]}>
           <div css={inner}>
             {/* TODO: no-image css tag? */}
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
@@ -422,7 +422,7 @@ const PostFullByline = styled.div`
 export const PostFullTitle = styled.h1`
   margin: 0 0 0.2em;
   color: ${setLightness('0.05', colors.darkgrey)};
-  font-family: ViceCitySans, Resolve, Roboto, sans-serif;
+  font-family: MonoFur, Resolve, Roboto, sans-serif;
 
   @media (max-width: 500px) {
     margin-top: 0.2em;
