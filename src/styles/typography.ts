@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
 import MonoFur_font from '../fonts/MonoFur.woff2';
-import MonoFurItalic_font from '../fonts/MonoFur-Ita.woff2'
+import MonoFurItalic_font from '../fonts/MonoFur-Ita.woff2';
 
 import ResolveRegular_font from '../fonts/Resolve-Regular.woff2';
 import ResolveBold_font from '../fonts/Resolve-Bold.woff2';
