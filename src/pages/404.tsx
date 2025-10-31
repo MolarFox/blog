@@ -40,7 +40,7 @@ function NotFoundPage(props: NotFoundTemplateProps) {
           <div css={[inner]}>
             <section style={{ textAlign: 'center' }}>
               <ErrorCode>404</ErrorCode>
-              <ErrorDescription>Page not found</ErrorDescription>
+              <ErrorDescription>That one doesn&apos;t exist!</ErrorDescription>
               <Link css={ErrorLink} to="/">
                 Go to the front page →
               </Link>
@@ -119,6 +119,8 @@ const ErrorContent = css`
 `;
 
 const ErrorCode = styled.h1`
+  font-family: MonoFur, monospace;
+
   margin: 0;
   /* color: var(--lightgrey); */
   color: ${colors.lightgrey};
