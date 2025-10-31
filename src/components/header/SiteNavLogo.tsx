@@ -9,9 +9,11 @@ type SiteNavLogoProps = {
   logo?: any;
 };
 
-export const SiteNavLogo = () => (
-  <StaticQuery
-    query={graphql`query HeadingQuery {
+// TODO - would be nice to make an alt logo that looks nice when small, and use that here instead
+export function SiteNavLogo() {
+  return (
+    <StaticQuery
+      query={graphql`query HeadingQuery {
   logo: file(relativePath: {eq: "img/molarfox-logo.png"}) {
     childImageSharp {
       gatsbyImageData(quality: 100, width: 500, layout: FIXED)
@@ -22,7 +24,7 @@ export const SiteNavLogo = () => (
       render={(data: SiteNavLogoProps) => (
         <Link className="site-nav-logo" css={SiteNavLogoStyles} to="/">
           {data.logo ? (
-            <img src={getSrc(data.logo)} alt={config.title} />
+            <img style={{ maxHeight: '75px', height: '75px' }} src={getSrc(data.logo)} alt={config.title} />
           ) : (
             config.title
           )}
@@ -51,7 +53,9 @@ const SiteNavLogoStyles = css`
   }
 
   img {
+    position: relative;
     display: block;
+    bottom: 25px;
     width: auto;
     height: 21px;
   }

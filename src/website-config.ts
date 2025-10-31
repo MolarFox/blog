@@ -61,9 +61,9 @@ export type WebsiteConfig = {
 const config: WebsiteConfig = {
   title: 'Molar\'s Blog',
   authorName: 'MolarFox',
-  description: 'Awoof.',
+  description: 'Molar\'s Blog!',
   coverImage: 'img/blog-cover.jpg',
-  logo: 'img/molarfox-logo.png', // TODO
+  logo: 'img/molarfox-logo.png',
   lang: 'en',
   siteUrl: 'https://blog.molarfox.io',
   github: 'https://github.com/MolarFox',

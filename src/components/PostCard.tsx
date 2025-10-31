@@ -203,7 +203,7 @@ const PostCardPrimaryTag = styled.div`
 `;
 
 const PostCardTitle = styled.h2`
-  font-family: MonoFur, sans-serif;
+  font-family: MonoFur, monospace;
   margin: 0 0 0.4em;
   line-height: 1.15em;
   transition: color 0.2s ease-in-out;
