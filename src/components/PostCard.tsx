@@ -1,7 +1,7 @@
 import { format } from 'date-fns';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
-import _ from 'lodash';
+import { kebabCase } from 'lodash';
 import { lighten } from 'polished';
 import React from 'react';
 
@@ -10,16 +10,16 @@ import styled from '@emotion/styled';
 import { ResolveLight, MonoFur } from '../styles/typography';
 
 import { colors } from '../styles/colors';
-import { PageContext } from '../templates/post';
+import type { PageContext } from '../templates/post';
 import { AuthorList } from './AuthorList';
 import config from '../website-config';
 
-export interface PostCardProps {
+export type PostCardProps = {
   post: PageContext;
-  large?: boolean;
-}
+  isLarge?: boolean;
+};
 
-export function PostCard({ post, large = false }: PostCardProps) {
+export function PostCard({ post, isLarge = false }: PostCardProps) {
   const date = new Date(post.frontmatter.date);
   // 2018-08-20
   const datetime = format(date, 'yyyy-MM-dd');
@@ -29,7 +29,7 @@ export function PostCard({ post, large = false }: PostCardProps) {
   return (
     <article
       className={`post-card ${post.frontmatter.image ? '' : 'no-image'} ${
-        large ? 'post-card-large' : ''
+        isLarge ? 'post-card-large' : ''
       }`}
       css={[MonoFur, ResolveLight, PostCardStyles, isLarge && PostCardLarge]}
     >
@@ -41,6 +41,7 @@ export function PostCard({ post, large = false }: PostCardProps) {
                 image={getImage(post.frontmatter.image)!}
                 alt={`${post.frontmatter.title} cover image`}
                 style={{ height: '100%' }}
+                loading={isLarge ? 'eager' : 'lazy'}
               />
             )}
           </PostCardImage>
@@ -53,15 +54,15 @@ export function PostCard({ post, large = false }: PostCardProps) {
               <PostCardPrimaryTag className="post-card-primary-tag">
                 {post.frontmatter.tags.map((tag, idx) => (
                   <React.Fragment key={tag}>
-                    {idx > 0 && (<>, &nbsp;</>)}
-                    <Link to={`/tags/${_.kebabCase(tag)}/`}>{tag}</Link>
+                    {idx > 0 && <>, &nbsp;</>}
+                    <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
                   </React.Fragment>
                 ))}
               </PostCardPrimaryTag>
             )}
             {post.frontmatter.tags && !config.showAllTags && (
               <PostCardPrimaryTag className="post-card-primary-tag">
-                <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
+                <Link to={`/tags/${kebabCase(post.frontmatter.tags[0])}/`}>
                   {post.frontmatter.tags[0]}
                 </Link>
               </PostCardPrimaryTag>
@@ -78,7 +79,7 @@ export function PostCard({ post, large = false }: PostCardProps) {
             <span>
               {post.frontmatter.author.map((author, index) => (
                 <React.Fragment key={author.name}>
-                  <Link to={`/author/${_.kebabCase(author.name)}/`}>{author.name}</Link>
+                  <Link to={`/author/${kebabCase(author.name)}/`}>{author.name}</Link>
                   {post.frontmatter.author.length - 1 > index && ', '}
                 </React.Fragment>
               ))}
