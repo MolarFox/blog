@@ -6,21 +6,19 @@ import { lighten } from 'polished';
 import favicon from '../../src/favicon.ico';
 import { colors } from '../styles/colors';
 
-import { ResolveLight } from '../styles/typography';
-
-interface IndexProps {
+type IndexProps = {
   className?: string;
   children: React.ReactNode;
 };
 
-const IndexLayout: React.FC<IndexProps> = props => (
-  <div className={props.className}>
-    <Helmet>
-      <link rel="icon" href={favicon} type="image/x-icon" />
-    </Helmet>
-    <Global
-      css={ResolveLight}
-      styles={css`
+function IndexLayout(props: IndexProps) {
+  return (
+    <div className={props.className}>
+      <Helmet>
+        <link rel="icon" href={favicon} type="image/x-icon" />
+      </Helmet>
+      <Global
+        styles={css`
           html,
           body,
           div,
