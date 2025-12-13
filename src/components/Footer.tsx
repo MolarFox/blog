@@ -36,7 +36,7 @@ export function Footer() {
           )}
 
           <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
-            Contact me
+            Email me
           </a>
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
