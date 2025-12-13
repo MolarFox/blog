@@ -29,9 +29,9 @@ export function Footer() {
               Github
             </a>
           )}
-          {config.twitter && (
-            <a href={config.twitter} target="_blank" rel="noopener noreferrer">
-              Twitter
+          {config.mastodon && (
+            <a href={config.mastodon} target="_blank" rel="noopener noreferrer">
+              Mastodon
             </a>
           )}
 

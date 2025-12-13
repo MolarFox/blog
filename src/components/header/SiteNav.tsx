@@ -10,7 +10,7 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import { Github } from '../icons/github';
 import { YouTube } from '../icons/youtube';
-import { Twitter } from '../icons/twitter';
+import { Mastodon } from '../icons/mastodon';
 import { Rss } from '../icons/rss';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
@@ -133,15 +133,15 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   <YouTube />
                 </a>
               )}
-              {config.twitter && (
+              {config.mastodon && (
                 <a
                   css={SocialLink}
-                  href={config.twitter}
-                  title="Twitter"
+                  href={config.mastodon}
+                  title="Mastodon"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Twitter />
+                  <Mastodon />
                 </a>
               )}
               <a

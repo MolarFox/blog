@@ -26,6 +26,10 @@ export type WebsiteConfig = {
    */
   twitter?: string;
   /**
+   * Full url, no username
+   */
+  mastodon?: string;
+  /**
    * hide or show all email subscribe boxes
    */
   showSubscribe: boolean;
@@ -69,6 +73,7 @@ const config: WebsiteConfig = {
   github: 'https://github.com/MolarFox',
   youtube: 'https://www.youtube.com/channel/UC0_Z_l0ae4x1sntIgAeMepA',
   twitter: 'https://twitter.com/MolarFox',
+  mastodon: 'https://furry.engineer/@MolarFox',
   showSubscribe: false,
   mailchimpAction: '',
   mailchimpName: '',

@@ -45,6 +45,7 @@ type AuthorTemplateProps = {
       name: string;
       website?: string;
       twitter?: string;
+      mastodon?: string;
       location?: string;
       profile_image?: any;
       bio?: string;
@@ -148,6 +149,17 @@ function Author({ data, location }: AuthorTemplateProps) {
                         </AuthorSocialLinkAnchor>
                       </AuthorSocialLink>
                     )}
+                    {author.mastodon && (
+                      <AuthorSocialLink className="author-social-link">
+                        <AuthorSocialLinkAnchor
+                          href={author.mastodon}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          Mastodon
+                        </AuthorSocialLinkAnchor>
+                      </AuthorSocialLink>
+                    )}
                     {author.twitter && (
                       <AuthorSocialLink className="author-social-link">
                         <AuthorSocialLinkAnchor
@@ -185,6 +197,7 @@ export const pageQuery = graphql`
     authorYaml(name: { eq: $author }) {
       name
       website
+      mastodon
       twitter
       bio
       location
