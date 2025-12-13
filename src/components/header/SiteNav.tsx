@@ -10,7 +10,7 @@ import { SocialLink } from '../../styles/shared';
 import config from '../../website-config';
 import { Github } from '../icons/github';
 import { YouTube } from '../icons/youtube';
-import { Twitter } from '../icons/twitter';
+import { Mastodon } from '../icons/mastodon';
 import { Rss } from '../icons/rss';
 import { SubscribeModal } from '../subscribe/SubscribeModal';
 import { SiteNavLogo } from './SiteNavLogo';
@@ -111,6 +111,17 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
+              {config.mastodon && (
+                <a
+                  css={SocialLink}
+                  href={config.mastodon}
+                  title="Mastodon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Mastodon />
+                </a>
+              )}
               {config.github && (
                 <a
                   css={SocialLink}
@@ -131,17 +142,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   rel="noopener noreferrer"
                 >
                   <YouTube />
-                </a>
-              )}
-              {config.twitter && (
-                <a
-                  css={SocialLink}
-                  href={config.twitter}
-                  title="Twitter"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Twitter />
                 </a>
               )}
               <a
