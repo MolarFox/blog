@@ -71,7 +71,7 @@ const config: WebsiteConfig = {
   lang: 'en',
   siteUrl: 'https://blog.molarfox.io',
   github: 'https://github.com/MolarFox',
-  youtube: 'https://www.youtube.com/channel/UC0_Z_l0ae4x1sntIgAeMepA',
+  youtube: 'https://www.youtube.com/@molarfox',
   twitter: 'https://twitter.com/MolarFox',
   mastodon: 'https://furry.engineer/@MolarFox',
   showSubscribe: false,

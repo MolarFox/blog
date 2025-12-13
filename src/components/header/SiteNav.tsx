@@ -111,6 +111,17 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
           </SiteNavLeft>
           <SiteNavRight>
             <SocialLinks>
+              {config.mastodon && (
+                <a
+                  css={SocialLink}
+                  href={config.mastodon}
+                  title="Mastodon"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Mastodon />
+                </a>
+              )}
               {config.github && (
                 <a
                   css={SocialLink}
@@ -131,17 +142,6 @@ class SiteNav extends React.Component<SiteNavProps, SiteNavState> {
                   rel="noopener noreferrer"
                 >
                   <YouTube />
-                </a>
-              )}
-              {config.mastodon && (
-                <a
-                  css={SocialLink}
-                  href={config.mastodon}
-                  title="Mastodon"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Mastodon />
                 </a>
               )}
               <a

@@ -14,29 +14,22 @@ export function Footer() {
       <div css={[inner, SiteFooterContent]}>
         <section className="copyright">
           <a href="https://molarfox.io" target="_self" rel="noopener noreferrer">
-            {config.authorName}
-          </a> &copy; {new Date().getFullYear()}{' '}
-          {config.footer && (
-            <Link to="/">
-              | {config.authorName} {config.footer}
-            </Link>
-          )}
+            {config.authorName} &copy; {new Date().getFullYear()}{' '}
+          </a>
+          {" | "}
+          <Link to="/">
+            {config.title} {config.footer}
+          </Link>
         </section>
         <SiteFooterNav>
           <Link to="/">Latest Posts</Link>
-          {config.github && (
-            <a href={config.github} target="_blank" rel="noopener noreferrer">
-              Github
-            </a>
-          )}
           {config.mastodon && (
             <a href={config.mastodon} target="_blank" rel="noopener noreferrer">
-              Mastodon
+              Yap at me on Masto
             </a>
           )}
-
           <a href="mailto:molar@molarfox.io" target="_blank" rel="noopener noreferrer">
-            Email me
+            Waaf at me over Email
           </a>
           <a href="/rss.xml">RSS</a>
         </SiteFooterNav>
