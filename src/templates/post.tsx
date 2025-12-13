@@ -38,6 +38,7 @@ type PageTemplateProps = {
       frontmatter: {
         title: string;
         date: string;
+        modificationDate?: string;
         userDate: string;
         image: any;
         excerpt: string;
@@ -85,6 +86,7 @@ export type PageContext = {
     excerpt: string;
     title: string;
     date: string;
+    modificationDate?: string;
     draft?: boolean;
     tags: string[];
     author: Author[];
@@ -100,11 +102,11 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
     height = getImage(post.frontmatter.image)?.height;
   }
 
-  const date = new Date(post.frontmatter.date);
-  // 2018-08-20
-  const datetime = format(date, 'yyyy-MM-dd');
-  // 20 AUG 2018
-  const displayDatetime = format(date, 'dd LLL yyyy');
+  const ShortDate = (date: Date) => format(date, 'yyyy-MM-dd');       // 2018-08-20
+  const HumanizedDate = (date: Date) => format(date, 'dd LLL yyyy');  // 20 AUG 2018
+
+  const creationDate = new Date(post.frontmatter.date);
+  const modificationDate = post.frontmatter.modificationDate ? new Date(post.frontmatter.modificationDate) : null;
 
   return (
     <IndexLayout className="post-template">
@@ -125,8 +127,9 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
           />
         )}
         <meta property="article:published_time" content={post.frontmatter.date} />
-        {/* not sure if modified time possible */}
-        {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
+        {post.frontmatter.modificationDate && (
+          <meta property="article:modified_time" content={post.frontmatter.modificationDate} />
+        )}7
         {post.frontmatter.tags && (
           <meta property="article:tag" content={post.frontmatter.tags[0]} />
         )}
@@ -224,9 +227,17 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
                         ))}
                       </h4>
                       <div className="byline-meta-content">
-                        <time className="byline-meta-date" dateTime={datetime}>
-                          {displayDatetime}
+                        <time className="byline-meta-date" dateTime={ShortDate(creationDate)}>
+                          <b>{HumanizedDate(creationDate)}</b>
                         </time>
+                        {modificationDate && (
+                          <>
+                            <span className="bull">&bull;</span>
+                            <time className="byline-meta-date" dateTime={ShortDate(modificationDate)}>
+                              (updated {HumanizedDate(modificationDate)})
+                            </time>
+                          </>
+                        )}
                         <span className="byline-reading-time">
                           <span className="bull">&bull;</span>
                           {post.fields.readingTime.text}
@@ -473,6 +484,7 @@ export const query = graphql`
         title
         userDate: date(formatString: "D MMMM YYYY")
         date
+        modificationDate
         tags
         excerpt
         image {

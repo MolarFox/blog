@@ -4,6 +4,7 @@ title: A Full and Comprehensive Style Test
 author: [MolarFox]
 image: ../../img/sc2_hyperion.jpg
 date: 2018-09-30T07:03:47.149Z
+modificationDate: 2018-10-30T07:03:47.149Z
 tags: [Tests, Default]
 ---
 
