@@ -44,6 +44,7 @@ type AuthorTemplateProps = {
     authorYaml: {
       name: string;
       website?: string;
+      mastodon?: string;
       twitter?: string;
       mastodon?: string;
       location?: string;
@@ -199,6 +200,7 @@ export const pageQuery = graphql`
       website
       mastodon
       twitter
+      mastodon
       bio
       location
       profile_image {
