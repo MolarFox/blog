@@ -14,7 +14,7 @@ export function SiteNavLogo() {
   return (
     <StaticQuery
       query={graphql`query HeadingQuery {
-  logo: file(relativePath: {eq: "img/molarfox-logo.png"}) {
+  logo: file(relativePath: {eq: "molarfox-logo.png"}) {
     childImageSharp {
       gatsbyImageData(quality: 100, width: 500, layout: FIXED)
     }

@@ -131,12 +131,12 @@ function IndexPage(props: IndexProps) {
 
 export const pageQuery = graphql`
   query blogPageQuery($skip: Int!, $limit: Int!) {
-    logo: file(relativePath: { eq: "img/molarfox-logo.png" }) {
+    logo: file(relativePath: { eq: "molarfox-logo.png" }) {
       childImageSharp {
         gatsbyImageData(layout: FIXED)
       }
     }
-    header: file(relativePath: { eq: "img/blog-cover.jpg" }) {
+    header: file(relativePath: { eq: "blog-cover.jpg" }) {
       childImageSharp {
         gatsbyImageData(width: 2000, quality: 100, layout: FIXED, formats: [AUTO, WEBP, AVIF])
       }

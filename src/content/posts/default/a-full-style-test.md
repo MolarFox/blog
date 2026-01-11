@@ -2,8 +2,9 @@
 layout: post
 title: A Full and Comprehensive Style Test
 author: [MolarFox]
-image: ../../img/sc2_hyperion.jpg
+image: ../../covers/sc2_hyperion.jpg
 date: 2018-09-30T07:03:47.149Z
+modificationDate: 2018-10-30T07:03:47.149Z
 tags: [Tests, Default]
 ---
 
@@ -37,7 +38,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 
 ### Big Image
 
-![Test Image](../../img/sc2_hyperion.jpg)
+![Test Image](../../covers/sc2_hyperion.jpg)
 
 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 
@@ -45,7 +46,7 @@ Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.
 
-![Small Test Image](../../avatars/sly_molar.jpeg)
+![Small Test Image](../../avatars/molarfox_sly.jpeg)
 
 Labore et dolore.
 
