@@ -83,7 +83,7 @@ function About() {
                   <img style={{ maxWidth: '600px', width: '100%' }} src={imgRjNitroCliffrock} alt={"A photograph of me and Nitro, my dog, on a hike. We're facing away from the camera, atop a big rock seen in the foreground. In the background is a nice landscape of grassy mountains and misty skies, with a slight bokeh effect. Photograph by Rex Rh0vs."}/>
 
                   <p>I&apos;m a senior software engineer, QRP HAM radio operator, car guy, and vulpine-friend-to-the-caprines from Naarm Australia.</p>
-                  <p>I live with my workshop supervisor, Nitro (a beagle).</p>
+                  <p>I live with my workshop supervisor, Nitro (seen below, during his lunch break).</p>
 
                   <img style={{ maxWidth: '512px', width: '100%' }} src={imgNitroEarPoint} alt={"A photograph of Nitro the beagle, laying down in a half-curled up position on his doggy bed beside my couch. He's got one eye open, and his left floppy ear is pointing like an arrow to the right of the image in his current position. Photograph by me"}/>
 
@@ -93,14 +93,16 @@ function About() {
                   <br />
 
                   <h2>What I write about</h2>
-                  <p>Tech, software, projects, and stories from being a software engineer and engineering manager. I love messing with hardware and low-level code, and getting lost down math rabbit holes.</p>
 
-                  <p>I wear a lot of different hats and have multiple very different jobs outside of just SWE&apos;ing, so expect lots of correspondingly varied stuff on here.</p>
+                  <p>Tech, software, projects, and stories from software engineering + software engineering management. I love messing with hardware and low-level code, and getting lost down math rabbit holes.</p>
+
+                  <p>I wear a lot of different hats and have multiple very different jobs outside of just SWE&apos;ing, so expect lots of correspondingly varied stuff on here!</p>
                   <br />
 
                   <img style={{ maxWidth: '512px', width: '100%' }} src={imgFidgetStupidHatClub} alt={"Screencap from the game 'Dust: An Elysian Tail', in which Fidget the nimbat is making fun of the hats Dust and the shopkeeper are wearing. Above her chat box is instead a photoshopped in image of blue scout and red demoman from TF2, wearing some common TF2 hats. Screenshot not taken or photoshopped by me"} />
 
                   <h2>What I care about most</h2>
+
                   {/* <p>I value legacy, and leaving one that contains a lot of good in it. There&apos;s no way to phrase it at this high a level without sounding at least a little preachy, but I reckon doing tangible, moral, good - whatever that means for you - with your available time and skills is one of the more important bits of life. A critical metric of &apos;moral success&apos;, which should hold as much weight as all the usual metrics of &apos;success&apos; in life do.</p>
 
                     <p>More specifically, I do this for example by dedicating some assets to supporting local orgs and charities, spending a bunch of my time donating plasma, running a blood donor group, looking after sanctuary animals, etc.</p>
@@ -109,9 +111,9 @@ function About() {
 
                   <p>Open source, right to repair, animal advocacy, and &apos;medical philantropy&apos;.</p>
 
-                  <p>That last one seems to be the bounding category for donating blood (and is an excuse to say &apos;medical philantropy&apos;). I&apos;ve been donating blood and plasma since I was 18, and have given 75+ donations so far. I also run a blood donation group to do the the blood-for-sausage-rolls exchange with friends.</p>
+                  <p>That last one seems to be the bounding category for donating blood (and is an excuse to say &apos;medical philantropy&apos; :p). I&apos;ve been donating blood and plasma since I was 18, and have given 75+ donations so far. I also run a blood donation group to do the the blood-for-sausage-rolls exchange with friends.</p>
 
-                  <p>At my nearby animal sanctuary, I&apos;m a permanent volunteer looking after rescued farm animals.</p>
+                  <p>At my nearby animal sanctuary, I&apos;m a permanent volunteer looking after rescued farm animals. I love all the animals and take care of em all equally - don&apos;t get me wrong, I try not to play favourites among species - but I have a soft spot for the many goats I get to hang out with!</p>
 
                   <div className="video-container">
                     <video loop autoPlay muted src={vidGoatAffection} preload="auto" />
@@ -122,12 +124,14 @@ function About() {
                   <br />
 
                   <h2>How I started writing</h2>
+
                   <p>As a kid I had a DSi, and since I couldn&apos;t watch Youtube on it, little kid RJ would stay up late with a DSi and a stylus writing on <a href="https://scp-wiki.wikidot.com/">the SCP wiki</a> instead. Back then there were less than 2000s SCPs written and the community was pretty small, a far cry from how big the wiki is now!</p>
 
                   <p>I haven&apos;t (publically) made any fiction works since then. Aside from my blog here I&apos;d love to get back into more creative writing at some point, and share some worldbuilding I&apos;ve been quietly working on.</p>
                   <br />
 
                   <h2>What&apos;s with all the foxes?</h2>
+
                   <p>They&apos;re clever and fluffy dinguses.</p>
 
                   <img style={{ maxWidth: '512px', width: '100%' }} src={imgFoxCroissant} alt="A close-up photograph of a fox kit curled up asleep in a ball on some grassy sand, in a sunny environment. Photograph by Artur Rydzewski." />
