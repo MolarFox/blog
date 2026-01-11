@@ -78,7 +78,7 @@ function About() {
                 <div className="post-content">
                   {/* writing an about me is hard dude. who even am i */}
 
-                  <h5>G&apos;day! I&apos;m RJ / Molar, welcome to my blog!</h5>
+                  <h1>G&apos;day! I&apos;m RJ / Molar, welcome to my blog!</h1>
 
                   <img style={{ maxWidth: '600px', width: '100%' }} src={imgRjNitroCliffrock} alt={"A photograph of me and Nitro, my dog, on a hike. We're facing away from the camera, atop a big rock seen in the foreground. In the background is a nice landscape of grassy mountains and misty skies, with a slight bokeh effect. Photograph by Rex Rh0vs."}/>
 
