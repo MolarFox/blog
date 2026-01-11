@@ -113,7 +113,7 @@ function About() {
 
                   <p>That last one seems to be the bounding category for donating blood (and is an excuse to say &apos;medical philantropy&apos; :p). I&apos;ve been donating blood and plasma since I was 18, and have given 75+ donations so far. I also run a blood donation group to do the the blood-for-sausage-rolls exchange with friends.</p>
 
-                  <p>At my nearby animal sanctuary, I&apos;m a permanent volunteer looking after rescued farm animals. I love all the animals and take care of em all equally - don't get me wrong, I try not to play favourites among species - but I have a soft spot for the many goats I get to hang out with!</p>
+                  <p>At my nearby animal sanctuary, I&apos;m a permanent volunteer looking after rescued farm animals. I love all the animals and take care of em all equally - don&apos;t get me wrong, I try not to play favourites among species - but I have a soft spot for the many goats I get to hang out with!</p>
 
                   <div className="video-container">
                     <video loop autoPlay muted src={vidGoatAffection} preload="auto" />
