@@ -46,7 +46,6 @@ type AuthorTemplateProps = {
       website?: string;
       mastodon?: string;
       twitter?: string;
-      mastodon?: string;
       location?: string;
       profile_image?: any;
       bio?: string;

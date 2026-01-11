@@ -102,8 +102,8 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
     height = getImage(post.frontmatter.image)?.height;
   }
 
-  const ShortDate = (date: Date) => format(date, 'yyyy-MM-dd');       // 2018-08-20
-  const HumanizedDate = (date: Date) => format(date, 'dd LLL yyyy');  // 20 AUG 2018
+  const shortDate = (date: Date) => format(date, 'yyyy-MM-dd'); // 2018-08-20
+  const humanizedDate = (date: Date) => format(date, 'dd LLL yyyy'); // 20 AUG 2018
 
   const creationDate = new Date(post.frontmatter.date);
   const modificationDate = post.frontmatter.modificationDate ? new Date(post.frontmatter.modificationDate) : null;
@@ -227,14 +227,14 @@ function PageTemplate({ data, pageContext, location }: PageTemplateProps) {
                         ))}
                       </h4>
                       <div className="byline-meta-content">
-                        <time className="byline-meta-date" dateTime={ShortDate(creationDate)}>
-                          <b>{HumanizedDate(creationDate)}</b>
+                        <time className="byline-meta-date" dateTime={shortDate(creationDate)}>
+                          <b>{humanizedDate(creationDate)}</b>
                         </time>
                         {modificationDate && (
                           <>
                             <span className="bull">&bull;</span>
-                            <time className="byline-meta-date" dateTime={ShortDate(modificationDate)}>
-                              (updated {HumanizedDate(modificationDate)})
+                            <time className="byline-meta-date" dateTime={shortDate(modificationDate)}>
+                              (updated {humanizedDate(modificationDate)})
                             </time>
                           </>
                         )}
