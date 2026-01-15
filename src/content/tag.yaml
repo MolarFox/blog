@@ -1,3 +1,9 @@
-- id: Default
-  description: Default posts
+- id: Test
+  description: "Test posts. If you're seeing this in prod, I've made an oopsie :3"
   image: blog-cover.jpg
+
+- id: Office
+  description: Stories, tips, and guides to working in an office workplace
+
+- id: Psychology
+  description: Analysis of the meat-computer
