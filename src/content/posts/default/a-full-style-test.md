@@ -6,7 +6,7 @@ image: ../../covers/sc2_hyperion.jpg
 date: 2018-09-30T07:03:47.149Z
 modificationDate: 2018-10-30T07:03:47.149Z
 tags: [Test, Default]
-draft: true
+draft: false
 ---
 
 Below is just about everything you’ll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.
