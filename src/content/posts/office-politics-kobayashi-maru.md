@@ -19,7 +19,7 @@ Although the outcome will always be crushing defeat, the test aims to assess _ho
 
 Today's scenario falls firmly into this category, and we'll focus on identifying and responding to it through this lens.
 
-## Key Skills
+## Important Tools
 <!-- 
 - always be kind. Employ empathy. Look to apply benefit of doubt
     - And observe how employing it leads to the truth of the matter 
@@ -27,10 +27,42 @@ Today's scenario falls firmly into this category, and we'll focus on identifying
     - + show how often they will lead to bad places
 - More on skills rec
     - Eg: psychology of needs
+    - Eg: nonviolent communcation
+- Radical Candor
 -->
+The scenario we'll be exploring today is involves a people-problem in an engineering team. In it, a politically-savvy staff engineer with a personal animus is able to deftly convince the entirety of our organisation's leadership team to thoroughly discredit an engineer on their team.
+
+Unfortunately today, by "an engineer on their team", I mean me.
+
+As with pretty much every "people problems" scenario, there's a great deal of subtle and often unspoken - communications in body language, subtle changes in people's behaviours, furtive exchanges of words in office corridors, etc. 
+
+To avoid writing a whole novella on this scenario, our goal will be to analyse the most important bits only, with a laser focus on only the things we can learn from, and/or which help us analyse each situation and the motivations behind each person involved in them!
+
+Here are some key principles, mindsets, and descriptive handles we'll make full use of as we go into our analysis below:
+
+### Radical Candor
+asdf
+
+### Psychology of Needs
+asdf
+
+### Nonviolent Communication
+asdf
+
+### The Ladder of Interference
+asdf
 
 
 # Setting the Scene
+## The Org
+
+
+## The Team
+
+## The "Damian"
+
+## The Engineering Manager
+
 <!-- 
 - the org
 - the team
@@ -68,7 +100,7 @@ Today's scenario falls firmly into this category, and we'll focus on identifying
     - Signs of political attack, not genuine feedback
 -->
 
-# Favoured Current
+# Unbalanced Scales
 <!--
 - EM becomes frustrated (behind closed doors)
 - Sides more with Damian
@@ -155,13 +187,32 @@ Today's scenario falls firmly into this category, and we'll focus on identifying
         - eg: make sure the control remains with you 
 -->
 
-# Summary
+# Wrapping Up
  <!--
  - thank rexy, friends
     - mention help w/ neurospicy stuff
 -->
+## Summary
 
-# References
-<!-- 
-- TODO 
--->
+## Thanks
+I want to thank my friends for lending me their experience and advice, and for pulling me to come step outside and live life whilst I was in the thick of things. I especially want to thank my good mate Rex for all the 3am minecraft sessions talking through this stuff, and Gx and Tim for the quality advice on the neurospicy-perspective.
+
+A big shoutout goes to an old friend and then-fellow-EM who mentored me whilst I was finding my feet as a fresh engineering manager many years ago, whose career means he's not allowed to get a named shoutout. It's anonymity for you, bucko! This is the third or fourth rewrite of this blog post I've made in 6 months, and his recommendations on "Radical Candor" and "The Ladder of Interference" have given handles to concepts I was otherwise having trouble expressly concisely.
+
+And hey, not to be cheesy, thank you for reading!
+
+Have you faced a situation like this yourself? Are there things I didn't touch on, or you think I should've done differently? Are there other tools and resources you can recommend for dealing with situations of this category?
+
+I would love to hear your thoughts down below. 
+
+<details>
+<summary>References</summary>
+
+[1] “Our Approach: Kim Scott’s Feedback Framework.” Accessed: Jan. 17, 2026. [Online]. Available: https://www.radicalcandor.com/our-approach
+
+[2] K. Scott, Radical candor: be a kick-ass boss without losing your humanity, First edition. New York: St. Martin’s Press, 2017.
+
+[3] Asana, “The Ladder of Inference: How to Make Better Decisions [2025] • Asana,” Asana. Accessed: Jan. 17, 2026. [Online]. Available: https://asana.com/resources/ladder-of-inference
+
+[4] “Wiki - Ladder of Inference.” Accessed: Jan. 17, 2026. [Online]. Available: https://sites.google.com/a/uvei.org/uvei-wiki/ladder-of-inference
+</details>
