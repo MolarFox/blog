@@ -434,6 +434,7 @@ export const PostFullContent = styled.section`
     padding: 6px 12px;
     /* border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid; */
     border: ${lighten('-0.01', colors.whitegrey)} 1px solid;
+    text-align: left !important;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -509,6 +510,7 @@ export const PostFullContent = styled.section`
     table td {
       /* border: color(var(--darkmode) l(+8%)) 1px solid; */
       border: ${lighten('0.08', colors.darkmode)} 1px solid;
+      text-align: left !important;
     }
 
     .kg-bookmark-container,
