@@ -160,7 +160,7 @@ Personal problems happen - it's not a function of who you are or how you operate
 What can be most dangerous is someone with an opaque reason to act with hostility towards you, who knows how to express those feelings politically!
 
 ### A Document of "Feedback"
-In our scenario, we'll talk about "Damian", who expresses this as a fairly hefty written document of "feedback" that is first escalated to our manager, and then later shared with us. There importantly aren't any early warning signs of this document, and we don't hear from Damian about his thoughts and feelings before this goes up to our manager.
+In our scenario, we'll talk about "Damian" the staff engineer, who expresses this via a fairly hefty written document of "feedback" that is first escalated to our manager, and then later shared with us. There importantly aren't any early warning signs of this document, and we don't hear from Damian about his thoughts and feelings before this goes up to our manager.
 
 We'll observe that the document is split into a few sections, each named after a company value, and contains some pretty pointed language. There are quotes from it like "I'll be blunt with this one...", "You wasted valuable time trying to...", and "I'll end this with two questions. \<_2x rhetorical questions follow_>". 
 
@@ -168,6 +168,9 @@ With titles like "Respect", "Trust", and "Complexity" (a topical phrase at that 
 - Tends to center around the theme of feeling disrespected / not trusted
 - Links to discussions that Damian felt were disrespectful or dismissive of his thoughts
 <!-- TODO: ^^ make sure we analyse these pretty benign discussions, mention how Damian does not like being challenged -->
+
+As an aside that will became important later, there's a single line in the document that starts with the phrase "You are a good engineer, however...".
+<!-- TODO: Ensure we link back to this -->
 
 Even without substantial vision we can tell that Damian is quite unhappy. We can also make use of the assumptions that because we've had a good working relationship with Damian for about a year, he must be giving sincere feedback.
 
@@ -201,6 +204,61 @@ And on top of this of course is how the document seems intentionally geared towa
 Begin with the assumption that a document like this is sincere, and both question a document like this with things that feel inconsistent + do your level best to see if you can find answers that still align with that idea of sincerity. If you can, that's great, and if you can't, you should recognise that special attention is needed.
 
 Now of course, this can be very hard to see in the moment, especially in a case like this where it comes quite suddenly after what feels like an otherwise positive working relationship. The sudden-ness is fairly expected, and usually a result of built up frustrations and animosity finally having an outlet (in this case, they can be expressed under the guise of professional feedback).
+
+
+## How Passive Leaders Tend to Approach Tough Situations
+
+### 
+With the benefit of hindsight it's a lot easier to use our tools and see the true intent behind a document like this being created about you, but in the moment we'll usually not have this level of articulation about what we're facing. Thoughts we might have to work with are:
+- We've received some pointed and unexpected feedback
+- We aren't able to find anybody that corroborates the feedback
+- Our attempts to try to sincerely action the feedback are usually being met with chastisement
+
+Overall, the feeling we may have by now is just that something seems "off".
+
+A natural next action may be to reach out to our manager both for help with dealing with the situation, and for a second opinion on the gut feeling that we're being treated fairly.
+
+###
+Over the next 6 weeks or so, Damian has booked out every free slot in our calendar with mandatory 1 on 1 pairing sessions with him. 
+
+We initially see these pairing sessions as opportunities for close pairing with Damian, and a chance to directly demonstrate that we're improving on the things we've been told to improve on. The fact that Damian wants to pair every spare minute of each day feels very unusual at an organisation where you've otherwise been able to operate freely however. Moreover, you note that any attempt to try and demonstrate improvement on the criticisms given to you in the document are met with the response from Damian that, in his eyes, you haven't made any progress towards improving, and/or that you are trying to subvert his feedback.
+
+In our next few one-on-ones with our manager, over those weeks, we talk more about how we got written up and the contents of the document. We highlight the language, and our difficulty both in being able to find any other perspectives with similar observations, as well as in actioning the feedback that doesn't cause Damian to react with more frustration. We also talk about those experiences with Damian, and how it's feeling increasingly uncomfortable to work with them, and increasingly apathy-inducing to be told constantly that you are failing to implement their feedback, with no further detail on what Damian actually wants you to do to gain such an approval from them.
+
+Your manager listens attentively. But does not seem to feel anything is wrong. They mostly just echo Damian's sentiments without adding much of their own opinions, telling you to try harder to implement the feedback you've been given, and to stop trying to subvert it. 
+
+At one stage your manager spends a 30 minute one-on-one explaining how dealing with feedback can be difficult, and tells stories from their career about how feedback is essential for personal growth. You feel like they're trying to connect with you... but also notice that that they're not directly addressing any of your questions, nor trying to assess the situation for themselves.
+
+In the moment, unfortunately, we make the interpretation that we are at fault, and that this is a deep personal failing of ours. 
+
+At the time, we still had a lot of goodwill for our staff engineer, and could go to them for assistance in the past. We also recognise the authority of our manager. We use the historically-evidenced assumptions that these are two people we can trust, and whose thoughts mean a lot.
+
+We reach the conclusion that we must indeed be taking feedback poorly. It must be us at fault, right? We've tried our best to improve, yet nothing seems to be working, and we're not being told what we actually need to do to be seen as applying the feedback. Are we fundamentally flawed? 
+
+The term "gaslighting" comes to mind here. We're grappling with the dissonance between what we're observing, and what we're being told.
+
+###
+With the benefit of a year of reflection between these events and this blog post, we can understand what happened a little better.
+
+We should first talk about the passive nature of our manager's leadership. They are unable to deal with difficult situations, and tend to avoid engaging closely with the team. This is not that obvious / severe during normal team operations, but becomes problematic when there is any conflict or difficult situations to deal with.
+
+This is important as it contextualises why our manager so quickly opts to parrot Damian's words and avoid investigating the issue further. They may recognise that something is wrong, but their instinct tells them that dealing with tough situations is difficult - take the path of least resistance to make it go away. Instead of investigating the issue, just side with the higher ranked person in the matter. 
+
+This also manifests the interesting interaction in which they told stories from their career for the duration of a one-on-one. This is a common thing that happens with people who often communicate in the 'Ruinous Empathy' style <!-- Link to radical candor -->.
+
+What they were likely trying to communicate is "I don't agree that you are being treated unfairly, and I'm frustrated that you are still not able to improve on the feedback you've been given. However, this is a difficult conversation. In ruinous empathy, people will often speak in a very indirect way in an effort to avoid upsetting anyone with tough conversation, but as a result are unable to be direct about their thoughts.
+
+As we'll see later, this path-of-least-resistance approach to things like conflict resolution pays dividends in management, from a political standpoint. Highlighting that there was conflict on your team, but that you quickly identified the issue and dealt with it to remove the conflict looks very good. It does not actually resolve conflict, but supresses it well enough. Senior leadership and c-suite rely on managers to learn if issues in teams are resolved properly, and as a result, the narrative can be fully controlled by a manager.
+
+###
+
+With the full-time pairing sessions, we come to recognise that these sessions are intended to be remedial, rather than collaborative - eg: the intention is to demonstrate outwardly that you are incapable of performing on your own, and need this level of micromanagement to function. 
+
+The only thing stronger (in the context of destroying your reputation in an office) than demonstrating that you need some sort of remedial guidance, is that you are not improving even with this remedial guidance. The narrative passed up by Damian, via our manager (who does not question Damian), to senior leadership is that Damian is doing everything he can to help us improve, but alas, we are just not improving.
+
+
+## 
+
 
 # Dealing with the Aftermath
 
