@@ -257,7 +257,49 @@ With the full-time pairing sessions, we come to recognise that these sessions ar
 The only thing stronger (in the context of destroying your reputation in an office) than demonstrating that you need some sort of remedial guidance, is that you are not improving even with this remedial guidance. The narrative passed up by Damian, via our manager (who does not question Damian), to senior leadership is that Damian is doing everything he can to help us improve, but alas, we are just not improving.
 
 
+## Signs of a Political Manoeuvre
+<!-- TODO: manoeuvre is right word? Also make sure this links to intro when complete -->
+We touched briefly on how a major aspect of politics in general is the use of certain communications and procedures to achieve certain side-effects, sometimes at odds with the surface-level goal of that communication or procedure.
+
+One very important thing to do in a situation like this is to be documenting everything, so that the contradictions that arise from this become very apparent.
+
+### Inconsistent Feedback
+A way that this manifests in our example is how "feedback" given tends to be inconsistent.
+
+The first instance is the document Damian gives escalates to our leadership. It can be summarised in a number of points, and the point Damian emphasises as most important is "don't talk over / interrupt Damian".
+
+The second instance takes some time to be collected in writing, and comes from our manager after we request enough times to gain clarity on what we actually need to work on. In this instance, all the feedback is completely different to Damian's document, mostly drawing from genuine but far less severe feedback given well before the first incident with Damian. The point emphasised as most important is now old feedback, "don't take on too many tasks at once". Notably, it takes some time before our manager seems prepared to give us these points, and they insist on sharing them verbally and having us write them, rather than giving it to us in writing.
+
+Later on, when we are able to leave the team and reach out to our old manager again to collect clarity on the feedback document again, and this time, after some waiting, are able to get this in writing from that manager. The feedback has once again changed! Some points are new, some are not, and now the most emphasised point is "you should have repaired relationships with Damian before abandoning the team". This is in reference to Damian not feeling that we were addressing their feedback in our encounters with him, like we've discussed up above. The fact that there was apparently some unresolved conflict / implication of mismanagement reflects very poorly on our manager, hence their added interest in this latest point.
+
+### 
+Genuine feedback can and should change over time - as you grow, the things you can improve on will change. However, this change should be accompanied by the observation that you have indeed improved on past feedback.
+
+One easy contradiction we should be observing here is that:
+- We are told we're apparently not making any progress on addressing Damian's feedback
+- Whenever we ask for clarity on how / what to do to address that feedback, it changes every time
+
+If trying to action this as though it were sincere feedback, as I naively was at that time, we would be left completely lost and confused!
+
+But again we need to apply our vision. Recognise:
+- Damian's intent with all of this was to disparage you, and make their displeasure with you well known
+- Your manager's intent is to make this situation go away quickly, as it reflects poorly on them the longer it persists without resolution
+    - Since they have committed to backing Damian, they are locked-in to continuing to doing so
+
+The important observation is that the feedback itself is not the point - there just needs to be something that resembles feedback, which can be shown to senior leadership as evidence that we are failing to address.
+
+###
+In our case here this is inconsistent feedback, but the bigger takeaway is to look for contradictions like this, and employ your understanding of the goals of each person involved to understand what the actual intention of actions like these are.
+
+Another way to look at this is "if I were genuinely providing feedback to someone" (for example), and they were having trouble actioning it, what would I say in subsequent followups?
+
+It would surely be to re-iterate the feedback, perhaps providing extra clarity on points they are having trouble with. If the goal were to actually help the person you're giving feedback to, it makes no sense to be changing it every time - this can then lead you to further awareness of what is happening.
+
+
 ## 
+
+
+<!-- also note reluctance to put things in writing -->
 
 
 # Dealing with the Aftermath
