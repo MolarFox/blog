@@ -360,7 +360,6 @@ There seems to be little point in reaching out to HR at this stage - without man
     - spending a long time before being able to process and shake this feeling. 
     - eg: natural response if staff and EM give you feedback, tell you you're at fault, is to believe you're at fault
     - help with analysing the situation. understanding it 
-- 
 -->
 
 

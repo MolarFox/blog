@@ -218,7 +218,7 @@ Overall, the feeling we may have by now is just that something seems "off".
 
 A natural next action may be to reach out to our manager both for help with dealing with the situation, and for a second opinion on the gut feeling that we're being treated fairly.
 
-###
+### asdf
 Over the next 6 weeks or so, Damian has booked out every free slot in our calendar with mandatory 1 on 1 pairing sessions with him. 
 
 We initially see these pairing sessions as opportunities for close pairing with Damian, and a chance to directly demonstrate that we're improving on the things we've been told to improve on. The fact that Damian wants to pair every spare minute of each day feels very unusual at an organisation where you've otherwise been able to operate freely however. Moreover, you note that any attempt to try and demonstrate improvement on the criticisms given to you in the document are met with the response from Damian that, in his eyes, you haven't made any progress towards improving, and/or that you are trying to subvert his feedback.
@@ -237,7 +237,7 @@ We reach the conclusion that we must indeed be taking feedback poorly. It must b
 
 The term "gaslighting" comes to mind here. We're grappling with the dissonance between what we're observing, and what we're being told.
 
-###
+### asdf
 With the benefit of a year of reflection between these events and this blog post, we can understand what happened a little better.
 
 We should first talk about the passive nature of our manager's leadership. They are unable to deal with difficult situations, and tend to avoid engaging closely with the team. This is not that obvious / severe during normal team operations, but becomes problematic when there is any conflict or difficult situations to deal with.
@@ -250,7 +250,7 @@ What they were likely trying to communicate is "I don't agree that you are being
 
 As we'll see later, this path-of-least-resistance approach to things like conflict resolution pays dividends in management, from a political standpoint. Highlighting that there was conflict on your team, but that you quickly identified the issue and dealt with it to remove the conflict looks very good. It does not actually resolve conflict, but supresses it well enough. Senior leadership and c-suite rely on managers to learn if issues in teams are resolved properly, and as a result, the narrative can be fully controlled by a manager.
 
-###
+### asdf
 
 With the full-time pairing sessions, we come to recognise that these sessions are intended to be remedial, rather than collaborative - eg: the intention is to demonstrate outwardly that you are incapable of performing on your own, and need this level of micromanagement to function. 
 
@@ -288,7 +288,7 @@ But again we need to apply our vision. Recognise:
 
 The important observation is that the feedback itself is not the point - there just needs to be something that resembles feedback, which can be shown to senior leadership as evidence that we are failing to address.
 
-###
+### asdf
 In our case here this is inconsistent feedback, but the bigger takeaway is to look for contradictions like this, and employ your understanding of the goals of each person involved to understand what the actual intention of actions like these are.
 
 Another way to look at this is "if I were genuinely providing feedback to someone" (for example), and they were having trouble actioning it, what would I say in subsequent followups?
@@ -296,15 +296,42 @@ Another way to look at this is "if I were genuinely providing feedback to someon
 It would surely be to re-iterate the feedback, perhaps providing extra clarity on points they are having trouble with. If the goal were to actually help the person you're giving feedback to, it makes no sense to be changing it every time - this can then lead you to further awareness of what is happening.
 
 
-## 
+<!-- Maybe include a section here about Damian using your ideas? Politically profiting, gaining manager support etc -->
+
+## When False Pretenses Begin to Drop
+So far we've looked at how animosity can be communicated indirectly in a work environment, and the dangers posed by someone who is particularly politically savvy. Another aspect of operating with invdividuals like this however is that under the veneer of goodwill they operate under, the volatility that drives them may sometimes come to the surface.
+
+### asdf
+In cases where you are on the receiving end of a situation like this, remember to apply your vision and recognise that there is an expected response that the Damian you are facing is playing for. 
+
+Thus far we've dealt with some tough and anxiety-inducing situations, not least of which is we've had to come to work and spend all of our time in close quarters with Damian - throughout it however, we've kept our cool, and rolled with each encounter as it's come. We haven't expressed any frustration, we haven't tried to leave the team or avoid Damian, and we haven't actually rejected / avoided taking onboard any feedback we've been given by Damian, no matter how unreasonable.
+
+In situations where someone is trying to incite a response from you, providing them with nothing can be infuriating to them.
+
+### The situation
+We come back from a week of company holidays, and join the scheduled 2 hour 1 on 1 meeting with Damian between standup and lunch, as has become our recent routine. The tone of the meeting seems off from the moment you join however. Damian makes no attempt at his usual pre-meeting small talk, and the usual forced smile he wears is decidedly absent.
+
+What follows is something that can be best described as a lecture that evolves into a full blown rant, as Damian becomes increasingly emotionally compromised. 
+
+Any pretense of Damian concealing their feelings through "feedback" or fake good intentions are gone now. They spend a full 40 minute duration talking about their struggles in their career and life - a past divorce, times they experienced discrimination, having to "ride the short bus [sic]" as a child, etc. The message was as direct as could be this time, not much analysis needed. Damian explicitly expresses that we have a long way to go before we're at his level, because we didn't been through all the hardships in life that he had to.
+
+The line of being unprofessional was crossed a long time ago - the tirade ends in some very unkind words, and a lot of ad hominem that I won't repeat here.
+
+Only 40 minutes of the 2 hour meeting window are necessary, and the call ends abruptly when Damian runs out of things to say, and observes that we aren't retaliating to any of his dialogue.
+
+We walk away from our desk and sit on the couch downstairs, not powering on the TV but staring into it anyway for a little bit. With mind to brevity in a blog post like this, it's difficult to fully express how uncomfortable much of the encounters with Damian like this were - it's a unique feeling of hopelessness that I hope you never have to experience, sitting through such things knowing that you have no support from your manager. I've persevered through some pretty rough things in my career so far, but this particular encounter definitely takes the cake for the absolute worst!
 
 
-<!-- also note reluctance to put things in writing -->
+### asdf
+The ladder of inference and the ability to use vision are tools I hope for you to use to derive the true meaning and intent from actions where those things are non-obvious. In a case like this however, where everything is completely overt, you aren't going to need it.
+
+A takeaway to remember here is that as awful as a situation like this is, it is often quite a good outcome for you. It's a blunder on Damian's part, as you now have something tangible that you can escalate to your manager, and to HR, in a way that is hard to ignore. 
+
+The way that you can make this happen is simply by remaining calm, analysing each situation properly, and not reacting on emotion. Importantly - your takeaway from this article should not be to be passive, or that these situations just happen and "that's life". It is that you should take action, but should do so deliberately and carefully, to ensure you can't be dismissed or minimised further. You must look out for yourself! But you need to do so logically, not emotionally.
 
 
-# Dealing with the Aftermath
 
-
+<!-- TODO - signpost kobayashi maru in more places -->
 
 <details>
 <summary>References</summary>
