@@ -330,6 +330,16 @@ A takeaway to remember here is that as awful as a situation like this is, it is 
 The way that you can make this happen is simply by remaining calm, analysing each situation properly, and not reacting on emotion. Importantly - your takeaway from this article should not be to be passive, or that these situations just happen and "that's life". It is that you should take action, but should do so deliberately and carefully, to ensure you can't be dismissed or minimised further. You must look out for yourself! But you need to do so logically, not emotionally.
 
 
+## Why A Lack of Manager Support Leads to a Kobayashi Maru
+
+
+## The Cult of "Good Vibes"
+
+## Looking After Yourself
+
+## How Should You Approach the Aftermath
+
+
 
 <!-- TODO - signpost kobayashi maru in more places -->
 
