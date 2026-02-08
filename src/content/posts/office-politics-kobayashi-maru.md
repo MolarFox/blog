@@ -14,13 +14,6 @@ tags: [Office, Psychology]
 - My credentials (11 yr swe etc)
  -->
 
- <!-- 
- Define politics eg:
- Politics is the product of using tools and systems that are meant to do good, for other means
-
- Throw in a couple of examples
-  -->
-
 ## A Kobayashi Maru?
 A no-win situation - a test! In the Star Trek, The Wrath of Khan, we see Starfleet cadets undergo this test - commanding a simulated ship towards inevitable, crushing defeat in an unwinnable scenario.
 
@@ -68,6 +61,7 @@ We can apply this anywhere and to any action + person, but make sure to particul
 
 If this is all feeling a little too theoretical so far, don't worry, things only get more practical from here!
 
+<!-- Link vision to chess -->
 
 ### Summary of Tactical Vision
 
@@ -75,7 +69,27 @@ Being able to think this way is a key skill nobody will tell you about, but that
 
 Doing this can feel pretty cynical, especially early on in your career when it's note yet based on lived experience to make it feel justified. The skill behind the skill here is being able to do these analyses whilst keeping your enjoyment of work, your sanity, and (importantly) your moral compass intact!
 
-We're now ready to dive into our main scenario.
+We're now ready to dive in.
+
+# Meet the Cast
+In this scenario, we're an engineer / <abbr title="Individual Contributor. Eg: a standard employee with no direct reports">IC</abbr> on a moderately sized software engineering team.
+
+We have had a great working relationship with our team since joining the org a year ago, and have already been able to successfully tech-lead some larger projects. 
+
+We're gearing up for a promotion, and have done our due diligence in making sure managers and other engineers we've worked with feel we're ready, and don't see any critical feedback that may hold us back. 
+
+The two people we'll focus on are on our team, being:
+- **"Damian" - our staff software engineer**
+    - A well liked engineer in the org
+    - Someone we've worked closely with, and who we trust as a mentor
+
+- **"Penny" - our manager**
+    - A manager known in the org for having a people-first mindset
+    - Someone we've also come to trust
+    - Adopts a laissez-faire leadership style 
+        - Prefers a light touch approach, encouraging ICs to act on initiative and be largely self-governing
+
+Up til this stage the team has had no major internal conflicts or issues.
 
 # Receiving Unusual Feedback
 
