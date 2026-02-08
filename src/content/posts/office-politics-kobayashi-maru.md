@@ -77,7 +77,7 @@ In this scenario, we're an engineer / <abbr title="Individual Contributor. Eg: a
 We have had a great working relationship with our team since joining the org a year ago, and have already been able to successfully tech-lead some larger projects. 
 
 We're gearing up for a promotion, and have done our due diligence in making sure managers and other engineers we've worked with feel we're ready, and don't see any critical feedback that may hold us back. 
-
+ 
 The two people we'll focus on are on our team, being:
 - **"Damian" - our staff software engineer**
     - A well liked engineer in the org
@@ -92,6 +92,99 @@ The two people we'll focus on are on our team, being:
 Up til this stage the team has had no major internal conflicts or issues.
 
 # Receiving Unusual Feedback
+## Situation
+Things begin suddenly, but subtly. 
+
+We receive an invite to a meeting with Damian, where he walks us through a fairly long document of critical feedback he has for us. It seems this document has made it to our manager, and their senior manager before it reaches us. 
+
+We make some key observations:
+- The language of the document seems quite charged. It seems Damian is pretty frustrated with us
+    - Particularly, there seems to be a lot of rhetoric in the expression
+    - eg: "why did you feel <x> was a good idea?"
+- The document broadly fits into categories of lacking trust, lacking respect, and building overcomplexity
+    - The latter being a contentious topic amongst leadership at our org
+- There seems to be a _lot_ of links to your messages in the org's slack, peer reviews, etc for evidence, spanning almost 6 months ago
+- The feedback in the document is novel to you / hasn't been mentioned to you before
+- Damian's heavily highlighted that his most important feedback in the document is in the respect section, and is "don't talk over others"
+
+## Apparent Observations
+You've read the title of this blog post, so you know things are about to go very wrong from here :p.
+
+For now though, we can condense our thoughts to:
+- We've received some sudden and unexpected feedback
+- There seems to be a sharp change in how Damian is communicating with us, and the contents of this document are very important to him
+- Something feels off, and we're feeling pretty anxious about it
+    - At this point, it's likely just the sudden-ness and charged nature of the document
+
+You should react the same way here that you normally would - thank Damian for the feedback, and look to implement it. Recognise as well how important this seems to be to Damian, based on how they've written and shared this document.
+
+## Deeper Observations
+We'll do more application of tactical vision once we've collected a little more info. Right now though, we don't necessarily have any reason to suspect any political plays are happening. 
+
+### Don't be Overly Suspicious
+You shouldn't be immediately suspicious / questioning of everything that happens to you at work, and getting visceral feedback like this should be taken an opportunity for you to self-reflect and self-improve. 
+
+Unexpected or unusual feedback may just be a sign that someone's identified an aspect of you that either nobody else has seen yet, or nobody else has told you. 
+
+There are things that feel off about how this feedback has come to us however. On top of the initial observations, you may see other things - like the fact that some of the critical feedback you've gotten relates to things people otherwise widely praise as your strengths. 
+
+
+### More Generally
+<!-- TODO: Maybe put this later? Focus on the not being suspicious part -->
+The first part of a situation like the one we'll explore can manifest in different ways. Here, it's a feedback document, but it could also be a comment directed at you during a team ritual, or a public comment about a project you are leading / work you have delivered.
+
+What tends to be consistent is:
+- It's sudden
+- It's pointed
+- It's usually delivered publicly and visibly, rather than privately
+
+All of these early warning signs will likely naturally feel a little unusual to you.
+
+No matter how it manifests, be humble and gracious in dealing with the situation. but also, don't dismiss the gut feeling you may have that something is amiss.
+
+## Implementing Feedback
+### Understand
+To implement feedback, you must first understand it. If things don't make total sense to you, the right things to do are:
+
+- Ask the person who gave you the feedback for more clarity
+    - Be specific in wanting to know what they would like to see you do to implement / improve on it as well
+
+- Ask others that that you work with for their thoughts
+    - This is often a good way to collect perspectives that people may not otherwise be forthcoming to you about
+
+### Implement if You Can
+Once you understand what your area of improvement is and how to tackle it, you can do so with impunity.
+
+### Discard Otherwise
+in a healthy interaction the goal of feedback is to **help you improve**.
+
+Not all feedback will necessarily be useful or relevant to you on that front, for a variety of possible reasons. So long as you have taken the time to fully understand the feedback, and self-reflect on it, it's ok to discard feedback when it doesn't help you.
+
+Either way, thank people for the act of delivering feedback to you. 
+
+## Corollary on Feedback
+Are you tired of the word "feedback" yet? Me too haha. We'll move on soon.
+
+Sometimes the only utlity feedback has, is to help you interact more smoothly with one specific person. This is ok! Recognise that:
+- It may not have more broader use for you
+- asdf
+
+<!-- ### Escalation to Our Manager
+Damian is someone who has acted in our best interests to help us in the past, and it's possible that they just wanted to give Penny (our manager) a heads up about their thoughts, rather than escalate necessarily. 
+
+### Delayed Feedback
+It seems unusual that so much has been "uncovered" (as Penny will describe it) about us now, and not earlier. Given the volume of examples however, it seems that Damian has either been collecting thoughts for a while, or has gone back pretty far in conversation histories recently. 
+
+Being someone who likes to appear approachable, it seems most likely at this stage that Damian just didn't want to rock the boat in the past.
+
+### Emotionally Charged Language
+
+
+
+### Findings
+Even though we haven't identified any contradictions, we have been able to target and explain away some of the bits that feel unusual to us at this stage. This alone is useful
+-->
+
 
 # Risks of Lacking Manager Support
 
