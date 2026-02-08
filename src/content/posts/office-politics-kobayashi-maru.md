@@ -41,27 +41,25 @@ These are questions you can ask about _a person_.
 
 <!-- TODO - tailor this more to Qs actually used in main article later -->
 
-- What does this person want in the short term? 
-- What drives this person in the longer term? 
-- What are they prepared to sacrifice to get what they want? (negotiable factors)
-- What will they not allow to be taken from them? (non-negotiable factors)
-- How does this person typically operate and communicate?
+- What does this person want in the **short term**? 
+- What drives this person in the **longer term**? 
+- What are they **prepared to sacrifice** to get what they want? (negotiable factors)
+- What will they **not allow to be taken** from them? (non-negotiable factors)
+- How does this person **typically operate** and communicate?
     - How does this change in different circumstances, or when specific people are present?
-
-
 
 ### Questions to Interrogate Actions
 These are questions you can ask about _an action_ a person has made.
 
 <!-- TODO - tailor this more to Qs actually used in main article later -->
 
-- What is the direct impact of this action?
-- What else changes due to this action?
-- Can this action be reversed easily?
-- Does anything else implicitly need to happen now?
-    - Who needs to do that thing?
-    - Are they able easily back out of what they need to do, if they need to?
-- How can this action be perceived by different people?
+- What is the **direct impact** of this action?
+- **What else changes** due to this action?
+- Can this action **be reversed easily**?
+- Does anything else **implicitly** need to happen now?
+    - **Who** needs to do that thing?
+    - **Are they forced** to do what they need to do, or can they decline?
+- How can this action **be perceived** by different people?
 
 ### Lining Up Intent and Action
 Once we've finished understanding what the person we're looking at wants, and what their actions can get them, we can connect the dots between the two.
@@ -78,3 +76,15 @@ Being able to think this way is a key skill nobody will tell you about, but that
 Doing this can feel pretty cynical, especially early on in your career when it's note yet based on lived experience to make it feel justified. The skill behind the skill here is being able to do these analyses whilst keeping your enjoyment of work, your sanity, and (importantly) your moral compass intact!
 
 We're now ready to dive into our main scenario.
+
+# Receiving Unusual Feedback
+
+# Risks of Lacking Manager Support
+
+# Recognising Inconsistencies
+
+# When Things Go Beyond Politics
+
+# Considerations in the Aftermath
+
+# Summary
