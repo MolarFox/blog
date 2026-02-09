@@ -14,6 +14,9 @@ I'm RJ, and I've been in software for 10 years - mostly as an <abbr title="Indiv
 We're going to walk through the mindset you'll use to recognise the mechanics of some of the more exasperating experiences almost all of us have to go through in our careers, how you can use that understanding to make good decisions, and how to keep yourself sane through it all.
 
 # What Does "Politics" Actually Mean?
+
+<!-- RUBY: illustration of politics suave thingo here TODO describe -->
+
 Politics is all about power dynamics in an organisation. The connotation is always negative, and when people refer to it in conversation, it almost always is about the kind of political plays that disingenuously invoke some normal process or communication for its side-effects.
 
 Scheduling an important sync-up meeting when someone is planning to be on personal leave, in order to make them look bad for their absence, is one common example. Loudly praising someone to indicate they deserve to lead an important project, quietly knowing that the project is likely to fail soon, is another.
@@ -84,6 +87,7 @@ The skill behind the skill here is being able to do these analyses whilst keepin
 Let's get into some examples. These are some common Qs I've worked through with my junior engineer mentees in the past.
 
 
+
 # Why Is Nothing Happening About My Situation?
 We're going to dive right into one of the most brutal things you may go through.
 
@@ -132,13 +136,103 @@ The short answer to why nothing may be happening about your situation may be tha
 This is just an example - given the information available to you, you can use the guiding questions to trace incentive in a more specific way to your own circumstances.
 
 ### "That's life"
-In this post, something I hope you take away is that understanding situations you are in is always the most important first step - making decisions comes later!
+As an aside, I want touch on here is the sentiment of "that's just life" you are likely to hear often in your career. It's a coping statement - that even if things are a little unfair sometimes, there are issues that just aren't worth pursuing. This is part of the advice that I give you via this post as well.
 
-Sometimes that decision may be to do nothing for now. Acknowledging that your only options carry too much risk of making the situation worse, and doing nothing is the best choice. In this part, building understanding is the only concern we have for now. We'll talk about making decision later.
+When you are told this, it is usually told with good intentions by someone with lived experience - in the case of our fake scenario here, our manager may want to contribute to our personal development by bracing us for the realities of a workplace.
 
-One thing I want touch on here is the sentiment of "that's just life" you are likely to hear often in your career. It's a coping statement - that even if things are a little unfair sometimes, there are issues that just aren't worth pursuing. This is part of the advice that I give you via this post as well.
+_However_ - when this sentiment comes from someone in your leadership team who _does_ have the ability to pursue and deal with that issue, it can carry different connotations. Just be mindful that it's common for sentiments like these to be used to justify inaction.
 
-When you are told this, it is usually told with good intentions by someone with lived experience - in the case of our fake scenario here, it's good advice to brace young engineers for the reality of the work.
+Next up we'll talk about what you can do about that.
 
-_However_ - when this sentiment comes from someone in your leadership team who _does_ have the ability to pursue and deal with that issue, it's a negative sign. Just be mindful that it's common for sentiments like these to be used to justify inaction.
+
+
+# How Can I Defend Myself?
+Whoa there, that's some strong verbage there - "defend" yourself! Are you being attacked?
+
+This heading is very intentional - it's the exact way that a mentee of mine phrased it to me. Her phrasing is totally valid, but it is a good idea to be aware of the implications of a word like "defend" - and whether you want to draw attention to those implications.
+
+This'll be an important idea in actually answering the question being asked here ;).
+
+## Facts are Your Friend
+The way you defend yourself is with evidence! That's basically it, we can just end the section here really.
+
+We've talked about how you can reduce big, messy, often emotional workplace conflicts into more objective form through this idea of incentive traceability. Now we use the same principles to put a spotlight on what we're facing.
+
+### How to Think About Collecting Evidence
+Let's flip the scenario for the rest of this section and imagine that you are the manager, looking after an engineer facing a tough and one-sided situation of some sort. Maybe their house is being bombarded from orbit by a coworker, for instance.
+
+You want to make a case on their behalf to your leader, and/or to HR, that something is amiss.
+
+**What do you need to do so?**
+
+It's a worthwhile thought exercise for you to consider. Two important things are:
+1. Clear, objective, **primary** evidence
+    - Primary evidence can be conversations in a work messaging platform, emails
+    - Meeting notes or notes that you've taken from certain interactions are useful, but less so
+    - Anecdotal accounts are useful too, but much less so
+
+2. Witnesses, or people who will vouch for your engineer
+    - These are people who you should be able to call on to support the case you're making
+    - We'll be making sure that these people agree with your engineer's experiences
+
+Thinking from the perspective of the manager backing you up is important, as they need to be able to demonstrate the things saying without the engineer themselves needing to be there. 
+
+When you are the engineer, think about what conversations your manager will need to have on your behalf and prioritise evidence that will be useful there.
+
+
+## Feeling Count Too
+Primary evidence counts for a lot, but so too does the impact that this situation has had on our engineer.
+
+The way we'll have to phrase this is something to the effect of "`<Thing>` has been happening, as we can see from `<evidence>`, and it has had `<effect>` on our engineer."
+
+## What if Everything Has Been Happening Verbally?
+This is pretty common. But there is a trick!
+
+Whilst you can and certainly should take notes after every verbal encounter during a situation where you are feeling attacked, those notes by themselves don't mean too much.
+
+This is because they're made by you - it's not primary evidence, and it's likely to be biased.
+
+The way you counteract this is like so:
+1. Take notes after every meaningful verbal encounter
+2. Put those notes into an email 
+    - even where Slack / Teams is available, email is better as it's not easily editable
+3. Send it to the person you've just had a conversation with, asking them if it all looks correct
+
+There are a few advantages to this:
+- Instead of just being notes of a conversation, it's now notes that are implicitly agreed on by the person you spoke to
+    - You can expect that you won't actually get a reply. The point is that you've provided an opportunity for your written record of the conversation to be challenged
+
+- Just sending notes is an inherently neutral thing to do. You could send confirmatory meeting notes to anyone you meet with
+
+- If the person you're speaking to is definitely trying to do something to you off the records, sending these notes acts a subtle warning
+    - This by itself can sometimes improve the situation, as they'll recognise you are aware of how they are attempting to communicate with you
+
+## Using These Tools Appropriately
+Be conscious that this section has been more active than passive - if you're on a path where you need to be collecting evidence, you are certainly already having to "play the game", so to speak.
+
+Somebody with a strong personal animus towards me had once used the exact advice in this section to poison my reputation amongst all of senior leadership in an organisation. 
+
+It was easily one of the most painful and hopeless experiences I've had in my career. Something I'd even spent a long time blaming myself for, before forming an understanding what had actually happened by thinking along the lines of incentive traceability.
+
+The reason something like this works, even as an offensive tool, is that actual evidence isn't needed to make a case - just things that _look sufficiently like evidence_. If you have a sufficiently high reputation in a company and are skilled at wordsmithing, anything can be spun in your favour. 
+
+This is not to say that senior leadership won't read evidence put forward and recognise it for what it is - an attack on someone. On the topic of lived experience, senior leaders will likely have the most of it when it comes to workplace theatre after all.
+
+Again, we should interrogate intent as we did in the first section, and rememeber that mitigating liability is an important goal at pretty much any level of leadership.
+
+Imagine we're on the directors of an organisation. Through one of our managers, somebody brings us an emotionally charged document about someone they work with, with links to 6+ months of messages and PR reviews that they'd been quietly collecting as evidence of times they felt disrespected (as was my scenario).
+
+As directors we see what's happening here. But we also see how this is an individual who is prepared more of a stink about this, and in doing so introduce liability to the organisation. This shouldn't need to be escalated and resolved at our level - so we make clear our expectation of a resolution to the reporting manager. They are now incentivised to deal with this situation, and do so quickly - so they do.
+
+Understanding motivations in a corporate structure to this level of detail is very important as we can see, and I hope you'll oay attention to such things to save yourself the stress and confusion I faced in that situation! (Well, think about it just a little. There are more important things to think about)
+
+<!-- Recommend book -->
+
+### Tl;dr
+
+Essentially - don't use advice in this post to go and attack someone you don't like at work! 
+
+I would be pretty disappointed if you went and did that. 
+
+If somebody does do that to you though, it sure stings. How can you deal with that?
 
