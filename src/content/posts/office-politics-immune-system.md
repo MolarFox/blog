@@ -146,6 +146,55 @@ Next up we'll talk about what you can do about that.
 
 
 
+# Why Did Actioning Feedback Make My Situation Worse?
+In the first example we had the benefit of being able to see things largely in black and white, at least in so far as our Dr Evil character. 
+
+In all real-life situations though, there is always a shade of grey. That'll be the focus of this one.
+
+## Feedback From Scar
+<!-- Situation -->
+
+So to summarise: <!-- / merge into the above to keep concise -->
+- We got some emotionally charged feedback
+- It's actionable in places, and there are things we can empathise with Scar's perspective on
+- Much of it is exaggerated or specifically worded more like justification than explanation
+- It's been presented in a very public, and very loud way
+
+## Actioning the Feedback
+We action the feedback, it's a mistake etc
+<!-- Flesh this part out breifly -->
+
+## Things get Worse!
+Explosion of emotions, we aren't told we're addressing feedback, how do we deal with this
+<!-- Flesh this part out breifly -->
+
+## Feedback Keeps Changing
+Feedback wildy varies. We can't really apply it, but that's not the point
+<!-- Flesh this part out breifly -->
+
+## Applying Incentive Traceability
+### What does Scar want?
+- Help our growth
+- Express actionable feedback for us
+- Express their frustration / unhappiness with us
+- Show it to our leaders
+<!-- Flesh this part out breifly -->
+
+### What does a feedback document do?
+- gives us feedback
+- loud, for managers
+
+### Connecting Intent to Action
+- scar making us look bad
+- but moreover, scar feeling hurt / disrespected, using feedback as a way to express it
+    - eg: often not so easy to express such unfounded emotions in a workplace
+
+## How to Deal Wtih This Situation
+In the first example we were largely just observing and understanding to predict how future mentions of some issue may play out. In this one, we want to make more active use of our mental model and determine what our response should be.
+
+<!-- Flesh this part out breifly -->
+
+
 # How Can I Defend Myself?
 Whoa there, that's some strong verbage there - "defend" yourself! Are you being attacked?
 
@@ -232,7 +281,25 @@ Understanding motivations in a corporate structure to this level of detail is ve
 
 Essentially - don't use advice in this post to go and attack someone you don't like at work! 
 
-I would be pretty disappointed if you went and did that. 
-
 If somebody does do that to you though, it sure stings. How can you deal with that?
+
+
+
+# How Do I Deal With the Aftermath of a Rough Situation?
+So far we've talked about how to deeply understand a common type of scenario in your workplace, and how to collect evidence if you need to escalate up.
+
+Majority of the time with something like this though, the best move is to leave it be. You've thought long and hard about the situation you're faced with, understood all the perspectives, and realised that pursuing it further just isn't the right call. 
+
+As in the example I touched on in the last section on someone with a personal animus towards me - one of the most apparent things to me during that is how that person was an order of magnitude more prepared and experienced with something like this. Without going into needless detail, it was apparent that my own goal of clearing my name was going to be messy, and quite loud.
+
+A trap here is that choosing to leave it be and move on feels like a loss. Like a very passive response, where you don't stand up for yourself. 
+
+Try to remove thinking of this in terms of winning and losing. Instead, remember that your long term goal is to progress your career, and walking away here is helping you to continue doing that.
+
+## Look For Closure
+The tough part here is that closure is a luxury you're not likely to be given at the end of your situation. There won't be a debrief, and of course you aren't likely to receive an apology for what happened to you.
+
+The big trap here is that you run the risk of sprialling, of continuing to try and problem solve, to analyse, to try and look for opportunities to continue trying to tackle the situation.
+
+
 
