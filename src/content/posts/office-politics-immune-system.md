@@ -144,6 +144,8 @@ _However_ - when this sentiment comes from someone in your leadership team who _
 
 Next up we'll talk about what you can do about that.
 
+<!-- TODO: rewrite linking sentence here -->
+
 
 
 # Why Did Actioning Feedback Make My Situation Worse?
@@ -151,29 +153,55 @@ In the first example we had the benefit of being able to see things largely in b
 
 In all real-life situations though, there is always a shade of grey. That'll be the focus of this one.
 
-## Feedback From Scar
-<!-- Situation -->
+## Feedback From Spock
+Instead of a comically over-the-top character like Dr Evil, we're now going to be working with now-engineer Spock, of Star Trek fame. being a beloved character, we're likely predisposed to assume the best of his intentions. Lean into that aspect as you read on.
 
-So to summarise: <!-- / merge into the above to keep concise -->
-- We got some emotionally charged feedback
-- It's actionable in places, and there are things we can empathise with Scar's perspective on
-- Much of it is exaggerated or specifically worded more like justification than explanation
-- It's been presented in a very public, and very loud way
+For our scenario, a nuance to bear in mind here about Spock is that he will not be direct when he feels emotional hurt, to the extent that it is <abbr title="For those of you who are trekkies, the implication about Vulcan psychology / Bendii Syndrome here is intentional, minus the telepathic effects.">likely to manifest in other ways</abbr> when such a hurt is a present factor.
+
+One day we receive some sudden and pointed written feedback from Spock. The specific feedback isn't relevant, but there are some observations to note:
+
+- The tone of the writing is fairly emotionally charged
+- It's actionable in places, and there are certainly things we can empathise with Spock's perspective on, now that he has expressed them (eg: recognise the nuance / grey here)
+- There is a much hyperbole and rhetoric in the contents
+- When examples are mentioned in the document, they are used as justfications rather than explanations for the points they support
+    - Eg: think "legal civil defence doc" more than "feedback doc", in expression
+- The document has been shared upwards in our chain of command before it has come to us
+
+To refocus again - the actual feedback here is not important to our point here, instead the expression of it is. 
 
 ## Actioning the Feedback
-We action the feedback, it's a mistake etc
-<!-- Flesh this part out breifly -->
+In short, we have some feedback, usually written, and even without any deep analyses we can see that it means a great deal to Spock that we address this quickly.
 
-## Things get Worse!
-Explosion of emotions, we aren't told we're addressing feedback, how do we deal with this
-<!-- Flesh this part out breifly -->
+Before we action feedback of any kind, the first two things we should make sure we completely understand are:
+1. What is the feedback?
+2. Does it help us to improve? (eg: should we action it?)
+3. If so, what do we need to do to action it? 
+
+If unsure or unclear on of any of these points, we should be getting clarity. Asking clarifying questions of Spock, seeking the advice of others on how to implement it, etc.
+
+Only then should we go ahead and action it. So we go ahead and do this - gaining clarity, then implementing.
+
+## An Unexpected Response
+Some time passes and we're feeling pretty good about the feedback we were given. We've successfully been able to understand it and consistently apply it, noticing both through self-reflection and observations made by others that we've been able use it to self-improve.
+
+Spock however does not agree! With a slight quiver breaking the otherwise typically sturdy cadence of his speech, he tells us bluntly that we have failed to even slightly address the feedback we were given, and we have demonstrated no improvement to him.
+
+How confusing!
+
+Now - the point of feedback is for you to improve, not to appease specific individuals. However, understanding the reason for a response like this could be useful to you, again since it could help you to improve in some way. 
+
+Therefore you ask for clarity on what you've failed to account for (in this case, it sounds like you've failed to account for anything!), and what you should aim to do better. This time however you don't receive a straight answer, and further questions seem to only draw out more frustration from within Spock.
 
 ## Feedback Keeps Changing
-Feedback wildy varies. We can't really apply it, but that's not the point
-<!-- Flesh this part out breifly -->
+We go through the same cycle again, aiming to understand, trying to implement, and finding Spock sees no improvement each time.
+
+As time passes 
+<!-- TODO: finish -->
 
 ## Applying Incentive Traceability
-### What does Scar want?
+Ok, it seems clear we've missed something here. We'll consciously apply incentive traceability and see if we can figure out what.
+
+### What does Spock want?
 - Help our growth
 - Express actionable feedback for us
 - Express their frustration / unhappiness with us
