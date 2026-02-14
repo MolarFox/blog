@@ -100,7 +100,7 @@ To underscore the point here though, let's remove that nuance.
 Ok here's the deal - you work with Dr Evil, and he's decided that his next mastermind scheme will be directed at you. He's doing all sorts of overtly villainy things to you.
 - He's been claiming your ideas as his own
 - He spreads nasty rumours about you with your senior leaders
-- One time he invited you to his volcano lair and shared all his childhood trauma with you, telling you you'll never be a mastermind like him because you haven't been through the same hardships
+<!-- - One time he invited you to his volcano lair and shared all his childhood trauma with you, telling you you'll never be a mastermind like him because you haven't been through the same hardships -->
 - Whenever he disagrees with you during standup, he moves an orbital laser over your house and blows a hole into your roof
 
 ### Escalating
@@ -195,7 +195,7 @@ Therefore you ask for clarity on what you've failed to account for (in this case
 ## Feedback Keeps Changing
 We go through the same cycle again, aiming to understand, trying to implement, and finding Spock sees no improvement each time.
 
-As time passes 
+As time passes we also ask for a summary of the feedback + the most important aspects of it during these checkins, to confirm we're still on the right track. Each time we ask however, the most important 
 <!-- TODO: finish -->
 
 ## Applying Incentive Traceability
