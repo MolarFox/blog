@@ -195,21 +195,25 @@ Therefore you ask for clarity on what you've failed to account for (in this case
 ## Feedback Keeps Changing
 We go through the same cycle again, aiming to understand, trying to implement, and finding Spock sees no improvement each time.
 
-As time passes we also ask for a summary of the feedback + the most important aspects of it during these checkins, to confirm we're still on the right track. Each time we ask however, the most important 
-<!-- TODO: finish -->
+As time passes we also ask for a summary of the feedback + the most important item we should be focussing on during these checkins, to confirm we're still on the right track. Each time we ask however, the most important item is different - indeed sometimes the entire list of feedback is totally different!
+
+if accompanied by observations that we are improving, this can be expected (for instance). It is however unusual when accompanied by the observation that we are _not_ improving at all.
+
+Where the goal is to sincerely accomodate the feedback as we have done so far in this hypothetical, this can be a point of frustration and confusion.
 
 ## Applying Incentive Traceability
 Ok, it seems clear we've missed something here. We'll consciously apply incentive traceability and see if we can figure out what.
 
 ### What does Spock want?
-- Help our growth
-- Express actionable feedback for us
-- Express their frustration / unhappiness with us
-- Show it to our leaders
-<!-- Flesh this part out breifly -->
+- To help our growth
+- To communicate actionable feedback for us
+- Potentially to express their frustration / unhappiness with us through the feedback
+
+For each item, link it to an observation or piece of evidence you have thus far.
+
 
 ### What does a feedback document do?
-- gives us feedback
+- It gives us feedback in a 
 - loud, for managers
 
 ### Connecting Intent to Action
@@ -222,7 +226,7 @@ In the first example we were largely just observing and understanding to predict
 
 <!-- Flesh this part out breifly -->
 
-
+<!-- 
 # How Can I Defend Myself?
 Whoa there, that's some strong verbage there - "defend" yourself! Are you being attacked?
 
@@ -303,7 +307,7 @@ As directors we see what's happening here. But we also see how this is an indivi
 
 Understanding motivations in a corporate structure to this level of detail is very important as we can see, and I hope you'll oay attention to such things to save yourself the stress and confusion I faced in that situation! (Well, think about it just a little. There are more important things to think about)
 
-<!-- Recommend book -->
+<!-- Recommend book
 
 ### Tl;dr
 
@@ -311,10 +315,23 @@ Essentially - don't use advice in this post to go and attack someone you don't l
 
 If somebody does do that to you though, it sure stings. How can you deal with that?
 
+ -->
 
+# Choosing What to Do Next
+<!-- Flesh this part out -->
 
 # How Do I Deal With the Aftermath of a Rough Situation?
-So far we've talked about how to deeply understand a common type of scenario in your workplace, and how to collect evidence if you need to escalate up.
+Around a year ago I went through a situation in which someone a couple of ranks more senior than me sabotaged a promotion of mine. They directly revealed later, at the end of a 40 minute 1 on 1 lecture about their childhood traumas and life hardships, that their reason for doing so was that I had not had to go through the same hardships that they had to get where I was. That I was a long way away from their level of seniority for that reason.
+
+There's a lot to unpack about that whole situation, but the point is that it was pretty rough thing to go through! Indeed, it was part of the catalyst for writing this post.
+
+Much as I hope you don't have to experience something similar, something in that category is 
+
+The situation at a high level could be:
+- Somebody acts on a personal animus towards us, negatively impacting us
+- 
+
+<!-- So far we've talked about how to deeply understand a common type of scenario in your workplace, and how to collect evidence if you need to escalate up.
 
 Majority of the time with something like this though, the best move is to leave it be. You've thought long and hard about the situation you're faced with, understood all the perspectives, and realised that pursuing it further just isn't the right call. 
 
@@ -322,7 +339,7 @@ As in the example I touched on in the last section on someone with a personal an
 
 A trap here is that choosing to leave it be and move on feels like a loss. Like a very passive response, where you don't stand up for yourself. 
 
-Try to remove thinking of this in terms of winning and losing. Instead, remember that your long term goal is to progress your career, and walking away here is helping you to continue doing that.
+Try to remove thinking of this in terms of winning and losing. Instead, remember that your long term goal is to progress your career, and walking away here is helping you to continue doing that. -->
 
 ## Look For Closure
 The tough part here is that closure is a luxury you're not likely to be given at the end of your situation. There won't be a debrief, and of course you aren't likely to receive an apology for what happened to you.
