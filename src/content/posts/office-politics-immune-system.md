@@ -7,6 +7,7 @@ date: 1970-01-1T00:00:00.009Z
 tags: [Office, Psychology]
 ---
 
+<!-- TODO: HOOK -->
 <hook>
 
 I'm RJ, and I've been in software for 10 years - mostly as an <abbr title="Individual Contributor. Eg: somebody with no direct reports">IC</abbr>, with little stints in engineering management and contracting.
@@ -86,7 +87,9 @@ The skill behind the skill here is being able to do these analyses whilst keepin
 
 Let's get into some examples. These are some common Qs I've worked through with my junior engineer mentees in the past.
 
-
+<!-- TODO: rename this to like "interrogating motivation" -->
+<!-- TODO: note that these motivations aren't always conscious / even the person may not recognise them. May not be pre-meditated in that way -->
+<!-- TODO: ensure the focus is on what this way of thinking can do to help you in future / make predictions -->
 
 # Why Is Nothing Happening About My Situation?
 We're going to dive right into one of the most brutal things you may go through.
@@ -224,112 +227,81 @@ For each item, link it to an observation or piece of evidence you have thus far.
 ## How to Deal Wtih This Situation
 In the first example we were largely just observing and understanding to predict how future mentions of some issue may play out. In this one, we want to make more active use of our mental model and determine what our response should be.
 
+<!-- TODO: mention how there's usually a seed of validity -eg: amplified by animosity, but based on a seed of something real -->
+
 <!-- Flesh this part out breifly -->
-
-<!-- 
-# How Can I Defend Myself?
-Whoa there, that's some strong verbage there - "defend" yourself! Are you being attacked?
-
-This heading is very intentional - it's the exact way that a mentee of mine phrased it to me. Her phrasing is totally valid, but it is a good idea to be aware of the implications of a word like "defend" - and whether you want to draw attention to those implications.
-
-This'll be an important idea in actually answering the question being asked here ;).
-
-## Facts are Your Friend
-The way you defend yourself is with evidence! That's basically it, we can just end the section here really.
-
-We've talked about how you can reduce big, messy, often emotional workplace conflicts into more objective form through this idea of incentive traceability. Now we use the same principles to put a spotlight on what we're facing.
-
-### How to Think About Collecting Evidence
-Let's flip the scenario for the rest of this section and imagine that you are the manager, looking after an engineer facing a tough and one-sided situation of some sort. Maybe their house is being bombarded from orbit by a coworker, for instance.
-
-You want to make a case on their behalf to your leader, and/or to HR, that something is amiss.
-
-**What do you need to do so?**
-
-It's a worthwhile thought exercise for you to consider. Two important things are:
-1. Clear, objective, **primary** evidence
-    - Primary evidence can be conversations in a work messaging platform, emails
-    - Meeting notes or notes that you've taken from certain interactions are useful, but less so
-    - Anecdotal accounts are useful too, but much less so
-
-2. Witnesses, or people who will vouch for your engineer
-    - These are people who you should be able to call on to support the case you're making
-    - We'll be making sure that these people agree with your engineer's experiences
-
-Thinking from the perspective of the manager backing you up is important, as they need to be able to demonstrate the things saying without the engineer themselves needing to be there. 
-
-When you are the engineer, think about what conversations your manager will need to have on your behalf and prioritise evidence that will be useful there.
-
-
-## Feeling Count Too
-Primary evidence counts for a lot, but so too does the impact that this situation has had on our engineer.
-
-The way we'll have to phrase this is something to the effect of "`<Thing>` has been happening, as we can see from `<evidence>`, and it has had `<effect>` on our engineer."
-
-## What if Everything Has Been Happening Verbally?
-This is pretty common. But there is a trick!
-
-Whilst you can and certainly should take notes after every verbal encounter during a situation where you are feeling attacked, those notes by themselves don't mean too much.
-
-This is because they're made by you - it's not primary evidence, and it's likely to be biased.
-
-The way you counteract this is like so:
-1. Take notes after every meaningful verbal encounter
-2. Put those notes into an email 
-    - even where Slack / Teams is available, email is better as it's not easily editable
-3. Send it to the person you've just had a conversation with, asking them if it all looks correct
-
-There are a few advantages to this:
-- Instead of just being notes of a conversation, it's now notes that are implicitly agreed on by the person you spoke to
-    - You can expect that you won't actually get a reply. The point is that you've provided an opportunity for your written record of the conversation to be challenged
-
-- Just sending notes is an inherently neutral thing to do. You could send confirmatory meeting notes to anyone you meet with
-
-- If the person you're speaking to is definitely trying to do something to you off the records, sending these notes acts a subtle warning
-    - This by itself can sometimes improve the situation, as they'll recognise you are aware of how they are attempting to communicate with you
-
-## Using These Tools Appropriately
-Be conscious that this section has been more active than passive - if you're on a path where you need to be collecting evidence, you are certainly already having to "play the game", so to speak.
-
-Somebody with a strong personal animus towards me had once used the exact advice in this section to poison my reputation amongst all of senior leadership in an organisation. 
-
-It was easily one of the most painful and hopeless experiences I've had in my career. Something I'd even spent a long time blaming myself for, before forming an understanding what had actually happened by thinking along the lines of incentive traceability.
-
-The reason something like this works, even as an offensive tool, is that actual evidence isn't needed to make a case - just things that _look sufficiently like evidence_. If you have a sufficiently high reputation in a company and are skilled at wordsmithing, anything can be spun in your favour. 
-
-This is not to say that senior leadership won't read evidence put forward and recognise it for what it is - an attack on someone. On the topic of lived experience, senior leaders will likely have the most of it when it comes to workplace theatre after all.
-
-Again, we should interrogate intent as we did in the first section, and rememeber that mitigating liability is an important goal at pretty much any level of leadership.
-
-Imagine we're on the directors of an organisation. Through one of our managers, somebody brings us an emotionally charged document about someone they work with, with links to 6+ months of messages and PR reviews that they'd been quietly collecting as evidence of times they felt disrespected (as was my scenario).
-
-As directors we see what's happening here. But we also see how this is an individual who is prepared more of a stink about this, and in doing so introduce liability to the organisation. This shouldn't need to be escalated and resolved at our level - so we make clear our expectation of a resolution to the reporting manager. They are now incentivised to deal with this situation, and do so quickly - so they do.
-
-Understanding motivations in a corporate structure to this level of detail is very important as we can see, and I hope you'll oay attention to such things to save yourself the stress and confusion I faced in that situation! (Well, think about it just a little. There are more important things to think about)
-
-<!-- Recommend book
-
-### Tl;dr
-
-Essentially - don't use advice in this post to go and attack someone you don't like at work! 
-
-If somebody does do that to you though, it sure stings. How can you deal with that?
-
- -->
 
 # Choosing What to Do Next
 <!-- Flesh this part out -->
 
 # How Do I Deal With the Aftermath of a Rough Situation?
-Around a year ago I went through a situation in which someone a couple of ranks more senior than me sabotaged a promotion of mine. They directly revealed later, at the end of a 40 minute 1 on 1 lecture about their childhood traumas and life hardships, that their reason for doing so was that I had not had to go through the same hardships that they had to get where I was. That I was a long way away from their level of seniority for that reason.
+Around a year ago I went through a situation in which someone a couple of ranks more senior than me sabotaged a promotion of mine. They directly revealed later, via a 40 minute 1 on 1 lecture about their childhood traumas and life hardships, that their reason for doing so was that they felt I did not have to go through the same hardships that they had to get where I was, and therefore was undeserving of promotion.
+
+I ended up missing out on what was an effectively guaranteed promotion that round, and even ended up receiving a demotion in pay later on solely on the basis of that engineer's word.
 
 There's a lot to unpack about that whole situation, but the point is that it was pretty rough thing to go through! Indeed, it was part of the catalyst for writing this post.
 
-Much as I hope you don't have to experience something similar, something in that category is 
+Much as I hope you don't have to experience something similar, there's a pretty high chance that you will experience something in this broader category of situation. This is to the extent that it's almost a guaranteed thing you can bond over. Talking about this stuff can be uncomfortable and "bring the mood down" sure, but talking and doing research to write this post opened up a lot of conversations and revealed a lot of stories that I don't think I would've otherwise heard from friends. 
 
-The situation at a high level could be:
-- Somebody acts on a personal animus towards us, negatively impacting us
-- 
+In a similar vein, having had this experience myself has already been pretty instrumental in helping out some of the junior engineers I mentor with situations of their own. Being young, or being female in a male-dominated industry tends to make this sort of thing more likely and more insidious as I've come to observe.
+
+Anyway, the key bits of a situation like this are usually:
+- Somebody acts on a personal animosity towards us, negatively impacting us in some way
+- This may be done in a way that is very difficult to see as being based on animosity to anyone not close enough to the situation
+
+On recognising this, you will have:
+- Thought about what motivates the person / people you're interfacing with
+- Thought about what motivates the leaders in your chain of command / heirarchy
+- Considered what the best next course of action is for you, and pursued it
+
+In some cases though, that best course of action is to let it go, and look to move on. As we've touched on up above <!-- TODO: ensure link --> this may be the option that is in our best interests.
+
+Realising it's the best option and dealing with taking that option are two very different things though, so how do you live with such a decision?
+
+## Recognise the Lack of Closure
+
+Above all, the part that "stings" the most after an encounter like this tends to be the lack of closure, in its various forms. It's common that up until this point a lot will have been happening, and the decision to step away / move on will come with a lot of unresolved items from those happenings. We can interrogate motivation to understand some things, but questions like <!-- TODO: put some questions in here --> will remain unresolved.
+
+There's two things I'd recommend you recognise here:
+1. That closure you seek is not likely to come externally. You'll need to find it yourself
+2. Without that closure, you are at an increased risk of spiralling
+
+## Finding your own Closure
+The first step to this sort of thing is to recognise what it is that you feel is unresolved. What thoughts keep you up at night? Is there some specific situation you keep thinking about? Was there some encounter that you would play differently, given the chance to do it over again?
+
+Next, armed with a decently articulated idea of what feels unresolved to you, you'll need to do something tangible about it. 
+- **Maybe you're fatigued from having to sit on things in silence**
+    - Then you could find a friend who has nothing to do with your work and talk it through with them
+    - Short of that, there's no shortage of places on the clearnet where you can anonymously rant about something, and hear anonymous thoughts from people about it
+
+- **Maybe you can't shake the lingering feeling that your reputation at work is going to have this (potentially) false black mark permanently attached to it**
+    - Then you could find someone at work you trust, but is far away enough from the situation to go ahead and talk to. Maybe a manager outside your chain of command, if you know and trust one
+    - It may be varyingly effective for "closure", but finding those people you know have a high opinion of you and asking for feedback from them can also be helpful
+        - You'd effectively be fishing for compliments in a way by doing so, but there's nothing wrong with that if that reminder proves useful in dispelling the idea of a ruined reputation!
+
+- **Maybe you just need an outlet for the frustration you feel with how things played out against you**
+    - Go write a nasty, unhinged writeup about it which nobody will ever see. Draw it. Write a short story about it. Print a picture of the person whom you felt screwed you over and put it onto a punching bag
+        - You should actually do this, instead of just thinking about doing it, to get the proper effect! The reason this works is that you can extract some thoughts from your mind by making some physical artefact of them
+        - It can end up a pretty fun exercise by the end of it. A mentee of mine drew some comic strips to do with her situation, and boy were they delightfully unhinged! I didn't know she had such rage in her... nor such perfect comedic timing
+
+The point is that you need to do _something_. It's not true closure in the sense that you get a real resolution to your situation, but it's enough that you can put it away and move on to thinking about more important things. 
+
+This is one of those things where it can seem obvious to think about, but which we easily forget in the moment. The risk is that our brains are not really wired to find closure per se, they're usually trying to engineer a solution to the unresolved problems on our minds.
+
+<!-- TODO: different word than "spriral"? -->
+
+## Recognising when you start to spiral
+Rarely will you have a bad experience in a workplace that is as clean as the examples you'll read about in a resource like this one. It's pretty much always messy, and it's pretty much always hard to break things down into usable chunks.
+
+The natural consequence of this is that for most personality types, we're likely to end up ruminating, and thinking about a situation like this for a long time. There's two main categories that I've noticed that these thoughts fall into:
+
+1. Why did thing x happen?
+
+2. What can I do to fix / improve the situation?
+
+Interrogating motivation can help somewhat with the first question. The trouble is that even after we've decided "yup, time to let this go", we still have a natural tendency to look for things that will 'fix' the situation. In most cases this is useful, but if you've reached the point where you've analysed the situation and decided that you will be dropping it and moving on, it is how you end up spiralling. Deciding on that course of action alone is hard enough, as we've walked through. 
+
+### 
 
 <!-- So far we've talked about how to deeply understand a common type of scenario in your workplace, and how to collect evidence if you need to escalate up.
 
@@ -341,10 +313,10 @@ A trap here is that choosing to leave it be and move on feels like a loss. Like 
 
 Try to remove thinking of this in terms of winning and losing. Instead, remember that your long term goal is to progress your career, and walking away here is helping you to continue doing that. -->
 
-## Look For Closure
+<!-- ## Look For Closure
 The tough part here is that closure is a luxury you're not likely to be given at the end of your situation. There won't be a debrief, and of course you aren't likely to receive an apology for what happened to you.
 
-The big trap here is that you run the risk of sprialling, of continuing to try and problem solve, to analyse, to try and look for opportunities to continue trying to tackle the situation.
+The big trap here is that you run the risk of sprialling, of continuing to try and problem solve, to analyse, to try and look for opportunities to continue trying to tackle the situation. -->
 
 
 
