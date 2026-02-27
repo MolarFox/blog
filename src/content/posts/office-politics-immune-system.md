@@ -301,22 +301,28 @@ The natural consequence of this is that for most personality types, we're likely
 
 Interrogating motivation can help somewhat with the first question. The trouble is that even after we've decided "yup, time to let this go", we still have a natural tendency to look for things that will 'fix' the situation. In most cases this is useful, but if you've reached the point where you've analysed the situation and decided that you will be dropping it and moving on, it is how you end up spiralling. Deciding on that course of action alone is hard enough, as we've walked through. 
 
-### 
+### Signs to watch for
+The choice of the phrase "sprialling" is intentional here. A lot of the markers related to the psychological term apply here, at varying degrees of severity.
 
-<!-- So far we've talked about how to deeply understand a common type of scenario in your workplace, and how to collect evidence if you need to escalate up.
+Some things to watch for, to be able to recognise this in yourself are:
+- <!-- TODO: fill these out  -->
 
-Majority of the time with something like this though, the best move is to leave it be. You've thought long and hard about the situation you're faced with, understood all the perspectives, and realised that pursuing it further just isn't the right call. 
+I certainly dealt with all of these pretty badly for about a year after my own situation! And with that experience, I noticed the same troubling signs in a couple of my mentees.
 
-As in the example I touched on in the last section on someone with a personal animus towards me - one of the most apparent things to me during that is how that person was an order of magnitude more prepared and experienced with something like this. Without going into needless detail, it was apparent that my own goal of clearing my name was going to be messy, and quite loud.
+Some of us are more predisposed to this happening than others, and things manifest differently for different people. This section in particular is one to take with a grain of salt, and to consider how much it applies to you specifically. There's a chance that you are an ascended being, completely unaffected by such trivial workplace issues, for instance. This post may be of limited use to you in that case!
 
-A trap here is that choosing to leave it be and move on feels like a loss. Like a very passive response, where you don't stand up for yourself. 
+### What to do about it
 
-Try to remove thinking of this in terms of winning and losing. Instead, remember that your long term goal is to progress your career, and walking away here is helping you to continue doing that. -->
+Alongside the ideas above in finding closure, we'll need to remember that work is work. When it creeps out and starts negatively affecting our personal lives, we need to notice that and recognise when it's time to step back a little.
 
-<!-- ## Look For Closure
-The tough part here is that closure is a luxury you're not likely to be given at the end of your situation. There won't be a debrief, and of course you aren't likely to receive an apology for what happened to you.
+The advice here is nothing ground breaking - go hang out with your friends, take your dog on a hike, take some leave and go climb a mountain in a foreign country, etc. 
 
-The big trap here is that you run the risk of sprialling, of continuing to try and problem solve, to analyse, to try and look for opportunities to continue trying to tackle the situation. -->
+But the key note here is similar to the above - which is that you do need to actually do it. It won't "feel" like the logical thing to be doing in a situation like this, where so much is happening, and you'll feel that you need to be doing a lot to deal with the situation. Indeed, stepping away can be used against you in a political context sometimes too, through various means - but this is somewhat the point. 
 
+Unless your intention is to live life solely through work, this is the point at which the watchdog of your sanity triggers an interrupt and lets you do something else. It won't feel like the right thing to do, until you step away and see your mind begin to clear.
 
+I'm pretty grateful to my friends for recognising I was pretty deep into things with my own situation last year, and continually dragging me out to do things / play some video games / build some stuff, for example.
 
+Things at work are going to happen, but don't lose sight of the fact that for most of us work is just a means to living the rest of your life happily. 
+
+# Summary
